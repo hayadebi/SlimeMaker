@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/title.unity
+    guid: f5db5ddf3f24e634bbcced26bc5585fe
+  - enabled: 1
+    path: Assets/Scenes/qrstage.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Resources/script/spell_convert/Scenes/qr_state.unity
+    guid: 2c001322a0b64f94bba4de1acac73b37
+  - enabled: 1
+    path: Assets/Scenes/loadstage.unity
+    guid: 7bc201682ea2f3a4aa84b28f6de1a673
+  - enabled: 1
+    path: Assets/Scenes/createstage.unity
+    guid: d51201f7db39a84468adfd41b4843456
+  m_configObjects: {}

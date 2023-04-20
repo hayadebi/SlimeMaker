@@ -1,0 +1,199 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1683954136660852453
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1683954136660852455}
+  - component: {fileID: 1683954136660852454}
+  - component: {fileID: 3727330078468739877}
+  - component: {fileID: 5874543127924428867}
+  m_Layer: 0
+  m_Name: GManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1683954136660852455
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683954136660852453}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1683954136660852454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683954136660852453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff14c2d60e2d2014a969ddedbe104da6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isEnglish: 0
+  walktrg: 1
+  seMax: 0.01
+  audioMax: 0.02
+  over: 0
+  setmenu: 0
+  ESCtrg: 0
+  setrg: -1
+  manager_trg: 00000000
+  magic_effectobj:
+  - {fileID: 0}
+  all_monster:
+  - monster_name:
+    - "\u30B9\u30E9\u30A4\u30E0"
+    - Slime
+    monster_script:
+    - "\u6700\u5F31\u306E\u7A2E\u65CF\u3002"
+    - The weakest species.
+    unique_namejp:
+    - "\u307D\u3088\u3093"
+    - "\u30DD\u30E0\u30DD\u30E0"
+    - "\u30D7\u30EB\u30F3\u3061\u3083\u3093"
+    unique_nameen:
+    - Poyon
+    - Pom Pom
+    - Prung
+    hp: 3
+    at: 1
+    df: 0
+    speed: 1
+    at_area: 1
+    at_speed: 1
+    lvup_speed: 1
+    normal_atid: 00000000
+    lvup_stateid_percent: 00000000
+    drop_itemid_percent: 00000000
+    get_specalatid: 01000000ffffffff
+    mon_obj: {fileID: 2131408426822601521, guid: 89bfe9a81cc3a044094afea7c3109986,
+      type: 3}
+  all_item:
+  - item_name:
+    - "\u8B0E\u306E\u30B8\u30A7\u30EB"
+    - Mystery Gel
+    script:
+    - "\u30B9\u30E9\u30A4\u30E0\u304B\u3089\u624B\u306B\u5165\u308B\u7528\u9014\u4E0D\u660E\u306E\u30A2\u30A4\u30C6\u30E0\u3002"
+    - Items of unknown use obtained from slime.
+    storage_num: 0
+    get_trg: 0
+    event_id: -1
+    item_sprite: {fileID: 0}
+  all_attack:
+  - at_name:
+    - "\u30B9\u30D7\u30E9\u30C3\u30B7\u30E5\u30B7\u30E7\u30C3\u30C8"
+    - Splash shot
+    script:
+    - "\u30B8\u30A7\u30EB\u3092\u98DB\u3070\u3059\u5F31\u653B\u6483\u3002"
+    - A weak attack that sends gels flying.
+    event_id: 0
+    atlv_obj: {fileID: 0}
+    at_area: 2
+    at: 1
+    lv: 0
+  - at_name:
+    - "\u30DE\u30C3\u30C9\u30B7\u30E7\u30C3\u30C8"
+    - Mad shot
+    script:
+    - "\u6CE5\u3092\u98DB\u3070\u3059\u5F31\u653B\u6483\u3002"
+    - A weak attack that sends mads flying.
+    event_id: 0
+    atlv_obj: {fileID: 0}
+    at_area: 1.5
+    at: 2
+    lv: 0
+  all_state:
+  - state_name:
+    - "\u5143\u6C17\u30E2\u30EA\u30E2\u30EA"
+    - Full of energy.
+    script:
+    - "\u5143\u6C17\u306B\u306A\u308A\u3001\u6700\u5927HP\u304C1\u5897\u3048\u30661\u56DE\u5FA9\u3059\u308B\u3002"
+    - Maximum HP is increased by 1 and restored by 1.
+    event_id: 0
+    state_sprite: {fileID: 0}
+  dungeon_player:
+    monster_id: 0
+    qr_pass: 
+    unique_name:
+    - 
+    - 
+    max_hp: 0
+    hp: 0
+    at: 0
+    df: 0
+    speed: 0
+    at_area: 0
+    at_speed: 0
+    lvup_speed: 0
+    lv: 0
+    nextlvup_num: 0
+    get_lvnum: 0
+    cooltime: 0
+  mainplayer_mode: 1
+  stock_monster:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  lost_monster: []
+  lost_num: 0
+  player_hand: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  temptext: 
+--- !u!114 &3727330078468739877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683954136660852453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44f4f2072fb2b3b4b81fcc17f27ceef3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  temp_set: 
+--- !u!114 &5874543127924428867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1683954136660852453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c3351b8243ae7c43984f96024db054a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  content: 

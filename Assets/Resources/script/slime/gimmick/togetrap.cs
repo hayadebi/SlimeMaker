@@ -1,0 +1,43 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class togetrap : MonoBehaviour
+{
+    public SpriteRenderer _sprite;
+    public Sprite[] on_or_off;
+    public int offtrg = 0;
+    public float check_time = 3f;
+    private float count_time;
+    // Start is called before the first frame update
+    void Start()
+    {
+        this.gameObject.tag = "red";
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (GManager.instance.walktrg && !GManager.instance.over)
+        {
+            count_time += Time.deltaTime;
+            if(count_time >= check_time)
+            {
+                count_time = 0;
+                GManager.instance.setrg = 3;
+                iTween.ShakePosition(this.gameObject, iTween.Hash("x",0.24f, "y", 0.24f, "time", 0.24f));
+                if (offtrg == 0)
+                {
+                    this.gameObject.tag = "ground";
+                    offtrg = 1;
+                }
+                else if (offtrg == 1)
+                {
+                    this.gameObject.tag = "red";
+                    offtrg = 0;
+                }
+                _sprite.sprite = on_or_off[offtrg];
+            }
+        }
+    }
+}

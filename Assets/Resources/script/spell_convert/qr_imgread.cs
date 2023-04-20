@@ -1,0 +1,113 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using System;
+using System.Linq;
+using System.IO;
+using UnityEngine.SceneManagement;
+public class qr_imgread : MonoBehaviour
+{
+    string _result = null;
+    public WebCamTexture _webCam;//カメラ
+    public RawImage raw;//カメラに映った様子を表示するためのRawImage
+    private bool check_trg = false;
+    private string global_temp1;
+    private string global_temp2;
+    public Image btimg;
+    public Text bttxt;
+    private bool is_start = false;
+    public Text qrtxt;
+    private bool not_lost = false;
+    public FileManager fmanager;
+    private bool not_stageqrtrg = false;
+    public void ClickQR()
+    {
+        StartCoroutine(nameof(QRStart));
+    }
+    public IEnumerator QRStart()//カメラ起動
+    {
+        yield return Application.RequestUserAuthorization(UserAuthorization.WebCam);
+       
+        btimg.enabled = false;
+        bttxt.enabled = false;
+        GManager.instance.setmenu = 1;
+        if (Application.HasUserAuthorization(UserAuthorization.WebCam) == false)
+        {
+            Debug.LogFormat("no camera.");
+            yield break;
+        }
+        Debug.LogFormat("camera ok.");
+        WebCamDevice[] devices = WebCamTexture.devices;
+        if (devices == null || devices.Length == 0)
+            yield break;
+        _webCam = new WebCamTexture(devices[0].name, Screen.width, Screen.height, 12);
+        raw.texture = _webCam;
+        _webCam.Play();//このカメラ起動と似たような感じでStop()で止めれる
+        is_start = true;
+    }
+    void Update()
+    {
+        if (is_start && !check_trg && _webCam != null)
+        {
+            _result = QRCodeHelper.Read(_webCam);//QRかどうか判断するための
+            if (_result != null && QRCodeHelper.Read(_webCam) != null && _result != "error" && !check_trg)//QRだった場合に条件を通させる、エラーの時は通らない
+            {
+                print(_result);
+                string tmp = _result;
+                System.IO.StringReader rs = new System.IO.StringReader(tmp);
+                string line = null;
+                int check_line = 0;
+                bool stage_qrtrg = false;
+                while ((line = rs.ReadLine()) != null)//本作では1行読み込んでステージデータかどうか判別してる
+                {
+                    if (check_line == 0 && line == "stage")
+                        stage_qrtrg = true;
+                    else if (check_line == 0 && line != "stage" && !not_stageqrtrg)
+                    {
+                        not_stageqrtrg = true;
+                        GManager.instance.setrg = 1;
+                        if (GManager.instance.isEnglish == 0)
+                            qrtxt.text = "<color=red>ステージ専用の</color>QRコードを読み込んでね！";
+                        else
+                            qrtxt.text = "Read the QR code for the <color=red>stage</color>!";
+                    }
+                    check_line += 1;
+                }
+                if (stage_qrtrg)//ステージデータなら
+                {
+                    check_trg = true;
+                    // 書き込み
+                    string path = Application.persistentDataPath + "/stage00.txt";
+                    bool isAppend = false; // 上書き or 追記
+                    using (var fs = new StreamWriter(path, isAppend, System.Text.Encoding.GetEncoding("UTF-8")))
+                    {
+                        fs.Write(tmp);
+                    }
+                    GManager.instance.setrg = 6;
+                    Instantiate(GManager.instance.all_ui[0], transform.position, transform.rotation);
+                    _webCam.Stop();
+                    _webCam = null;
+                    Invoke("SceneChange", 1);//書き込み後ステージシーンへ飛ぶ
+                }
+            }
+        }
+    }
+    void SceneChange()
+    {
+        GManager.instance.setmenu = 0;
+        GManager.instance.walktrg = true;
+        GManager.instance.storymode = false;
+        GManager.instance.debug_trg = false;
+        GManager.instance.over = false;
+        GManager.instance.goal_num = 0;
+        SceneManager.LoadScene("loadstage");
+    }
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name == "qrstage")
+        {
+            StartCoroutine(nameof(QRStart));
+        }
+    }
+}
