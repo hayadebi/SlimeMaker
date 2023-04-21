@@ -335,7 +335,7 @@ MonoBehaviour:
   move_num: -1
   stand_anim: 0
   walk_anim: 1
-  kando: 15
+  kando: 90
 --- !u!54 &-2418646064861008309
 Rigidbody:
   m_ObjectHideFlags: 0

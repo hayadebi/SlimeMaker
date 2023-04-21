@@ -26,6 +26,12 @@ public class clickbutton : MonoBehaviour
     [Header("テキスト")]
     public Text _text;
     public int dxtrg = -1;
+    [Header("スクロールバー固定ギミック")]
+    public int fixed_selectid = -1;
+    public Image fixed_idobjimg = null;
+    public Text fixed_idobjname = null;
+    public GameObject EnableUI = null;
+    public bool check_fixedtrg = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,17 +40,32 @@ public class clickbutton : MonoBehaviour
             GManager.instance.slime_titleui = true;
             SetUI();
         }
+        
     }
-
+    void FixedUITime()
+    {
+        if (EnableUI != null)
+            GManager.instance.setmenu = 1;
+        if (fixed_idobjimg != null && fixed_selectid != -1)
+            fixed_idobjimg.sprite = GManager.instance.stageobj_createimg[fixed_selectid];
+        if (fixed_idobjname != null && fixed_selectid != -1)
+            fixed_idobjname.text = GManager.instance.stageobj_data[fixed_selectid].name[GManager.instance.isEnglish];
+    }
     // Update is called once per frame
     void Update()
     {
-
+        if (fixed_selectid != -1 && check_fixedtrg)
+        {
+            check_fixedtrg = false;
+            FixedUITime();
+        }
     }
     public void FixedCreate()
     {
         GManager.instance.setrg = 8;
         GManager.instance.fixed_createid = !GManager.instance.fixed_createid;
+        if (fixed_selectid != -1)
+            GManager.instance.set_createid = fixed_selectid;
         if (GManager.instance.fixed_createid)
         {
             if (GManager.instance.isEnglish == 0)
@@ -59,6 +80,8 @@ public class clickbutton : MonoBehaviour
             else
                 _text.text = "Gimmick fixation: OFF";
         }
+        GManager.instance.setmenu = 0;
+        EnableUI.SetActive(false);
     }
     public void NextScene()
     {
@@ -127,6 +150,14 @@ public class clickbutton : MonoBehaviour
             GManager.instance.walktrg = true;
             GManager.instance.ESCtrg = false;
             Destroy(destroy_obj.gameObject, destroy_time);
+        }
+    }
+    public void SetTargetActive()
+    {
+        if (GManager.instance.setmenu <= 0)
+        {
+            GManager.instance.setrg = 0;
+            uiobj.SetActive(true);
         }
     }
     public void quitClick()

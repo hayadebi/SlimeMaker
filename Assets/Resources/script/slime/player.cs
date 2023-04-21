@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System;
 public class player : MonoBehaviour
 {
     //【今後修正しながら使っていくプレイヤースクリプトの原型】
@@ -35,7 +36,7 @@ public class player : MonoBehaviour
     public int stand_anim = 0;
     public int walk_anim = 1;
     private GameObject cm;
-
+    private Vector3 iceoldvec;
     // Start is called before the first frame update
 
     void Start()
@@ -58,7 +59,7 @@ public class player : MonoBehaviour
     private bool goaltrg = false;
 
     public float kando = 15;
-    
+    private bool icetrg = false;
     void FixedUpdate()
     {
         if (GManager.instance.walktrg && !GManager.instance.over && !stoptrg)
@@ -70,7 +71,7 @@ public class player : MonoBehaviour
             xSpeed = 0;
             ySpeed = -gravity;
             //----ここからは移動----
-            if (!movetrg && (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
+            if (!movetrg &&!icetrg&& (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
             {
                 //この部分では歩きの効果音、アニメーションを操作
                 movetrg = true;
@@ -82,12 +83,27 @@ public class player : MonoBehaviour
             //移動メイン部分
             var inputX = Input.GetAxisRaw("Horizontal");
             var inputZ = Input.GetAxisRaw("Vertical");
-            var tempVc = new Vector3(move_num * inputX, 0, inputZ);
-            if (tempVc.magnitude > 1) tempVc = tempVc.normalized;
-            var vec = tempVc;
-            var movevec = vec * playerspeed + Vector3.up * (ySpeed);
-            rb.velocity = movevec;
 
+            if (!icetrg || (transform.position - iceoldvec).magnitude <= 0.00001f)
+            {
+                var tempVc = new Vector3(move_num * inputX, 0, inputZ);
+                if (tempVc.magnitude > 1) tempVc = tempVc.normalized;
+                var vec = tempVc;
+                var movevec = vec * playerspeed + Vector3.up * ySpeed;
+                rb.velocity = movevec;
+            }
+            else if (icetrg)
+            {
+                inputX = 0;
+                inputZ = 0;
+                var tempVc = character.transform.forward *2f;
+                if (tempVc.magnitude > 1) tempVc = tempVc.normalized;
+                var vec = tempVc;
+                var movevec = vec * (playerspeed*2) + Vector3.up *ySpeed;
+                rb.velocity = movevec;
+                iceoldvec = transform.position;
+            }
+            
             Vector3 targetPositon = latestPos;
             // 高さがずれていると体ごと上下を向いてしまうので便宜的に高さを統一
             if (character.transform.position.y != latestPos.y)
@@ -100,7 +116,7 @@ public class player : MonoBehaviour
             }
             latestPos = character.transform.position;  //前回のPositionの更新
 
-            if (!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+            if ((!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))||icetrg)
             {
                 //移動してない場合、またはジャンプ中の時はアニメーションや音を止める
                 if (movetrg)
@@ -120,41 +136,54 @@ public class player : MonoBehaviour
         }
         
     }
+    private void OnTriggerStay(Collider col)
+    {
+        if (!GManager.instance.over && GManager.instance.walktrg && col.tag == "ice" && !icetrg )
+            icetrg = true;
+    }
     private void OnTriggerEnter(Collider col)
     {
-        if((col.tag == "red"|| col.tag == "bullet") && !GManager.instance.over && GManager.instance.walktrg)
+        if (!GManager.instance.over && GManager.instance.walktrg)
         {
-            GManager.instance.setrg = 4;
-            if (col.tag == "bullet")
-                Destroy(col.gameObject);
-            iTween.ShakePosition(cm.gameObject, iTween.Hash("x", 1f, "y", 1f, "time", 0.3f));
-            GManager.instance.over = true;
-            Instantiate(GManager.instance.all_ui[2], transform.position, transform.rotation);
-            Instantiate(GManager.instance.all_ui[7], transform.position, transform.rotation);
-            Destroy(gameObject, 0.1f);
-        }
-        else if (col.tag == "goal" && !GManager.instance.over && GManager.instance.walktrg && !goaltrg )
-        {
-            goaltrg = true;
-            GManager.instance.goal_num += 1;
-            GManager.instance.setrg = 7;
-            Instantiate(GManager.instance.all_ui[4], transform.position, transform.rotation);
-            if (GManager.instance.goal_num < 2)
+            if (col.tag == "red" || col.tag == "bullet")
             {
-                GManager.instance.setrg = 5;
-            }
-            else
-            {
-                GManager.instance.setrg = 6;
-                GManager.instance.cleartrg = true;
-                if(GManager.instance.debug_trg )
-                    Instantiate(GManager.instance.all_ui[5], transform.position, transform.rotation);
-                else
-                    Instantiate(GManager.instance.all_ui[6], transform.position, transform.rotation);
-            }
+                GManager.instance.setrg = 4;
+                if (col.tag == "bullet")
+                    Destroy(col.gameObject);
                 iTween.ShakePosition(cm.gameObject, iTween.Hash("x", 1f, "y", 1f, "time", 0.3f));
-            Destroy(gameObject, 0.1f);
+                GManager.instance.over = true;
+                Instantiate(GManager.instance.all_ui[2], transform.position, transform.rotation);
+                Instantiate(GManager.instance.all_ui[7], transform.position, transform.rotation);
+                Destroy(gameObject, 0.1f);
+            }
+            else if (col.tag == "goal" && !goaltrg)
+            {
+                goaltrg = true;
+                GManager.instance.goal_num += 1;
+                GManager.instance.setrg = 7;
+                Instantiate(GManager.instance.all_ui[4], transform.position, transform.rotation);
+                if (GManager.instance.goal_num < 2)
+                {
+                    GManager.instance.setrg = 5;
+                }
+                else
+                {
+                    GManager.instance.setrg = 6;
+                    GManager.instance.cleartrg = true;
+                    if (GManager.instance.debug_trg)
+                        Instantiate(GManager.instance.all_ui[5], transform.position, transform.rotation);
+                    else
+                        Instantiate(GManager.instance.all_ui[6], transform.position, transform.rotation);
+                }
+                iTween.ShakePosition(cm.gameObject, iTween.Hash("x", 1f, "y", 1f, "time", 0.3f));
+                Destroy(gameObject, 0.1f);
+            }
         }
+    }
+    private void OnTriggerExit(Collider col)
+    {
+        if (col.tag == "ice")
+            icetrg = false;
     }
 
 }
