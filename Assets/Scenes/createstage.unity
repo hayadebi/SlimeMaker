@@ -7344,6 +7344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: loadstage
   check_debug: 1
   check_story: 0
@@ -7362,7 +7363,8 @@ MonoBehaviour:
   fixed_idobjimg: {fileID: 0}
   fixed_idobjname: {fileID: 0}
   EnableUI: {fileID: 0}
-  check_fixedtrg: 0
+  start_posy: -36
+  posy_add: 87
 --- !u!114 &212603430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28798,6 +28800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: loadstage
   check_debug: 1
   check_story: 0
@@ -28816,7 +28819,8 @@ MonoBehaviour:
   fixed_idobjimg: {fileID: 0}
   fixed_idobjname: {fileID: 0}
   EnableUI: {fileID: 0}
-  check_fixedtrg: 0
+  start_posy: -36
+  posy_add: 87
 --- !u!1 &731430636
 GameObject:
   m_ObjectHideFlags: 0
@@ -32483,6 +32487,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: title
   check_debug: 0
   check_story: 0
@@ -32501,7 +32506,8 @@ MonoBehaviour:
   fixed_idobjimg: {fileID: 0}
   fixed_idobjname: {fileID: 0}
   EnableUI: {fileID: 0}
-  check_fixedtrg: 0
+  start_posy: -36
+  posy_add: 87
 --- !u!1 &814821190
 GameObject:
   m_ObjectHideFlags: 0
@@ -75896,7 +75902,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 156894f08fd9a8f45935ac2d3936958b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -81760,7 +81766,6 @@ GameObject:
   - component: {fileID: 7707196565038006583}
   - component: {fileID: 4660896421212037616}
   - component: {fileID: 8766675606419301749}
-  - component: {fileID: 186714205714513279}
   m_Layer: 5
   m_Name: gimmick
   m_TagString: Untagged
@@ -81768,37 +81773,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &186714205714513279
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186714205714513278}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  next_scene: loadstage
-  check_debug: 1
-  check_story: 0
-  storyadd: 0
-  Webcm_off: {fileID: 0}
-  anim: {fileID: 0}
-  animname: Abool
-  destroy_obj: {fileID: 0}
-  destroy_time: 1
-  uiobj: {fileID: 0}
-  title_starttrg: 0
-  notsay: 1
-  _text: {fileID: 914625662}
-  dxtrg: -1
-  fixed_selectid: 0
-  fixed_idobjimg: {fileID: 1960031783}
-  fixed_idobjname: {fileID: 2475894308806217336}
-  EnableUI: {fileID: 6075476550222348434}
-  check_fixedtrg: 0
 --- !u!224 &296636145595899935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -82545,7 +82519,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 45
   m_Viewport: {fileID: 6175082426826521161}
   m_HorizontalScrollbar: {fileID: 4649337893961774682}
   m_VerticalScrollbar: {fileID: 6406817891612375332}
@@ -82714,8 +82688,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1182447732767910340}
   m_HandleRect: {fileID: 8389975909756257156}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.99999994
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -82732,8 +82706,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: loadstage
-  check_debug: 0
+  check_debug: 1
   check_story: 0
   storyadd: 0
   Webcm_off: {fileID: 0}
@@ -82743,14 +82718,15 @@ MonoBehaviour:
   destroy_time: 1
   uiobj: {fileID: 0}
   title_starttrg: 0
-  notsay: 0
-  _text: {fileID: 0}
-  dxtrg: 0
+  notsay: 1
+  _text: {fileID: 914625662}
+  dxtrg: -1
   fixed_selectid: -1
-  fixed_idobjimg: {fileID: 0}
-  fixed_idobjname: {fileID: 0}
-  EnableUI: {fileID: 0}
-  check_fixedtrg: 0
+  fixed_idobjimg: {fileID: 1960031783}
+  fixed_idobjname: {fileID: 2475894308806217336}
+  EnableUI: {fileID: 6075476550222348434}
+  start_posy: -36
+  posy_add: 87
 --- !u!222 &4852349867172997051
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -82864,6 +82840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 0
   next_scene: loadstage
   check_debug: 1
   check_story: 0
@@ -82882,7 +82859,8 @@ MonoBehaviour:
   fixed_idobjimg: {fileID: 0}
   fixed_idobjname: {fileID: 0}
   EnableUI: {fileID: 0}
-  check_fixedtrg: 0
+  start_posy: -36
+  posy_add: 87
 --- !u!224 &5999692244320238791
 RectTransform:
   m_ObjectHideFlags: 0
@@ -83757,7 +83735,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 186714205714513279}
+      - m_Target: {fileID: 4660896421212037616}
         m_MethodName: FixedCreate
         m_Mode: 1
         m_Arguments:
@@ -83851,7 +83829,7 @@ RectTransform:
   m_Father: {fileID: 8073668336774190194}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.000000059604645, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}

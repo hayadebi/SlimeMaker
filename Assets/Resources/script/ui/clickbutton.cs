@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
 
 public class clickbutton : MonoBehaviour
 {
+    public bool destroytrg = true;
     [Header("シーンチェンジ用")]
     public string next_scene = "loadstage";
     public bool check_debug = true;
@@ -31,7 +33,9 @@ public class clickbutton : MonoBehaviour
     public Image fixed_idobjimg = null;
     public Text fixed_idobjname = null;
     public GameObject EnableUI = null;
-    public bool check_fixedtrg = false;
+    public float start_posy = -36;
+    public float posy_add = 87;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -40,24 +44,31 @@ public class clickbutton : MonoBehaviour
             GManager.instance.slime_titleui = true;
             SetUI();
         }
-        
+        if (EnableUI != null&&fixed_selectid == -1)
+        {
+            if (GManager.instance.isEnglish == 0)
+            {
+                fixed_idobjname.fontSize = 14;
+                fixed_idobjname.text = "最後に設置したギミックを固定化";
+            }
+            else
+            {
+                fixed_idobjname.fontSize = 12;
+                fixed_idobjname.text = "Fixing the last placed gimmick.";
+            }
+        }
     }
-    void FixedUITime()
+    public void FixedUITime(int tmpid = 0)
     {
+        fixed_selectid = tmpid;
         if (EnableUI != null)
             GManager.instance.setmenu = 1;
-        if (fixed_idobjimg != null && fixed_selectid != -1)
+        if (fixed_idobjimg != null )
             fixed_idobjimg.sprite = GManager.instance.stageobj_createimg[fixed_selectid];
-        if (fixed_idobjname != null && fixed_selectid != -1)
-            fixed_idobjname.text = GManager.instance.stageobj_data[fixed_selectid].name[GManager.instance.isEnglish];
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        if (fixed_selectid != -1 && check_fixedtrg)
+        if (fixed_idobjname != null)
         {
-            check_fixedtrg = false;
-            FixedUITime();
+            fixed_idobjname.fontSize = 22;
+            fixed_idobjname.text = GManager.instance.stageobj_data[fixed_selectid].name[GManager.instance.isEnglish];
         }
     }
     public void FixedCreate()
@@ -149,15 +160,30 @@ public class clickbutton : MonoBehaviour
             GManager.instance.setmenu = 0;
             GManager.instance.walktrg = true;
             GManager.instance.ESCtrg = false;
-            Destroy(destroy_obj.gameObject, destroy_time);
+            if (destroytrg)
+                Destroy(destroy_obj.gameObject, destroy_time);
+            else
+                destroy_obj.SetActive(false);
         }
     }
     public void SetTargetActive()
     {
-        if (GManager.instance.setmenu <= 0)
+        if (GManager.instance.setmenu <= 0 && !GManager.instance.fixed_createid)
         {
+            GManager.instance.setmenu = 1;
             GManager.instance.setrg = 0;
             uiobj.SetActive(true);
+        }
+        else if (GManager.instance.setmenu <= 0 && GManager.instance.fixed_createid)
+        {
+            GManager.instance.setmenu = 0;
+            GManager.instance.setrg = 0;
+            GManager.instance.fixed_createid = false;
+            uiobj.SetActive(false);
+            if (GManager.instance.isEnglish == 0)
+                _text.text = "ギミック固定：OFF";
+            else
+                _text.text = "Gimmick fixation: OFF";
         }
     }
     public void quitClick()

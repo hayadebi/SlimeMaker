@@ -37,6 +37,7 @@ public class player : MonoBehaviour
     public int walk_anim = 1;
     private GameObject cm;
     private Vector3 iceoldvec;
+    private bool icese = false;
     // Start is called before the first frame update
 
     void Start()
@@ -138,11 +139,23 @@ public class player : MonoBehaviour
     }
     private void OnTriggerStay(Collider col)
     {
-        if (!GManager.instance.over && GManager.instance.walktrg && col.tag == "ice" && !icetrg )
-            icetrg = true;
+        
     }
     private void OnTriggerEnter(Collider col)
     {
+        if (!GManager.instance.over && GManager.instance.walktrg && col.tag == "ice" && !icese && !goaltrg)
+        {
+            icese = true;
+            GManager.instance.setrg = 12;
+        }
+        else if (!GManager.instance.over && GManager.instance.walktrg && col.tag != "ice" && icese)
+        {
+            icese = false;
+        }
+        if (!GManager.instance.over && GManager.instance.walktrg && col.tag == "ice" && !icetrg)
+            icetrg = true;
+        if (!GManager.instance.over && GManager.instance.walktrg && col.tag != "ice" && icetrg)
+            icetrg = false;
         if (!GManager.instance.over && GManager.instance.walktrg)
         {
             if (col.tag == "red" || col.tag == "bullet")
@@ -182,8 +195,7 @@ public class player : MonoBehaviour
     }
     private void OnTriggerExit(Collider col)
     {
-        if (col.tag == "ice")
-            icetrg = false;
+        
     }
 
 }

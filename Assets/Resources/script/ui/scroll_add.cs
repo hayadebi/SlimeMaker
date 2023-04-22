@@ -15,9 +15,8 @@ public class scroll_add : MonoBehaviour
             for(int i=1; i < GManager.instance.gimmick_length;)
             {
                 GameObject tmp = Instantiate(addcopy_target, transform.position, transform.rotation, transform);
-                clickbutton tmp_click = tmp.GetComponent<clickbutton>();
-                tmp_click.fixed_selectid = i;
-                tmp_click.check_fixedtrg = true;
+                clickbutton tmpui = tmp.GetComponent<clickbutton>();
+                tmpui.FixedUITime(i);
                 i++;
             }
         }
