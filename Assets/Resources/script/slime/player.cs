@@ -61,6 +61,7 @@ public class player : MonoBehaviour
 
     public float kando = 15;
     private bool icetrg = false;
+    private float icewall_time = 0;
     void FixedUpdate()
     {
         if (GManager.instance.walktrg && !GManager.instance.over && !stoptrg)
@@ -139,23 +140,38 @@ public class player : MonoBehaviour
     }
     private void OnTriggerStay(Collider col)
     {
-        
+        if (!GManager.instance.over && GManager.instance.walktrg && col.tag == "icewall"&& !goaltrg && icetrg )
+        {
+            icewall_time += Time.deltaTime;
+            if(icewall_time >= 1.3f)
+            {
+                icetrg = false;
+                icese = false;
+                icewall_time = 0;
+            }
+        }
     }
     private void OnTriggerEnter(Collider col)
     {
-        if (!GManager.instance.over && GManager.instance.walktrg && col.tag == "ice" && !icese && !goaltrg)
+        if (!GManager.instance.over && GManager.instance.walktrg && (col.tag == "ice"|| col.tag == "icewall") && !icese && !goaltrg)
         {
             icese = true;
             GManager.instance.setrg = 12;
         }
-        else if (!GManager.instance.over && GManager.instance.walktrg && col.tag != "ice" && icese)
+        else if (!GManager.instance.over && GManager.instance.walktrg && (col.tag != "ice" && col.tag != "icewall") && icese)
         {
             icese = false;
         }
-        if (!GManager.instance.over && GManager.instance.walktrg && col.tag == "ice" && !icetrg)
+        if (!GManager.instance.over && GManager.instance.walktrg && (col.tag == "ice" || col.tag == "icewall") && !icetrg)
+        {
+            icewall_time = 0;
             icetrg = true;
-        if (!GManager.instance.over && GManager.instance.walktrg && col.tag != "ice" && icetrg)
+        }
+        if (!GManager.instance.over && GManager.instance.walktrg && (col.tag != "ice" && col.tag != "icewall") && icetrg)
+        {
             icetrg = false;
+            icese = false;
+        }
         if (!GManager.instance.over && GManager.instance.walktrg)
         {
             if (col.tag == "red" || col.tag == "bullet")

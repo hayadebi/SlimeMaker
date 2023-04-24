@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7998232216629057436}
   m_Layer: 8
   m_Name: 8_rightbullet
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -193,10 +193,8 @@ MonoBehaviour:
   shoteffect: {fileID: 201432250980252153, guid: 252655d469677f24393b002b5230e6c9,
     type: 3}
   shotpos: {fileID: 5395936345676075735}
-  bulletspeed: 2.5
   Bullet: {fileID: 1612413365460771757, guid: 494972c20aa6ba64cbfb77a3f014db89, type: 3}
   anim: {fileID: 2955013775872669258}
-  shot_time: 4
 --- !u!1 &2787807450060007469
 GameObject:
   m_ObjectHideFlags: 0
