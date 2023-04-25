@@ -143,7 +143,7 @@ public class player : MonoBehaviour
         if (!GManager.instance.over && GManager.instance.walktrg && col.tag == "icewall"&& !goaltrg && icetrg )
         {
             icewall_time += Time.deltaTime;
-            if(icewall_time >= 1.3f)
+            if(icewall_time >= 3f)
             {
                 icetrg = false;
                 icese = false;
@@ -174,7 +174,7 @@ public class player : MonoBehaviour
         }
         if (!GManager.instance.over && GManager.instance.walktrg)
         {
-            if (col.tag == "red" || col.tag == "bullet")
+            if (col.tag == "red" || col.tag == "bullet"||col.tag=="icebullet")
             {
                 GManager.instance.setrg = 4;
                 if (col.tag == "bullet")

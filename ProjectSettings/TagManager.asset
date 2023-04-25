@@ -18,6 +18,7 @@ TagManager:
   - Enemy
   - ice
   - icewall
+  - icebullet
   layers:
   - Default
   - TransparentFX

@@ -335,11 +335,11 @@ MonoBehaviour:
   - {fileID: 8135813058928451090, guid: 8163184fae6c4274584f64a33a9464c0, type: 3}
   - {fileID: 3905879102852136796, guid: 191b541f90635fa468023d67ed0f0f61, type: 3}
   - {fileID: 3149093629309224897, guid: f14e7d53ccf4f9440bcba7fcbde7e1de, type: 3}
-  - {fileID: 5655787479151225384, guid: 1844fff4f06c9f147bc10e30592363c4, type: 3}
-  - {fileID: 5655787479151225384, guid: 1844fff4f06c9f147bc10e30592363c4, type: 3}
-  - {fileID: 5655787479151225384, guid: 1844fff4f06c9f147bc10e30592363c4, type: 3}
-  - {fileID: 7833452353315789684, guid: 5db8de6eca48bc44d88c0e2f7f30375c, type: 3}
-  - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
+  - {fileID: 6959208465037402168, guid: e0b8f79a5c01fda46a00baffc9d1b52c, type: 3}
+  - {fileID: 7005976347064761545, guid: c48f3fe46b915a74d996680050b6846a, type: 3}
+  - {fileID: 8848071689518145048, guid: 96fad53309bb7ef41b1430266620b1df, type: 3}
+  - {fileID: 2003389244179426452, guid: 31261ceb01ce7b4469ac25007f675f68, type: 3}
+  - {fileID: 1659656599784188730, guid: 9d565abac0e40fc4090191bb12df65fa, type: 3}
   - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
   - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
   - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
@@ -400,11 +400,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6119605e7098bc247a747340712d3d26, type: 3}
   - {fileID: 21300000, guid: 3e92110355214f142a76d47e90153adb, type: 3}
   - {fileID: 21300000, guid: f2832e8739f5ad744b8e590b05629ca6, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
+  - {fileID: 21300000, guid: ee4fc48147100034d923a97d6d90f302, type: 3}
+  - {fileID: 21300000, guid: 62b532c9567e9dd4db6f15c68ac6b349, type: 3}
+  - {fileID: 21300000, guid: 23d6bf2a29d87c346a1e479d70f83eab, type: 3}
+  - {fileID: 21300000, guid: 4b3b8e38a19665b4ea93757d03f6ef8e, type: 3}
+  - {fileID: 21300000, guid: 59fa5e0e0d1b08f4da22d6e45c4b4d9f, type: 3}
   - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
   - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
   - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
@@ -601,35 +601,35 @@ MonoBehaviour:
     - "\u6ED1\u3063\u3066\u8DF3\u306D\u8FD4\u3059\u305C"
     - I'm gonna slip and bounce.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30A2\u30A4\u30B9\u30AD\u30E3\u30CE\u30F3(\u4E0A\u65B9\u5411)"
+    - Ice cannon(up)
     script:
-    - "\u88C5\u98FE\u3060\u305C"
-    - This is decoration, man.
+    - "\u5F53\u3066\u305F\u3082\u306E\u3092\u51CD\u308A\u3064\u304B\u305B\u3061\u3083\u3046"
+    - Freezes anything it hits.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30A2\u30A4\u30B9\u30AD\u30E3\u30CE\u30F3(\u53F3\u65B9\u5411)"
+    - Ice cannon(right)
     script:
-    - "\u88C5\u98FE\u3060\u305C"
-    - This is decoration, man.
+    - "\u5F53\u3066\u305F\u3082\u306E\u3092\u51CD\u308A\u3064\u304B\u305B\u3061\u3083\u3046"
+    - Freezes anything it hits.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30A2\u30A4\u30B9\u30AD\u30E3\u30CE\u30F3(\u4E0B\u65B9\u5411)"
+    - Ice cannon(down)
     script:
-    - "\u88C5\u98FE\u3060\u305C"
-    - This is decoration, man.
+    - "\u5F53\u3066\u305F\u3082\u306E\u3092\u51CD\u308A\u3064\u304B\u305B\u3061\u3083\u3046"
+    - Freezes anything it hits.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30A2\u30A4\u30B9\u30AD\u30E3\u30CE\u30F3(\u5DE6\u65B9\u5411)"
+    - Ice cannon(left)
     script:
-    - "\u88C5\u98FE\u3060\u305C"
-    - This is decoration, man.
+    - "\u5F53\u3066\u305F\u3082\u306E\u3092\u51CD\u308A\u3064\u304B\u305B\u3061\u3083\u3046"
+    - Freezes anything it hits.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u52D5\u304F\u6C37\u30D6\u30ED\u30C3\u30AF"
+    - Moving ice block
     script:
-    - "\u88C5\u98FE\u3060\u305C"
-    - This is decoration, man.
+    - "\u653B\u6483\u3092\u8DF3\u306D\u8FD4\u305B\u308B\u62BC\u3057\u51FA\u3057\u53EF\u80FD\u30AE\u30DF\u30C3\u30AF"
+    - A pushable gimmick that bounces back attacks
   - name:
     - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
     - Color tile (red)
@@ -857,7 +857,7 @@ MonoBehaviour:
   - test_x: 0100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b0000000c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
   - test_x: 0100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   notsay: 0
-  gimmick_length: 27
+  gimmick_length: 32
   reset_time: 0
   set_createid: 0
   fixed_createid: 0
@@ -868,6 +868,7 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 83f881bcd1452354ca16422d79a1f450, type: 3}
   - {fileID: 4900000, guid: a5f3fcada2cccc74e91d91a847140448, type: 3}
   - {fileID: 4900000, guid: aab8ed0766664a84bbb5bcf86b3ff395, type: 3}
+  - {fileID: 4900000, guid: f1fd26d298af3d442a83d87880832f43, type: 3}
 --- !u!114 &6017326719407883951
 MonoBehaviour:
   m_ObjectHideFlags: 0

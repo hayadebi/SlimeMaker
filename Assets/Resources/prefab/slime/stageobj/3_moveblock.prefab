@@ -174,6 +174,7 @@ GameObject:
   - component: {fileID: 7586536126763248044}
   - component: {fileID: 9045503544397332860}
   - component: {fileID: 6547694648898016515}
+  - component: {fileID: 358430605613594887}
   m_Layer: 8
   m_Name: 3_moveblock
   m_TagString: wall
@@ -252,3 +253,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectobj: {fileID: 201432250980252153, guid: 252655d469677f24393b002b5230e6c9,
     type: 3}
+--- !u!114 &358430605613594887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2619153969966117694}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0b155dfd27f5de4ea7a37a1d7ef9cf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  colcheck_id: 1
