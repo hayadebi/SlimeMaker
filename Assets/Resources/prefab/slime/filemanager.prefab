@@ -340,14 +340,14 @@ MonoBehaviour:
   - {fileID: 8848071689518145048, guid: 96fad53309bb7ef41b1430266620b1df, type: 3}
   - {fileID: 2003389244179426452, guid: 31261ceb01ce7b4469ac25007f675f68, type: 3}
   - {fileID: 1659656599784188730, guid: 9d565abac0e40fc4090191bb12df65fa, type: 3}
-  - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
-  - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
-  - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
-  - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
-  - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
-  - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
-  - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
-  - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
+  - {fileID: 5607724309430776342, guid: c939e7bb93c93bf4eb489a767f08f335, type: 3}
+  - {fileID: 4505964990749287576, guid: c2f568a9091223248a5224907780af4a, type: 3}
+  - {fileID: 6919085752465227816, guid: 941d9a134b15d3d44b95cecb05b1694e, type: 3}
+  - {fileID: 7057902449956831452, guid: bca2b140ad3f9ab4e991f9004d27b2a7, type: 3}
+  - {fileID: 8387806352624014219, guid: 1ad00de2619b8d2429364d017ab98b92, type: 3}
+  - {fileID: 4462487287928721803, guid: e9c0d12ac07d55e4184a95f168313723, type: 3}
+  - {fileID: 5886889575417779674, guid: 3a929905b8db9fb428468cf236fdf328, type: 3}
+  - {fileID: 918482493252231213, guid: 144f27a7d3cc1984cb5d326aaf64cd36, type: 3}
   - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
   - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
   - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
@@ -405,14 +405,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 23d6bf2a29d87c346a1e479d70f83eab, type: 3}
   - {fileID: 21300000, guid: 4b3b8e38a19665b4ea93757d03f6ef8e, type: 3}
   - {fileID: 21300000, guid: 59fa5e0e0d1b08f4da22d6e45c4b4d9f, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
-  - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
+  - {fileID: 21300000, guid: 3d270226e8ada354d988f85c88bd576c, type: 3}
+  - {fileID: 21300000, guid: fd152829db5e15144801d1b272e875c1, type: 3}
+  - {fileID: 21300000, guid: 7dfd4efb37b1e0246a19f99e72c77d93, type: 3}
+  - {fileID: 21300000, guid: 23eac8f0f821e5245a0ebf07f3dd5a56, type: 3}
+  - {fileID: 21300000, guid: 166369491e1a4ff4d95e167c2cd1d497, type: 3}
+  - {fileID: 21300000, guid: d6841531537c7fc42b5284c6ca3426f4, type: 3}
+  - {fileID: 21300000, guid: 5796b5fe2c1eeb04a9cc6eb57c86a7e6, type: 3}
+  - {fileID: 21300000, guid: a4385225fa0f8dc4ab3e56aa2f1fa403, type: 3}
   - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
   - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
   - {fileID: 21300000, guid: 7e17d89c11e0e2846b659a709c4f7340, type: 3}
@@ -631,50 +631,50 @@ MonoBehaviour:
     - "\u653B\u6483\u3092\u8DF3\u306D\u8FD4\u305B\u308B\u62BC\u3057\u51FA\u3057\u53EF\u80FD\u30AE\u30DF\u30C3\u30AF"
     - A pushable gimmick that bounces back attacks
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30AB\u30E9\u30FC\u30D6\u30ED\u30C3\u30AF(GB0)"
+    - Color block (GB0)
     script:
     - "\u88C5\u98FE\u3060\u305C"
     - This is decoration, man.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30AB\u30E9\u30FC\u30D6\u30ED\u30C3\u30AF(GB1)"
+    - Color block (GB1)
     script:
     - "\u88C5\u98FE\u3060\u305C"
     - This is decoration, man.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30AB\u30E9\u30FC\u30D6\u30ED\u30C3\u30AF(GB2)"
+    - Color block (GB2)
     script:
     - "\u88C5\u98FE\u3060\u305C"
     - This is decoration, man.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30AB\u30E9\u30FC\u30D6\u30ED\u30C3\u30AF(GB3)"
+    - Color block (GB3)
     script:
     - "\u88C5\u98FE\u3060\u305C"
     - This is decoration, man.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(GB0)"
+    - Color tile (GB0)
     script:
     - "\u88C5\u98FE\u3060\u305C"
     - This is decoration, man.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(GB1)"
+    - Color tile (GB1)
     script:
     - "\u88C5\u98FE\u3060\u305C"
     - This is decoration, man.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(GB2)"
+    - Color tile (GB2)
     script:
     - "\u88C5\u98FE\u3060\u305C"
     - This is decoration, man.
   - name:
-    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(\u8D64)"
-    - Color tile (red)
+    - "\u30AB\u30E9\u30FC\u30BF\u30A4\u30EB(GB3)"
+    - Color tile (GB3)
     script:
     - "\u88C5\u98FE\u3060\u305C"
     - This is decoration, man.
@@ -857,7 +857,7 @@ MonoBehaviour:
   - test_x: 0100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b0000000c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
   - test_x: 0100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   notsay: 0
-  gimmick_length: 32
+  gimmick_length: 40
   reset_time: 0
   set_createid: 0
   fixed_createid: 0
