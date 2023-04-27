@@ -209,7 +209,6 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
         }
         if (!wheelstrg)
             wheelstrg = true;
-
     }
     public void OnPointerExit(PointerEventData eventDara)
     {
