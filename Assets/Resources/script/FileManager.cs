@@ -20,10 +20,8 @@ public class FileManager : MonoBehaviour
         using (var fs = new StreamReader(path, System.Text.Encoding.GetEncoding("UTF-8")))
         {
             string tmp = fs.ReadToEnd();
-            print(tmp);
             string tmp2 = tmp;
-            print(tmp2);
-            qrcreate.qr_content = tmp2;
+            qrcreate.qr_content = GManager.instance.ComporessGZIP(tmp2);
         }
         qrcreate.StartCoroutine("CreaterQR");
     }

@@ -806,6 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: createstage
   check_debug: 0
   check_story: 0
@@ -820,6 +821,12 @@ MonoBehaviour:
   notsay: 1
   _text: {fileID: 0}
   dxtrg: -1
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87
 --- !u!1 &6671715949813362627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1020,6 +1027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: loadstage
   check_debug: 1
   check_story: 0
@@ -1034,3 +1042,9 @@ MonoBehaviour:
   notsay: 1
   _text: {fileID: 0}
   dxtrg: -1
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87

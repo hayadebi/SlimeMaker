@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.IO;
+using Unity.IO.Compression;
 public class GManager : MonoBehaviour
 {
     public static GManager instance = null;
@@ -171,6 +172,36 @@ public class GManager : MonoBehaviour
         if(instance.reset_time >= 0)
         {
             instance.reset_time -= Time.deltaTime;
+        }
+    }
+    public byte[] ComporessGZIP(string _str)
+    {
+        using (var memoryStream = new MemoryStream())
+        {
+            using (var inflateStream = new GZipStream(memoryStream, CompressionMode.Compress))
+            {
+                using (var writer = new StreamWriter(inflateStream))
+                {
+                    writer.Write(_str);
+                }
+            }
+            return memoryStream.ToArray();
+        }
+    }
+    /// <summary>
+    /// GZIP圧縮されたバッファを解凍します。
+    /// </summary>
+    public string DeComporessGZIP(byte[] _bytes)
+    {
+        using (var memoryStream = new MemoryStream(_bytes))
+        {
+            using (var deflateStream = new GZipStream(memoryStream, CompressionMode.Decompress))
+            {
+                using (var reader = new StreamReader(deflateStream))
+                {
+                    return reader.ReadToEnd();
+                }
+            }
         }
     }
 

@@ -25,6 +25,7 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
     private int addnum = 1;
     private int reset_id;
     private float reset_cool = 0;
+    //public InputManager inputspell;
     // Start is called before the first frame update
     void Start()
     {
@@ -155,7 +156,7 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
                 GManager.instance.setrg = 2;
                 GManager.instance.debug_trg = true;
                 GManager.instance.storymode = false;
-                result_stage = "stage";
+                result_stage = "stage\n"+Application.version;
                 //------------------------------------
                 for (int y = 0; y < GManager.instance.test_y.Length;)
                 {
@@ -169,7 +170,6 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
                     }
                     y++;
                 }
-                print(result_stage);
                 //------------------------------------
                 string path = Application.persistentDataPath + "/stage00.txt";
                 bool isAppend = false; // 上書き or 追記

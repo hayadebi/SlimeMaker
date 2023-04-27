@@ -3639,7 +3639,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1749990319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3789,7 +3789,7 @@ MonoBehaviour:
   destroy_obj: {fileID: 0}
   destroy_time: 1
   uiobj: {fileID: 5574755731956184146, guid: 4742c6b8e0acfac4fb6e796b3d13f348, type: 3}
-  title_starttrg: 1
+  title_starttrg: 0
   notsay: 1
   _text: {fileID: 0}
   dxtrg: -1

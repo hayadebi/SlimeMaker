@@ -2,6 +2,7 @@
 using ZXing;
 using ZXing.QrCode;
 using System.IO;
+using Unity.IO.Compression;
 using System;
 using System.Collections;
 using System.Text;
@@ -15,10 +16,10 @@ public class qr_create : MonoBehaviour
     //public string content = "";
     public string[] tags;
     [Multiline]
-    public string qr_content = "";
+    public byte[] qr_content;
     [Multiline]
     public string tweets = "";
-    
+    public InputManager inputspell;
     private void Start()
     {
         //if(content != "")
@@ -32,7 +33,9 @@ public class qr_create : MonoBehaviour
         using (var fs = new StreamReader(path, System.Text.Encoding.GetEncoding("UTF-8")))
         {
             string tmp = fs.ReadToEnd();
-            qr_content = tmp;
+            print(tmp);
+            qr_content = GManager.instance.ComporessGZIP(tmp);
+            print(qr_content.ToString());
         }
         StartCoroutine("CreaterQR");
     }
@@ -57,7 +60,8 @@ public class qr_create : MonoBehaviour
 
         var format = TextureFormat.ARGB32;
         var texture = new Texture2D(width, height, format, false);
-        var colors = writer.Write(qr_content);
+        print(BitConverter.ToString(qr_content));
+        var colors = writer.Write(BitConverter.ToString(qr_content));
 
         texture.SetPixels32(colors);
         texture.Apply();

@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: loadstage
   check_debug: 1
   check_story: 0
@@ -173,6 +174,12 @@ MonoBehaviour:
   notsay: 1
   _text: {fileID: 0}
   dxtrg: -1
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87
 --- !u!1 &611747686806042245
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +728,7 @@ MonoBehaviour:
   bttxt: {fileID: 0}
   qrtxt: {fileID: 0}
   fmanager: {fileID: 1779145766184378291}
+  inputspell: {fileID: 1480660426347735641}
 --- !u!114 &1779145766184378293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,6 +744,7 @@ MonoBehaviour:
   tags: []
   qr_content: 
   tweets: "\u65B0\u3057\u3044\u30B9\u30C6\u30FC\u30B8\u30C7\u30FC\u30BF\u304C\u5171\u6709\u3055\u308C\u307E\u3057\u305F\uFF01%0a\n\u30B9\u30C6\u30FC\u30B8\u540D\uFF1A\u25CB\u25CB(\u597D\u304D\u306B\u66F8\u3044\u3066)%0a\n\u30B9\u30C6\u30FC\u30B8\u8AAC\u660E\uFF1A%0a\n\u25CB\u25CB(\u597D\u304D\u306B\u66F8\u3044\u3066)%0a"
+  inputspell: {fileID: 0}
 --- !u!114 &1480660426347735641
 MonoBehaviour:
   m_ObjectHideFlags: 0
