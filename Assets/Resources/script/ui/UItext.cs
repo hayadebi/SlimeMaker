@@ -53,6 +53,10 @@ public class UItext : MonoBehaviour
                 _text.text = "Clear time：" + ((int)(GManager.instance.cleartime / 60)).ToString() + " minutes and " + ((int)(GManager.instance.cleartime % 60)).ToString() + " seconds";
             }
         }
+        if(ui_mode == "appversion")
+        {
+            _text.text = "Version：" + Application.version;
+        }
     }
     // Update is called once per frame
     void Update()

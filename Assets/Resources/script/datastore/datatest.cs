@@ -3,31 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using NCMB;
 using System.IO;
-
+using System;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class datatest : MonoBehaviour
 {
     public string class_name = "StageDataClass";
     public string field_name = "stagedata";
-    public bool descending = true;
-    public int query_limit = 99;
-    public string[] all_namelist =null;
-    public string[] all_versionlist = null;
+    public int query_limit = 200;
+    public List<string> all_namelist = null;
+    public List<string> all_versionlist = null;
     public List<string> all_datalist = null;
-    [System.Serializable]
-    public struct StageData
-    {
-        public string stage_version;
-        public string stage_name;
-        public string stage_data;
-    }
-    public StageData[] AllStage=null;
     public GameObject[] all_btn;
     public GameObject summon_btn;
-    private datatest selfdata;
+    [Multiline]
+    private string result_tmp;
+
+    public CustomBool cbool;
+    public Text onsearch_word;
+    public Text notsearch_word;
+    public List<NCMBObject> tmp_objlist = null;
     // Start is called before the first frame update
     void Start()
     {
-        selfdata = this.GetComponent<datatest>();
         //// クラスのNCMBObjectを作成
         //NCMBObject testClass = new NCMBObject("TestClass");
 
@@ -46,10 +44,11 @@ public class datatest : MonoBehaviour
     }
     public void FetchStage()
     {
+        GManager.instance.setrg = 0;
         //ボタン配置初期化
-        if(all_btn!=null && all_btn.Length > 0)
+        if (all_btn != null && all_btn.Length  > 0)
         {
-            for(int b = 0; b < all_btn.Length;)
+            for (int b = 0; b < all_btn.Length;)
             {
                 Destroy(all_btn[b].gameObject);
                 b++;
@@ -60,16 +59,22 @@ public class datatest : MonoBehaviour
         NCMBQuery<NCMBObject> query = new NCMBQuery<NCMBObject>(class_name);
 
         //Scoreフィールドの降順でデータを取得
-        if(descending)
-            query.OrderByDescending(field_name);
-        else if (!descending)
-            query.OrderByAscending(field_name);
+        if (GManager.instance.sorttrg )
+        {
+            query.OrderByDescending("stagedata");
+        }
+        else if (!GManager.instance.sorttrg)
+        {
+            query.OrderByAscending("stagedata");
+        }
+
 
         //検索件数を5件に設定
         query.Limit = query_limit;
 
         //データストアでの検索を行う
-        query.FindAsync((List<NCMBObject> objList, NCMBException e) => {
+        query.FindAsync((List<NCMBObject> objList, NCMBException e) =>
+        {
             if (e != null)
             {
                 GManager.instance.setrg = 1;
@@ -78,44 +83,88 @@ public class datatest : MonoBehaviour
             else
             {
                 all_btn = new GameObject[objList.Count];
-                all_namelist = new string[objList.Count];
-                all_versionlist = new string[objList.Count];
-                //
-                int count_id = 0;
+                int i = 0;
                 //検索成功時の処理
                 // 取得したレコードをHighScoreクラスとして保存
                 foreach (NCMBObject obj in objList)
                 {
+                    
                     string tmpdata = System.Convert.ToString(obj["stagedata"]);
                     all_datalist.Add(tmpdata);
+                    TempRead(tmpdata);
+                    all_btn[i] = Instantiate(summon_btn, transform.position, transform.rotation, transform);
+                    //---
+                    StringReader rs = new StringReader(result_tmp);
                     string line = null;
                     int check_line = 0;
-                    StringReader strReader = new StringReader(tmpdata);
-                    while ((line = strReader.ReadLine()) != null)
+
+                    while ((line = rs.ReadLine()) != null)//本作では1行読み込んでステージデータかどうか判別してる
                     {
-                        all_btn[count_id] = Instantiate(summon_btn, transform.position, transform.rotation, transform);
-                        child_data tmp_cdata = all_btn[count_id].GetComponent<child_data>();
-                        tmp_cdata.stage_alldata = tmpdata;
                         if (check_line == 1 && (line == Application.version || line == "-1"))
                         {
-                            if(line == Application.version) all_versionlist[count_id ]=line;
-                            else if (line == "-1") all_versionlist[count_id] = "共通";
-                            if (line == Application.version) tmp_cdata.stage_version=line;
-                            else if (line == "-1") tmp_cdata.stage_version = "共通";
+                            if (line == Application.version) all_versionlist.Add(line);
+                            else if (line == "-1") all_versionlist.Add("共通");
                         }
-                        else if(check_line == 2)
+                        else if (check_line == 2)
                         {
-                            all_namelist[count_id] = line;
-                            tmp_cdata.stage_name = line;
+                            all_namelist.Add(line);
                         }
-                        tmp_cdata.child_id = count_id;
-                        tmp_cdata.parent_data = selfdata;
-                        tmp_cdata.ChildDataSet();
                         check_line += 1;
                     }
-                    count_id++;
+                    result_tmp = "";
+                    i ++;
+                }
+                for(int ch = 0; ch < all_btn.Length;)
+                {
+                    all_btn[ch].SetActive(true);
+                    ch++;
+                }
+                //検索調整
+                if (all_btn != null && all_btn.Length > 0)
+                {
+                    child_data tmp_child = null;
+                    for (int b = 0; b < all_btn.Length;)
+                    {
+                        tmp_child = all_btn[b].GetComponent<child_data>();
+                        print(tmp_child.ToString());
+                        print(tmp_child.stage_name.Contains(onsearch_word.text).ToString());
+                        print(tmp_child.stage_name.Contains(notsearch_word.text).ToString());
+                        if (tmp_child != null && GManager.instance.check_onword != "" && !tmp_child.stage_name.Contains(GManager.instance.check_onword) && !tmp_child.stage_version.Contains(GManager.instance.check_onword))
+                            Destroy(all_btn[b].gameObject);
+                        if(tmp_child !=null && GManager.instance.check_notword != "" &&(tmp_child.stage_name.Contains(GManager.instance.check_notword) || tmp_child.stage_version.Contains(GManager.instance.check_notword)))
+                            Destroy(all_btn[b].gameObject);
+                        b++;
+                    }
                 }
             }
         });
+        
+    }
+    public void FetchReload()
+    {
+        GManager.instance.setrg = 0;
+        GManager.instance.check_onword = onsearch_word.text;
+        GManager.instance.check_notword = notsearch_word.text;
+        Instantiate(GManager.instance.all_ui[0], transform.position, transform.rotation);
+        Invoke("SceneChange", 1f);
+    }
+    void SceneChange()
+    {
+        SceneManager.LoadScene("qrstage");
+    }
+    public void TempRead(string _result = "")
+    {
+        string tmp = "";
+        //print(_result);
+        string[] arrayStr2 = _result.Split('-');
+        byte[] arrayOut = new byte[arrayStr2.Length];
+        for (int i = 0; i < arrayStr2.Length; i++)
+        {
+            // 16進数文字列に変換
+            arrayOut[i] = Convert.ToByte(arrayStr2[i], 16);
+        }
+        //print(GManager.instance.DeComporessGZIP(arrayOut));
+        tmp = GManager.instance.DeComporessGZIP(arrayOut);
+        result_tmp = tmp;
     }
 }

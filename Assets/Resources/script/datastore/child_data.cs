@@ -12,12 +12,28 @@ public class child_data : MonoBehaviour
     public string stage_alldata;
     public Text nameText;
     public Text versionText;
-    private qr_imgread serverread;
+    private qr_imgread serverread=null;
     public string readscript_name;
     // Start is called before the first frame update
     void Start()
     {
         serverread = GameObject.Find(readscript_name).GetComponent<qr_imgread >();
+        parent_data = GameObject.Find("Content").GetComponent<datatest>();
+        if(parent_data != null)
+        {
+            for(int i=0; i< parent_data.all_btn.Length;)
+            {
+                if(parent_data.all_btn[i] == this.gameObject)
+                {
+                    child_id = i;
+                    stage_name = parent_data.all_namelist[i];
+                    stage_version = parent_data.all_versionlist[i];
+                    stage_alldata = parent_data.all_datalist[i];
+                    ChildDataSet();
+                }
+                i++;
+            }
+        }
     }
 
     // Update is called once per frame

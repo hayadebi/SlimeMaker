@@ -157,6 +157,9 @@ public class GManager : MonoBehaviour
     public TextAsset[] dx_filename;
 
     public string[] not_word;
+    public bool sorttrg = true;
+    public string check_onword = "";
+    public string check_notword = "";
     private void Awake()
     {
         if (instance == null)
@@ -206,5 +209,4 @@ public class GManager : MonoBehaviour
             }
         }
     }
-
 }

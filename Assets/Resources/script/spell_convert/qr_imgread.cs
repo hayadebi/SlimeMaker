@@ -179,7 +179,7 @@ public class qr_imgread : MonoBehaviour
             int stage_qrtrg = 0;
             try
             {
-                print(_result);
+               // print(_result);
                 string[] arrayStr2 = _result.Split('-');
                 byte[] arrayOut = new byte[arrayStr2.Length];
                 for (int i = 0; i < arrayStr2.Length; i++)
@@ -187,7 +187,7 @@ public class qr_imgread : MonoBehaviour
                     // 16進数文字列に変換
                     arrayOut[i] = Convert.ToByte(arrayStr2[i], 16);
                 }
-                print(GManager.instance.DeComporessGZIP(arrayOut));
+                //print(GManager.instance.DeComporessGZIP(arrayOut));
                 tmp = GManager.instance.DeComporessGZIP(arrayOut);
 
                 StringReader rs = new StringReader(tmp);
@@ -206,9 +206,9 @@ public class qr_imgread : MonoBehaviour
                         GManager.instance.setrg = 1;
                         qrtxt.fontSize = 28;
                         if (GManager.instance.isEnglish == 0)
-                            qrtxt.text = "<color=red>同じゲームバージョンのステージ専用</color>QRコードを読み込んでね！";
+                            qrtxt.text = "<color=red>同じゲームバージョンのステージを選んでね！</color>";
                         else
-                            qrtxt.text = "<color=red>Please read the QR code dedicated to the same game version stage.</color>!";
+                            qrtxt.text = "<color=red>Choose the same game version of the stage!</color>!";
                     }
                     check_line += 1;
                 }
@@ -237,7 +237,7 @@ public class qr_imgread : MonoBehaviour
                     GManager.instance.setrg = 1;
                     qrtxt.fontSize = 28;
                     if (GManager.instance.isEnglish == 0)
-                        qrtxt.text = "<color=red>同じゲームバージョンのステージを選んでね！";
+                        qrtxt.text = "<color=red>同じゲームバージョンのステージを選んでね！</color>";
                     else
                         qrtxt.text = "<color=red>Choose the same game version of the stage!</color>!";
                     stage_qrtrg = 0;
@@ -260,7 +260,7 @@ public class qr_imgread : MonoBehaviour
                             GManager.instance.setrg = 1;
                             qrtxt.fontSize = 28;
                             if (GManager.instance.isEnglish == 0)
-                                qrtxt.text = "<color=red>同じゲームバージョンのステージを選んでね！";
+                                qrtxt.text = "<color=red>同じゲームバージョンのステージを選んでね！</color>";
                             else
                                 qrtxt.text = "<color=red>Choose the same game version of the stage!</color>!";
                         }

@@ -131,6 +131,7 @@ public class clickbutton : MonoBehaviour
         GManager.instance.setmenu = 0;
         GManager.instance.goal_num = 0;
         GManager.instance.debug_trg = check_debug;
+        if(next_scene == "title") Resources.UnloadUnusedAssets();
         if (!notsay)
             GManager.instance.notsay = false;
         if (check_story)
@@ -141,6 +142,7 @@ public class clickbutton : MonoBehaviour
             SceneManager.LoadScene(next_scene);
         else
         {
+            Resources.UnloadUnusedAssets();
             GManager.instance.select_stage = 0;
             SceneManager.LoadScene("title");
         }
