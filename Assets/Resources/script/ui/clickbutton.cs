@@ -101,11 +101,11 @@ public class clickbutton : MonoBehaviour
             clicktrg = true;
             Instantiate(GManager.instance.all_ui[0], transform.position, transform.rotation);
             GManager.instance.setrg = 2;
-            if (Webcm_off != null)
-            {
-                Webcm_off._webCam.Stop();
-                Webcm_off._webCam = null;
-            }
+            //if (Webcm_off != null)
+            //{
+            //    Webcm_off._webCam.Stop();
+            //    Webcm_off._webCam = null;
+            //}
             Invoke(nameof(SceneChange), 1f);
         }
     }

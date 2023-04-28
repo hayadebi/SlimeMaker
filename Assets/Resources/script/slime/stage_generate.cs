@@ -12,7 +12,7 @@ public class stage_generate : MonoBehaviour
     }
     public stage_board[] stage_y;
 
-    private int select_y = -2;
+    private int select_y = -3;
     private int select_x = 0;
     public AudioSource BGM;
     // Start is called before the first frame update

@@ -182,6 +182,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &6289133
 MonoBehaviour:
@@ -349,6 +350,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &7360554
 MonoBehaviour:
@@ -516,6 +518,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &9698850
 MonoBehaviour:
@@ -683,6 +686,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &24915003
 MonoBehaviour:
@@ -850,6 +854,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &33639735
 MonoBehaviour:
@@ -1017,6 +1022,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &47210974
 MonoBehaviour:
@@ -1184,6 +1190,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &49772389
 MonoBehaviour:
@@ -1351,6 +1358,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &53937252
 MonoBehaviour:
@@ -1612,6 +1620,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &67766480
 MonoBehaviour:
@@ -1779,6 +1788,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &72618297
 MonoBehaviour:
@@ -1946,6 +1956,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &76070946
 MonoBehaviour:
@@ -2113,6 +2124,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &80310047
 MonoBehaviour:
@@ -2280,6 +2292,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &93332506
 MonoBehaviour:
@@ -2447,6 +2460,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &94598508
 MonoBehaviour:
@@ -2614,6 +2628,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &97055315
 MonoBehaviour:
@@ -2781,6 +2796,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &102650318
 MonoBehaviour:
@@ -2963,6 +2979,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &103048107
 MonoBehaviour:
@@ -3237,6 +3254,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &110399306
 MonoBehaviour:
@@ -3470,6 +3488,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &113565704
 MonoBehaviour:
@@ -3637,6 +3656,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &118144924
 MonoBehaviour:
@@ -3819,6 +3839,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &122204057
 MonoBehaviour:
@@ -3971,6 +3992,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &127935384
 MonoBehaviour:
@@ -4138,6 +4160,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &132917331
 MonoBehaviour:
@@ -4305,6 +4328,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &138347595
 MonoBehaviour:
@@ -4472,6 +4496,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &138733716
 MonoBehaviour:
@@ -4639,6 +4664,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &146296956
 MonoBehaviour:
@@ -4806,6 +4832,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &152335570
 MonoBehaviour:
@@ -4973,6 +5000,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &161140154
 MonoBehaviour:
@@ -5140,6 +5168,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &161446169
 MonoBehaviour:
@@ -5307,6 +5336,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &164293691
 MonoBehaviour:
@@ -5535,6 +5565,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &177294108
 MonoBehaviour:
@@ -5702,6 +5733,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &178793035
 MonoBehaviour:
@@ -5869,6 +5901,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &180974315
 MonoBehaviour:
@@ -6036,6 +6069,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &183967539
 MonoBehaviour:
@@ -6203,6 +6237,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &184274304
 MonoBehaviour:
@@ -6370,6 +6405,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &186382844
 MonoBehaviour:
@@ -6683,6 +6719,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &196182687
 MonoBehaviour:
@@ -6850,6 +6887,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &196650680
 MonoBehaviour:
@@ -7017,6 +7055,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &197779661
 MonoBehaviour:
@@ -7184,6 +7223,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &201425707
 MonoBehaviour:
@@ -7546,6 +7586,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &214226086
 MonoBehaviour:
@@ -7698,6 +7739,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &217754489
 MonoBehaviour:
@@ -7865,6 +7907,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &222103458
 MonoBehaviour:
@@ -8032,6 +8075,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &223997261
 MonoBehaviour:
@@ -8199,6 +8243,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &234385596
 MonoBehaviour:
@@ -8366,6 +8411,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &234837705
 MonoBehaviour:
@@ -8631,6 +8677,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &246497188
 MonoBehaviour:
@@ -8798,6 +8845,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &250060802
 MonoBehaviour:
@@ -9026,6 +9074,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &250700837
 MonoBehaviour:
@@ -9193,6 +9242,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &253634019
 MonoBehaviour:
@@ -9360,6 +9410,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &256599141
 MonoBehaviour:
@@ -9527,6 +9578,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &262890957
 MonoBehaviour:
@@ -9694,6 +9746,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &266541219
 MonoBehaviour:
@@ -9922,6 +9975,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &277725963
 MonoBehaviour:
@@ -10089,6 +10143,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &286669240
 MonoBehaviour:
@@ -10256,6 +10311,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &288409159
 MonoBehaviour:
@@ -10423,6 +10479,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &288743749
 MonoBehaviour:
@@ -10590,6 +10647,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &291176562
 MonoBehaviour:
@@ -10757,6 +10815,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &291201451
 MonoBehaviour:
@@ -10924,6 +10983,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &296268082
 MonoBehaviour:
@@ -11091,6 +11151,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &296672819
 MonoBehaviour:
@@ -11258,6 +11319,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &298138302
 MonoBehaviour:
@@ -11425,6 +11487,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &301642885
 MonoBehaviour:
@@ -11592,6 +11655,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &302228556
 MonoBehaviour:
@@ -11759,6 +11823,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &308814199
 MonoBehaviour:
@@ -11926,6 +11991,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &308931324
 MonoBehaviour:
@@ -12093,6 +12159,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &311338534
 MonoBehaviour:
@@ -12260,6 +12327,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &323741866
 MonoBehaviour:
@@ -12427,6 +12495,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &331365437
 MonoBehaviour:
@@ -12594,6 +12663,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &337624274
 MonoBehaviour:
@@ -12761,6 +12831,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &354868610
 MonoBehaviour:
@@ -12928,6 +12999,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &362158312
 MonoBehaviour:
@@ -13095,6 +13167,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &364945479
 MonoBehaviour:
@@ -13262,6 +13335,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &367731676
 MonoBehaviour:
@@ -13429,6 +13503,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &368661568
 MonoBehaviour:
@@ -13596,6 +13671,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &375810131
 MonoBehaviour:
@@ -13816,6 +13892,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &379781678
 MonoBehaviour:
@@ -13983,6 +14060,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &381897076
 MonoBehaviour:
@@ -14150,6 +14228,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &382783733
 MonoBehaviour:
@@ -14317,6 +14396,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &383195939
 MonoBehaviour:
@@ -14499,6 +14579,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &388138581
 MonoBehaviour:
@@ -14651,6 +14732,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &394802864
 MonoBehaviour:
@@ -14818,6 +14900,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &399462313
 MonoBehaviour:
@@ -14985,6 +15068,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &405958818
 MonoBehaviour:
@@ -15152,6 +15236,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &407576972
 MonoBehaviour:
@@ -15319,6 +15404,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &408076196
 MonoBehaviour:
@@ -15486,6 +15572,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &413556988
 MonoBehaviour:
@@ -15653,6 +15740,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &414021173
 MonoBehaviour:
@@ -15820,6 +15908,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &414700205
 MonoBehaviour:
@@ -15987,6 +16076,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &423734348
 MonoBehaviour:
@@ -16154,6 +16244,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &427429322
 MonoBehaviour:
@@ -16321,6 +16412,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &432840543
 MonoBehaviour:
@@ -16488,6 +16580,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &459344746
 MonoBehaviour:
@@ -16655,6 +16748,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &469268790
 MonoBehaviour:
@@ -16837,6 +16931,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &474207694
 MonoBehaviour:
@@ -16989,6 +17084,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &474999579
 MonoBehaviour:
@@ -17156,6 +17252,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &475674241
 MonoBehaviour:
@@ -17323,6 +17420,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &476121437
 MonoBehaviour:
@@ -17490,6 +17588,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &483014071
 MonoBehaviour:
@@ -17801,6 +17900,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &484971055
 MonoBehaviour:
@@ -17968,6 +18068,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &489440184
 MonoBehaviour:
@@ -18135,6 +18236,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &490908442
 MonoBehaviour:
@@ -18317,6 +18419,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &497243091
 MonoBehaviour:
@@ -18469,6 +18572,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &500538386
 MonoBehaviour:
@@ -18636,6 +18740,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &500831700
 MonoBehaviour:
@@ -18803,6 +18908,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &513718873
 MonoBehaviour:
@@ -18970,6 +19076,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &514401394
 MonoBehaviour:
@@ -19137,6 +19244,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &514946399
 MonoBehaviour:
@@ -19304,6 +19412,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &516936970
 MonoBehaviour:
@@ -19471,6 +19580,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &521700945
 MonoBehaviour:
@@ -19638,6 +19748,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &530497484
 MonoBehaviour:
@@ -19805,6 +19916,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &531627328
 MonoBehaviour:
@@ -19972,6 +20084,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &532811988
 MonoBehaviour:
@@ -20139,6 +20252,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &536533353
 MonoBehaviour:
@@ -20321,6 +20435,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &540652026
 MonoBehaviour:
@@ -20473,6 +20588,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &551053796
 MonoBehaviour:
@@ -20640,6 +20756,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &551760431
 MonoBehaviour:
@@ -20905,6 +21022,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &556764257
 MonoBehaviour:
@@ -21072,6 +21190,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &569350612
 MonoBehaviour:
@@ -21314,6 +21433,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &578747576
 MonoBehaviour:
@@ -21496,6 +21616,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &578966461
 MonoBehaviour:
@@ -21648,6 +21769,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &581235832
 MonoBehaviour:
@@ -21815,6 +21937,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &583432241
 MonoBehaviour:
@@ -21982,6 +22105,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &586178764
 MonoBehaviour:
@@ -22149,6 +22273,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &586915354
 MonoBehaviour:
@@ -22316,6 +22441,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &589716193
 MonoBehaviour:
@@ -22483,6 +22609,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &592926186
 MonoBehaviour:
@@ -22650,6 +22777,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &595368617
 MonoBehaviour:
@@ -22817,6 +22945,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &604613020
 MonoBehaviour:
@@ -22984,6 +23113,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &606714890
 MonoBehaviour:
@@ -23151,6 +23281,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &607676553
 MonoBehaviour:
@@ -23318,6 +23449,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &609096511
 MonoBehaviour:
@@ -23485,6 +23617,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &615477672
 MonoBehaviour:
@@ -23652,6 +23785,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &618405901
 MonoBehaviour:
@@ -23880,6 +24014,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &626654126
 MonoBehaviour:
@@ -24062,6 +24197,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &629189512
 MonoBehaviour:
@@ -24214,6 +24350,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &629641373
 MonoBehaviour:
@@ -24381,6 +24518,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &640652726
 MonoBehaviour:
@@ -24548,6 +24686,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &645803308
 MonoBehaviour:
@@ -24715,6 +24854,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &646212056
 MonoBehaviour:
@@ -24882,6 +25022,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &647957752
 MonoBehaviour:
@@ -25049,6 +25190,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &649132184
 MonoBehaviour:
@@ -25216,6 +25358,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &656082254
 MonoBehaviour:
@@ -25383,6 +25526,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &663344033
 MonoBehaviour:
@@ -25639,6 +25783,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &670195584
 MonoBehaviour:
@@ -25821,6 +25966,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &676803011
 MonoBehaviour:
@@ -25973,6 +26119,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &679295157
 MonoBehaviour:
@@ -26140,6 +26287,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &681654489
 MonoBehaviour:
@@ -26307,6 +26455,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &683341057
 MonoBehaviour:
@@ -26474,6 +26623,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &685481724
 MonoBehaviour:
@@ -26641,6 +26791,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &687754158
 MonoBehaviour:
@@ -26808,6 +26959,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &688626084
 MonoBehaviour:
@@ -26975,6 +27127,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &688908954
 MonoBehaviour:
@@ -27142,6 +27295,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &692619143
 MonoBehaviour:
@@ -27309,6 +27463,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &694268558
 MonoBehaviour:
@@ -27476,6 +27631,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &702756021
 MonoBehaviour:
@@ -27704,6 +27860,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &714694250
 MonoBehaviour:
@@ -27871,6 +28028,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &717101777
 MonoBehaviour:
@@ -28038,6 +28196,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &719507756
 MonoBehaviour:
@@ -28205,6 +28364,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &719826063
 MonoBehaviour:
@@ -28372,6 +28532,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &723374146
 MonoBehaviour:
@@ -28554,6 +28715,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &724992155
 MonoBehaviour:
@@ -28886,6 +29048,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 1323948149}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 1917716415}
   quick_stage: 
 --- !u!114 &731430639
 MonoBehaviour:
@@ -29053,6 +29216,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &735031134
 MonoBehaviour:
@@ -29220,6 +29384,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &735796717
 MonoBehaviour:
@@ -29387,6 +29552,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &740019991
 MonoBehaviour:
@@ -29554,6 +29720,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &751928379
 MonoBehaviour:
@@ -29721,6 +29888,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &752562204
 MonoBehaviour:
@@ -29888,6 +30056,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &754420962
 MonoBehaviour:
@@ -30055,6 +30224,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &756424268
 MonoBehaviour:
@@ -30222,6 +30392,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &764845048
 MonoBehaviour:
@@ -30389,6 +30560,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &765052274
 MonoBehaviour:
@@ -30556,6 +30728,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &765103996
 MonoBehaviour:
@@ -30723,6 +30896,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &766172342
 MonoBehaviour:
@@ -30890,6 +31064,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &771397242
 MonoBehaviour:
@@ -31057,6 +31232,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &774823604
 MonoBehaviour:
@@ -31224,6 +31400,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &784637855
 MonoBehaviour:
@@ -31391,6 +31568,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &786696184
 MonoBehaviour:
@@ -31558,6 +31736,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &787845037
 MonoBehaviour:
@@ -31725,6 +31904,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &789426849
 MonoBehaviour:
@@ -31892,6 +32072,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &792782839
 MonoBehaviour:
@@ -32059,6 +32240,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &800983313
 MonoBehaviour:
@@ -32226,6 +32408,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &813278235
 MonoBehaviour:
@@ -32573,6 +32756,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &814821193
 MonoBehaviour:
@@ -32740,6 +32924,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &816762923
 MonoBehaviour:
@@ -32907,6 +33092,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &817698400
 MonoBehaviour:
@@ -33074,6 +33260,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &819048689
 MonoBehaviour:
@@ -33241,6 +33428,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &825696003
 MonoBehaviour:
@@ -33408,6 +33596,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &826919486
 MonoBehaviour:
@@ -33575,6 +33764,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &828521578
 MonoBehaviour:
@@ -33742,6 +33932,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &829888924
 MonoBehaviour:
@@ -33909,6 +34100,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &834324246
 MonoBehaviour:
@@ -34076,6 +34268,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &840676217
 MonoBehaviour:
@@ -34243,6 +34436,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &844742743
 MonoBehaviour:
@@ -34410,6 +34604,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &853328218
 MonoBehaviour:
@@ -34577,6 +34772,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &857527791
 MonoBehaviour:
@@ -34744,6 +34940,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &863151016
 MonoBehaviour:
@@ -34911,6 +35108,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &864147355
 MonoBehaviour:
@@ -35078,6 +35276,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &866927137
 MonoBehaviour:
@@ -35245,6 +35444,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &871437762
 MonoBehaviour:
@@ -35427,6 +35627,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &881265252
 MonoBehaviour:
@@ -35579,6 +35780,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &881556448
 MonoBehaviour:
@@ -35746,6 +35948,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &885657143
 MonoBehaviour:
@@ -35913,6 +36116,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &886498945
 MonoBehaviour:
@@ -36080,6 +36284,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &894256012
 MonoBehaviour:
@@ -36247,6 +36452,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &896566820
 MonoBehaviour:
@@ -36414,6 +36620,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &900514966
 MonoBehaviour:
@@ -36581,6 +36788,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &903596758
 MonoBehaviour:
@@ -36846,6 +37054,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &915137600
 MonoBehaviour:
@@ -37013,6 +37222,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &916980565
 MonoBehaviour:
@@ -37180,6 +37390,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &929395103
 MonoBehaviour:
@@ -37347,6 +37558,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &930522955
 MonoBehaviour:
@@ -37514,6 +37726,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &932799125
 MonoBehaviour:
@@ -37681,6 +37894,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &935805944
 MonoBehaviour:
@@ -37848,6 +38062,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &936786323
 MonoBehaviour:
@@ -38030,6 +38245,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &942293315
 MonoBehaviour:
@@ -38256,6 +38472,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &952153539
 MonoBehaviour:
@@ -38423,6 +38640,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &967411785
 MonoBehaviour:
@@ -38590,6 +38808,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &969329337
 MonoBehaviour:
@@ -38757,6 +38976,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &977251258
 MonoBehaviour:
@@ -38924,6 +39144,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &978921930
 MonoBehaviour:
@@ -39091,6 +39312,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &987124158
 MonoBehaviour:
@@ -39258,6 +39480,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &991501523
 MonoBehaviour:
@@ -39425,6 +39648,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &991784235
 MonoBehaviour:
@@ -39592,6 +39816,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &991865722
 MonoBehaviour:
@@ -39759,6 +39984,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &993257745
 MonoBehaviour:
@@ -40024,6 +40250,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1005299945
 MonoBehaviour:
@@ -40191,6 +40418,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1007001584
 MonoBehaviour:
@@ -40358,6 +40586,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1010813926
 MonoBehaviour:
@@ -40525,6 +40754,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1014054141
 MonoBehaviour:
@@ -40803,6 +41033,7 @@ RectTransform:
   - {fileID: 58677796}
   - {fileID: 725281086}
   - {fileID: 212603428}
+  - {fileID: 1890971696}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -40871,6 +41102,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1031474141
 MonoBehaviour:
@@ -41038,6 +41270,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1033566048
 MonoBehaviour:
@@ -41205,6 +41438,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1039647841
 MonoBehaviour:
@@ -41372,6 +41606,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1040519531
 MonoBehaviour:
@@ -41539,6 +41774,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1043320706
 MonoBehaviour:
@@ -41706,6 +41942,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1047270581
 MonoBehaviour:
@@ -41873,6 +42110,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1052047709
 MonoBehaviour:
@@ -42040,6 +42278,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1053115304
 MonoBehaviour:
@@ -42207,6 +42446,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1054491183
 MonoBehaviour:
@@ -42435,6 +42675,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1065889729
 MonoBehaviour:
@@ -42602,6 +42843,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1083738173
 MonoBehaviour:
@@ -42769,6 +43011,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1085378043
 MonoBehaviour:
@@ -42936,6 +43179,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1085750995
 MonoBehaviour:
@@ -43103,6 +43347,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1093426425
 MonoBehaviour:
@@ -43270,6 +43515,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1096548360
 MonoBehaviour:
@@ -43437,6 +43683,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1098591193
 MonoBehaviour:
@@ -43604,6 +43851,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1103330631
 MonoBehaviour:
@@ -43771,6 +44019,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1103505945
 MonoBehaviour:
@@ -43938,6 +44187,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1108645860
 MonoBehaviour:
@@ -44105,6 +44355,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1116104688
 MonoBehaviour:
@@ -44272,6 +44523,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1129562558
 MonoBehaviour:
@@ -44439,6 +44691,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1133377983
 MonoBehaviour:
@@ -44606,6 +44859,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1135471918
 MonoBehaviour:
@@ -44773,6 +45027,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1139397642
 MonoBehaviour:
@@ -44940,6 +45195,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1139799763
 MonoBehaviour:
@@ -45107,6 +45363,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1149529017
 MonoBehaviour:
@@ -45274,6 +45531,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1149585413
 MonoBehaviour:
@@ -45441,6 +45699,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1149639267
 MonoBehaviour:
@@ -45608,6 +45867,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1151507427
 MonoBehaviour:
@@ -45775,6 +46035,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1152780105
 MonoBehaviour:
@@ -45942,6 +46203,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1155033167
 MonoBehaviour:
@@ -46109,6 +46371,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1157623509
 MonoBehaviour:
@@ -46276,6 +46539,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1159693739
 MonoBehaviour:
@@ -46443,6 +46707,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1165296462
 MonoBehaviour:
@@ -46610,6 +46875,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1165463796
 MonoBehaviour:
@@ -46777,6 +47043,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1172891866
 MonoBehaviour:
@@ -46944,6 +47211,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1175001321
 MonoBehaviour:
@@ -47111,6 +47379,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1176060328
 MonoBehaviour:
@@ -47278,6 +47547,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1177089258
 MonoBehaviour:
@@ -47445,6 +47715,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1180765876
 MonoBehaviour:
@@ -47673,6 +47944,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1200152108
 MonoBehaviour:
@@ -47840,6 +48112,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1200923217
 MonoBehaviour:
@@ -48007,6 +48280,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1205318057
 MonoBehaviour:
@@ -48174,6 +48448,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1207611351
 MonoBehaviour:
@@ -48341,6 +48616,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1208995907
 MonoBehaviour:
@@ -48508,6 +48784,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1215854745
 MonoBehaviour:
@@ -48675,6 +48952,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1247318405
 MonoBehaviour:
@@ -48842,6 +49120,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1247950249
 MonoBehaviour:
@@ -49009,6 +49288,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1249493643
 MonoBehaviour:
@@ -49237,6 +49517,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1254895572
 MonoBehaviour:
@@ -49404,6 +49685,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1256260448
 MonoBehaviour:
@@ -49571,6 +49853,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1275962604
 MonoBehaviour:
@@ -49738,6 +50021,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1276041153
 MonoBehaviour:
@@ -49920,6 +50204,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1276260457
 MonoBehaviour:
@@ -50072,6 +50357,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1278842892
 MonoBehaviour:
@@ -50239,6 +50525,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1280279438
 MonoBehaviour:
@@ -50406,6 +50693,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1282932062
 MonoBehaviour:
@@ -50634,6 +50922,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1283641422
 MonoBehaviour:
@@ -50801,6 +51090,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1294711615
 MonoBehaviour:
@@ -50968,6 +51258,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1298694082
 MonoBehaviour:
@@ -51135,6 +51426,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1307330158
 MonoBehaviour:
@@ -51317,6 +51609,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1308408123
 MonoBehaviour:
@@ -51484,6 +51777,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1312266954
 MonoBehaviour:
@@ -51636,6 +51930,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1321403366
 MonoBehaviour:
@@ -51743,6 +52038,104 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 0.01, y: -8}
   m_UseGraphicAlpha: 1
+--- !u!1 &1322899630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1322899631}
+  - component: {fileID: 1322899634}
+  - component: {fileID: 1322899633}
+  - component: {fileID: 1322899632}
+  m_Layer: 5
+  m_Name: Placeholder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1322899631
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322899630}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1890971696}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 3.75, y: 3}
+  m_SizeDelta: {x: -27.5, y: -6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1322899632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322899630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: Please enter a stage name.
+  englishFontSize: 20
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  starttrg: 1
+--- !u!114 &1322899633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322899630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 0.5}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ea9e693649b2e914e96165e90ba876b4, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 2
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\u30B9\u30C6\u30FC\u30B8\u540D\u3092\u5165\u529B\u3057\u3066\u304F\u3060\u3055\u3044"
+--- !u!222 &1322899634
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1322899630}
+  m_CullTransparentMesh: 0
 --- !u!1 &1323948146
 GameObject:
   m_ObjectHideFlags: 0
@@ -51920,6 +52313,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1325482003
 MonoBehaviour:
@@ -52148,6 +52542,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1333625467
 MonoBehaviour:
@@ -52315,6 +52710,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1334738974
 MonoBehaviour:
@@ -52482,6 +52878,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1338131463
 MonoBehaviour:
@@ -52649,6 +53046,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1341759232
 MonoBehaviour:
@@ -52816,6 +53214,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1348134350
 MonoBehaviour:
@@ -52983,6 +53382,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1349484762
 MonoBehaviour:
@@ -53150,6 +53550,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1350937983
 MonoBehaviour:
@@ -53317,6 +53718,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1358667161
 MonoBehaviour:
@@ -53484,6 +53886,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1363124219
 MonoBehaviour:
@@ -53651,6 +54054,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1363494260
 MonoBehaviour:
@@ -53818,6 +54222,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1370891772
 MonoBehaviour:
@@ -53985,6 +54390,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1371878965
 MonoBehaviour:
@@ -54152,6 +54558,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1372010510
 MonoBehaviour:
@@ -54319,6 +54726,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1372649906
 MonoBehaviour:
@@ -54501,6 +54909,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1374396423
 MonoBehaviour:
@@ -54653,6 +55062,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1377140851
 MonoBehaviour:
@@ -54820,6 +55230,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1377396426
 MonoBehaviour:
@@ -54987,6 +55398,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1397478761
 MonoBehaviour:
@@ -55154,6 +55566,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1412623343
 MonoBehaviour:
@@ -55321,6 +55734,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1419001517
 MonoBehaviour:
@@ -55488,6 +55902,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1419356427
 MonoBehaviour:
@@ -55655,6 +56070,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1426935308
 MonoBehaviour:
@@ -55837,6 +56253,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1427070383
 MonoBehaviour:
@@ -55989,6 +56406,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1431292715
 MonoBehaviour:
@@ -56156,6 +56574,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1436359284
 MonoBehaviour:
@@ -56323,6 +56742,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1438157444
 MonoBehaviour:
@@ -56490,6 +56910,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1443819916
 MonoBehaviour:
@@ -56718,6 +57139,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1451686702
 MonoBehaviour:
@@ -56900,6 +57322,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1451849222
 MonoBehaviour:
@@ -57052,6 +57475,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1458969176
 MonoBehaviour:
@@ -57219,6 +57643,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1465905534
 MonoBehaviour:
@@ -57386,6 +57811,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1476159398
 MonoBehaviour:
@@ -57493,6 +57919,80 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 0.01, y: -8}
   m_UseGraphicAlpha: 1
+--- !u!1 &1482336389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1482336390}
+  - component: {fileID: 1482336392}
+  - component: {fileID: 1482336391}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1482336390
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482336389}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1890971696}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 380, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1482336391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482336389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.9811321, g: 0.9537202, b: 0.9302243, a: 1}
+  m_RaycastTarget: 0
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 82306ec1555e74d41b5fc97d5e09f8e2, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1482336392
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482336389}
+  m_CullTransparentMesh: 0
 --- !u!1 &1482483072
 GameObject:
   m_ObjectHideFlags: 0
@@ -57553,6 +58053,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1482483075
 MonoBehaviour:
@@ -57720,6 +58221,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1486225627
 MonoBehaviour:
@@ -57887,6 +58389,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1487234220
 MonoBehaviour:
@@ -58054,6 +58557,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1488803372
 MonoBehaviour:
@@ -58221,6 +58725,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1489934071
 MonoBehaviour:
@@ -58388,6 +58893,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1490620827
 MonoBehaviour:
@@ -58555,6 +59061,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1495541653
 MonoBehaviour:
@@ -58722,6 +59229,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1499136141
 MonoBehaviour:
@@ -58889,6 +59397,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1500306000
 MonoBehaviour:
@@ -59056,6 +59565,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1501784288
 MonoBehaviour:
@@ -59223,6 +59733,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1504215882
 MonoBehaviour:
@@ -59405,6 +59916,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1510889709
 MonoBehaviour:
@@ -59636,6 +60148,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1522044020
 MonoBehaviour:
@@ -59803,6 +60316,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1530576215
 MonoBehaviour:
@@ -59970,6 +60484,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1536273304
 MonoBehaviour:
@@ -60137,6 +60652,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1538275340
 MonoBehaviour:
@@ -60319,6 +60835,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1541489482
 MonoBehaviour:
@@ -60471,6 +60988,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1549620905
 MonoBehaviour:
@@ -60653,6 +61171,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1549650942
 MonoBehaviour:
@@ -60805,6 +61324,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1549683272
 MonoBehaviour:
@@ -60972,6 +61492,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1549879761
 MonoBehaviour:
@@ -61139,6 +61660,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1562342955
 MonoBehaviour:
@@ -61306,6 +61828,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1577871304
 MonoBehaviour:
@@ -61473,6 +61996,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1583866432
 MonoBehaviour:
@@ -61640,6 +62164,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1585164547
 MonoBehaviour:
@@ -61807,6 +62332,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1590014949
 MonoBehaviour:
@@ -61974,6 +62500,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1591664366
 MonoBehaviour:
@@ -62141,6 +62668,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1598700270
 MonoBehaviour:
@@ -62308,6 +62836,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1603898112
 MonoBehaviour:
@@ -62475,6 +63004,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1605808938
 MonoBehaviour:
@@ -62642,6 +63172,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1607180497
 MonoBehaviour:
@@ -62809,6 +63340,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1607645013
 MonoBehaviour:
@@ -62976,6 +63508,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1609120977
 MonoBehaviour:
@@ -63143,6 +63676,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1613224954
 MonoBehaviour:
@@ -63310,6 +63844,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1619610937
 MonoBehaviour:
@@ -63477,6 +64012,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1620425197
 MonoBehaviour:
@@ -63644,6 +64180,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1624131599
 MonoBehaviour:
@@ -63811,6 +64348,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1627783449
 MonoBehaviour:
@@ -63978,6 +64516,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1633323387
 MonoBehaviour:
@@ -64145,6 +64684,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1640328294
 MonoBehaviour:
@@ -64312,6 +64852,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1641322733
 MonoBehaviour:
@@ -64479,6 +65020,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1641345619
 MonoBehaviour:
@@ -64646,6 +65188,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1651158713
 MonoBehaviour:
@@ -64813,6 +65356,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1651846807
 MonoBehaviour:
@@ -64980,6 +65524,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1657150992
 MonoBehaviour:
@@ -65147,6 +65692,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1659933942
 MonoBehaviour:
@@ -65314,6 +65860,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1660618872
 MonoBehaviour:
@@ -65481,6 +66028,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1672878898
 MonoBehaviour:
@@ -65648,6 +66196,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1678386425
 MonoBehaviour:
@@ -65815,6 +66364,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1682980777
 MonoBehaviour:
@@ -65982,6 +66532,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1685828581
 MonoBehaviour:
@@ -66164,6 +66715,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1686237961
 MonoBehaviour:
@@ -66316,6 +66868,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1687618246
 MonoBehaviour:
@@ -66483,6 +67036,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1692628495
 MonoBehaviour:
@@ -66650,6 +67204,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1696730788
 MonoBehaviour:
@@ -66817,6 +67372,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1696733612
 MonoBehaviour:
@@ -66984,6 +67540,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1697847620
 MonoBehaviour:
@@ -67225,6 +67782,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1703490059
 MonoBehaviour:
@@ -67392,6 +67950,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1704322613
 MonoBehaviour:
@@ -67559,6 +68118,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1705215978
 MonoBehaviour:
@@ -67726,6 +68286,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1710428820
 MonoBehaviour:
@@ -67893,6 +68454,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1713543810
 MonoBehaviour:
@@ -68121,6 +68683,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1727264811
 MonoBehaviour:
@@ -68349,6 +68912,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1732364111
 MonoBehaviour:
@@ -68516,6 +69080,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1732876578
 MonoBehaviour:
@@ -68683,6 +69248,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1734352337
 MonoBehaviour:
@@ -68850,6 +69416,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1734987513
 MonoBehaviour:
@@ -69017,6 +69584,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1735466955
 MonoBehaviour:
@@ -69184,6 +69752,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1737130295
 MonoBehaviour:
@@ -69351,6 +69920,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1740627593
 MonoBehaviour:
@@ -69579,6 +70149,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1744167883
 MonoBehaviour:
@@ -69746,6 +70317,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1769671475
 MonoBehaviour:
@@ -69913,6 +70485,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1770773492
 MonoBehaviour:
@@ -70156,6 +70729,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1789641473
 MonoBehaviour:
@@ -70308,6 +70882,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1792414436
 MonoBehaviour:
@@ -70475,6 +71050,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1801103913
 MonoBehaviour:
@@ -70642,6 +71218,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1802752378
 MonoBehaviour:
@@ -70809,6 +71386,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1806880445
 MonoBehaviour:
@@ -70976,6 +71554,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1810623296
 MonoBehaviour:
@@ -71143,6 +71722,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1812144731
 MonoBehaviour:
@@ -71310,6 +71890,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1813707556
 MonoBehaviour:
@@ -71477,6 +72058,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1829887947
 MonoBehaviour:
@@ -71644,6 +72226,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1835328509
 MonoBehaviour:
@@ -71811,6 +72394,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1837548126
 MonoBehaviour:
@@ -71978,6 +72562,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1850782612
 MonoBehaviour:
@@ -72145,6 +72730,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1853374301
 MonoBehaviour:
@@ -72312,6 +72898,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1862128073
 MonoBehaviour:
@@ -72479,6 +73066,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1868140559
 MonoBehaviour:
@@ -72646,6 +73234,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1870724209
 MonoBehaviour:
@@ -72813,6 +73402,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1876810183
 MonoBehaviour:
@@ -73072,6 +73662,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1888613954
 MonoBehaviour:
@@ -73239,6 +73830,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1889022175
 MonoBehaviour:
@@ -73406,6 +73998,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1890798561
 MonoBehaviour:
@@ -73513,6 +74106,148 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 0.01, y: -8}
   m_UseGraphicAlpha: 1
+--- !u!1 &1890971695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1890971696}
+  - component: {fileID: 1890971699}
+  - component: {fileID: 1890971698}
+  - component: {fileID: 1890971697}
+  m_Layer: 5
+  m_Name: InputField
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1890971696
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890971695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1482336390}
+  - {fileID: 1322899631}
+  - {fileID: 1917716414}
+  m_Father: {fileID: 1017866781}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 750, y: -500}
+  m_SizeDelta: {x: 400, y: 60}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1890971697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890971695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d199490a83bb2b844b9695cbf13b01ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.69803923}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.4}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.69803923}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.34901962}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1890971698}
+  m_TextComponent: {fileID: 1917716415}
+  m_Placeholder: {fileID: 1322899633}
+  m_ContentType: 0
+  m_InputType: 0
+  m_AsteriskChar: 42
+  m_KeyboardType: 0
+  m_LineType: 0
+  m_HideMobileInput: 0
+  m_CharacterValidation: 0
+  m_CharacterLimit: 0
+  m_OnEndEdit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_CustomCaretColor: 0
+  m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
+  m_Text: 
+  m_CaretBlinkRate: 0.85
+  m_CaretWidth: 1
+  m_ReadOnly: 0
+  m_ShouldActivateOnSelect: 1
+--- !u!114 &1890971698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890971695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.4811321, g: 0.25061926, b: 0.22014064, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 89c89d31cbb023d4a87840ff06fe110e, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 0.85
+--- !u!222 &1890971699
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890971695}
+  m_CullTransparentMesh: 0
 --- !u!1 &1894165211
 GameObject:
   m_ObjectHideFlags: 0
@@ -73573,6 +74308,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1894165214
 MonoBehaviour:
@@ -73740,6 +74476,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1896401416
 MonoBehaviour:
@@ -73907,6 +74644,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1899275072
 MonoBehaviour:
@@ -74074,6 +74812,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1903163974
 MonoBehaviour:
@@ -74241,6 +74980,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1909715675
 MonoBehaviour:
@@ -74408,6 +75148,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1915812165
 MonoBehaviour:
@@ -74515,6 +75256,84 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 0.01, y: -8}
   m_UseGraphicAlpha: 1
+--- !u!1 &1917716413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1917716414}
+  - component: {fileID: 1917716416}
+  - component: {fileID: 1917716415}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1917716414
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917716413}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1890971696}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 3.75, y: 3}
+  m_SizeDelta: {x: -27.5, y: -6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1917716415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917716413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.1981132, g: 0.11154251, b: 0.09064614, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: ea9e693649b2e914e96165e90ba876b4, type: 3}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 3
+    m_AlignByGeometry: 0
+    m_RichText: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &1917716416
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917716413}
+  m_CullTransparentMesh: 0
 --- !u!1 &1923905514
 GameObject:
   m_ObjectHideFlags: 0
@@ -74575,6 +75394,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1923905517
 MonoBehaviour:
@@ -74742,6 +75562,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1924751621
 MonoBehaviour:
@@ -74909,6 +75730,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1927787537
 MonoBehaviour:
@@ -75076,6 +75898,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1929838666
 MonoBehaviour:
@@ -75243,6 +76066,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1938432069
 MonoBehaviour:
@@ -75410,6 +76234,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1940345977
 MonoBehaviour:
@@ -75577,6 +76402,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1948796086
 MonoBehaviour:
@@ -75744,6 +76570,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1953484413
 MonoBehaviour:
@@ -75985,6 +76812,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1963043957
 MonoBehaviour:
@@ -76152,6 +76980,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1967399175
 MonoBehaviour:
@@ -76319,6 +77148,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &1992207474
 MonoBehaviour:
@@ -76501,6 +77331,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2003024185
 MonoBehaviour:
@@ -76653,6 +77484,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2006264742
 MonoBehaviour:
@@ -76820,6 +77652,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2010424488
 MonoBehaviour:
@@ -76987,6 +77820,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2011464927
 MonoBehaviour:
@@ -77154,6 +77988,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2016294366
 MonoBehaviour:
@@ -77321,6 +78156,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2018654580
 MonoBehaviour:
@@ -77488,6 +78324,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2021019835
 MonoBehaviour:
@@ -77655,6 +78492,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2027441950
 MonoBehaviour:
@@ -77837,6 +78675,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2029012928
 MonoBehaviour:
@@ -78050,6 +78889,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2038245761
 MonoBehaviour:
@@ -78217,6 +79057,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2044473560
 MonoBehaviour:
@@ -78384,6 +79225,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2047723059
 MonoBehaviour:
@@ -78551,6 +79393,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2050547255
 MonoBehaviour:
@@ -78718,6 +79561,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2063080522
 MonoBehaviour:
@@ -78885,6 +79729,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2065038846
 MonoBehaviour:
@@ -79052,6 +79897,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2065353061
 MonoBehaviour:
@@ -79219,6 +80065,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2066721821
 MonoBehaviour:
@@ -79386,6 +80233,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2070532260
 MonoBehaviour:
@@ -79553,6 +80401,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2072428692
 MonoBehaviour:
@@ -79720,6 +80569,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2074588393
 MonoBehaviour:
@@ -79887,6 +80737,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2077553386
 MonoBehaviour:
@@ -80054,6 +80905,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2083705072
 MonoBehaviour:
@@ -80221,6 +81073,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2090075852
 MonoBehaviour:
@@ -80388,6 +81241,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2103869987
 MonoBehaviour:
@@ -80555,6 +81409,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2109731272
 MonoBehaviour:
@@ -80722,6 +81577,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2116334910
 MonoBehaviour:
@@ -80889,6 +81745,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2118712886
 MonoBehaviour:
@@ -81130,6 +81987,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2125791922
 MonoBehaviour:
@@ -81297,6 +82155,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2132546305
 MonoBehaviour:
@@ -81464,6 +82323,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2132959657
 MonoBehaviour:
@@ -81631,6 +82491,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 0}
   objscript: {fileID: 58677798}
+  stage_customname: {fileID: 0}
   quick_stage: 
 --- !u!114 &2144727514
 MonoBehaviour:
@@ -82069,7 +82930,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2437261705020706721
 MonoBehaviour:
@@ -83190,7 +84051,7 @@ RectTransform:
   m_Children:
   - {fileID: 6075476550134699255}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -83813,7 +84674,7 @@ RectTransform:
   m_Children:
   - {fileID: 296636145595899935}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

@@ -8,6 +8,7 @@ using System.Collections;
 using System.Text;
 using UnityEngine.Networking;
 using UnityEngine.Events;
+using NCMB;
 //前提知識:参考サイト5
 
 public class qr_create : MonoBehaviour
@@ -38,6 +39,15 @@ public class qr_create : MonoBehaviour
             print(qr_content.ToString());
         }
         StartCoroutine("CreaterQR");
+    }
+    public void CreateServer()
+    {
+        // クラスのNCMBObjectを作成
+        NCMBObject obj = new NCMBObject("StageDataClass");
+        // オブジェクトに値を設定
+        obj["stagedata"] = BitConverter.ToString(qr_content);
+        // データストアへの登録
+        obj.SaveAsync();
     }
     public IEnumerator CreaterQR()
     {

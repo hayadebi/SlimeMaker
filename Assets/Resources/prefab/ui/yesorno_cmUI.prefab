@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 2450193080046683852}
   - component: {fileID: 5389697340289065544}
   - component: {fileID: 8278200421769342784}
+  - component: {fileID: 543142635792477339}
   m_Layer: 5
   m_Name: uesornoText
   m_TagString: Untagged
@@ -209,7 +210,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30B9\u30C6\u30FC\u30B8\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u3080\u305F\u3081\u306B\nWeb\u30AB\u30E1\u30E9\u3092\u958B\u304D\u307E\u3059\u3002\u7D9A\u3051\u307E\u3059\u304B\uFF1F"
+  m_Text: "\u5168\u30B9\u30C6\u30FC\u30B8\u30C7\u30FC\u30BF\u3092\u8AAD\u307F\u8FBC\u3080\u305F\u3081\u306B\n\u30B5\u30FC\u30D0\u30FC\u3092\u958B\u304D\u307E\u3059\u3002\u7D9A\u3051\u307E\u3059\u304B\uFF1F"
 --- !u!114 &5389697340289065544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +218,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2870499904047535365}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
@@ -247,6 +248,25 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &543142635792477339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2870499904047535365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  englishText: "To load all stage data Open server.\n Shall we continue?"
+  englishFontSize: 20
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  starttrg: 0
 --- !u!1 &5074949085637026071
 GameObject:
   m_ObjectHideFlags: 0
@@ -406,6 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: qrstage
   check_debug: 0
   check_story: 0
@@ -420,6 +441,12 @@ MonoBehaviour:
   notsay: 1
   _text: {fileID: 0}
   dxtrg: -1
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87
 --- !u!1 &7731214563779089287
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: loadstage
   check_debug: 1
   check_story: 0
@@ -593,6 +621,12 @@ MonoBehaviour:
   notsay: 1
   _text: {fileID: 0}
   dxtrg: -1
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87
 --- !u!1 &7731214564035166828
 GameObject:
   m_ObjectHideFlags: 0

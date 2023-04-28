@@ -19,6 +19,7 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
     public bool entertrg = true;
     public Text not_goalslimetext;
     public Text objscript;
+    public Text stage_customname;
     [Multiline]
     public string quick_stage = "";
     private bool wheelstrg = false;
@@ -156,33 +157,62 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
                 GManager.instance.setrg = 2;
                 GManager.instance.debug_trg = true;
                 GManager.instance.storymode = false;
-                result_stage = "stage\n"+Application.version;
-                //------------------------------------
-                for (int y = 0; y < GManager.instance.test_y.Length;)
+                bool tmp_notword = false;
+                for(int w = 0; w < GManager.instance.not_word.Length;)
                 {
-                    result_stage += "\n";
-                    for (int x = 0; x < GManager.instance.test_y[y].test_x.Length;)
+                    if (stage_customname.text.Contains(GManager.instance.not_word[w]))
                     {
-                        result_stage += GManager.instance.test_y[y].test_x[x].ToString();
-                        if (x < GManager.instance.test_y[y].test_x.Length - 1)
-                            result_stage += ",";
-                        x++;
+                        tmp_notword = true;
+                        break;
                     }
-                    y++;
+                    w++;
                 }
-                //------------------------------------
-                string path = Application.persistentDataPath + "/stage00.txt";
-                bool isAppend = false; // 上書き or 追記
-                using (var fs = new StreamWriter(path, isAppend, System.Text.Encoding.GetEncoding("UTF-8")))
+                if (!tmp_notword)
                 {
-                    if (quick_stage == "")
-                        fs.Write(result_stage);
-                    else if (quick_stage != "")
-                        fs.Write(quick_stage);
+                    if (stage_customname.text != "")
+                        result_stage = "stage\n" + Application.version + "\n" + stage_customname.text;
+                    else
+                        result_stage = "stage\n" + Application.version + "\n" + "No stage name.";
+                    //------------------------------------
+                    for (int y = 0; y < GManager.instance.test_y.Length;)
+                    {
+                        result_stage += "\n";
+                        for (int x = 0; x < GManager.instance.test_y[y].test_x.Length;)
+                        {
+                            result_stage += GManager.instance.test_y[y].test_x[x].ToString();
+                            if (x < GManager.instance.test_y[y].test_x.Length - 1)
+                                result_stage += ",";
+                            x++;
+                        }
+                        y++;
+                    }
+                    //------------------------------------
+                    string path = Application.persistentDataPath + "/stage00.txt";
+                    bool isAppend = false; // 上書き or 追記
+                    using (var fs = new StreamWriter(path, isAppend, System.Text.Encoding.GetEncoding("UTF-8")))
+                    {
+                        if (quick_stage == "")
+                            fs.Write(result_stage);
+                        else if (quick_stage != "")
+                            fs.Write(quick_stage);
+                    }
+                    Instantiate(GManager.instance.all_ui[0], transform.position, transform.rotation);
+                    Invoke(nameof(SceneChange), 1f);
                 }
-                Instantiate(GManager.instance.all_ui[0], transform.position, transform.rotation);
-                Invoke(nameof(SceneChange), 1f);
-               
+                else if (tmp_notword)
+                {
+                    GManager.instance.setrg = 1;
+                    if (GManager.instance.isEnglish == 0)
+                    {
+                        not_goalslimetext.fontSize = 32;
+                        not_goalslimetext.text = "<color=red>※配慮された言葉をお書きください</color>";
+                    }
+                    else
+                    {
+                        not_goalslimetext.fontSize = 32;
+                        not_goalslimetext.text = "<color=red>※Please don't use swear words.</color>";
+                    }
+                }
             }
             else
             {

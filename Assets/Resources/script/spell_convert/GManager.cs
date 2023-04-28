@@ -155,6 +155,8 @@ public class GManager : MonoBehaviour
     public bool dx_mode = false;
     public int dx_stageid = -1;
     public TextAsset[] dx_filename;
+
+    public string[] not_word;
     private void Awake()
     {
         if (instance == null)
