@@ -122,16 +122,15 @@ public class datatest : MonoBehaviour
                 //検索調整
                 if (all_btn != null && all_btn.Length > 0)
                 {
-                    child_data tmp_child = null;
                     for (int b = 0; b < all_btn.Length;)
                     {
-                        tmp_child = all_btn[b].GetComponent<child_data>();
-                        print(tmp_child.ToString());
-                        print(tmp_child.stage_name.Contains(onsearch_word.text).ToString());
-                        print(tmp_child.stage_name.Contains(notsearch_word.text).ToString());
-                        if (tmp_child != null && GManager.instance.check_onword != "" && !tmp_child.stage_name.Contains(GManager.instance.check_onword) && !tmp_child.stage_version.Contains(GManager.instance.check_onword))
+                        bool on_name = all_namelist[b].Contains(GManager.instance.check_onword);
+                        bool on_ver = all_versionlist[b].Contains(GManager.instance.check_onword);
+                        bool off_name = all_namelist [b].Contains(GManager.instance.check_notword);
+                        bool off_ver = all_versionlist[b].Contains(GManager.instance.check_notword);
+                        if ( GManager.instance.check_onword != "" && !on_name && !on_ver)
                             Destroy(all_btn[b].gameObject);
-                        if(tmp_child !=null && GManager.instance.check_notword != "" &&(tmp_child.stage_name.Contains(GManager.instance.check_notword) || tmp_child.stage_version.Contains(GManager.instance.check_notword)))
+                        else if( GManager.instance.check_notword != "" &&(off_name  || off_ver))
                             Destroy(all_btn[b].gameObject);
                         b++;
                     }
