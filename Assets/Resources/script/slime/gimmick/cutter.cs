@@ -41,7 +41,7 @@ public class cutter : MonoBehaviour
     }
     private void OnTriggerEnter(Collider col)
     {
-        if (colmode != null && col.tag == "wall")
+        if (colmode != null && (col.tag == "wall"|| col.tag == "icewall"))
         {
             colmode.move_num *= -1;
             colmode.count_time = 0;

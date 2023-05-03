@@ -142,7 +142,7 @@ PrefabInstance:
     - target: {fileID: 6017326719407883948, guid: efae9084dc8ded241bbcf03e0da34e57,
         type: 3}
       propertyPath: dx_mode
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6017326719407883948, guid: efae9084dc8ded241bbcf03e0da34e57,
         type: 3}

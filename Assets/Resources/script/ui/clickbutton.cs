@@ -57,6 +57,19 @@ public class clickbutton : MonoBehaviour
                 fixed_idobjname.text = "Fixing the last placed gimmick.";
             }
         }
+        else if (EnableUI != null && fixed_selectid == 0)
+        {
+            if (GManager.instance.isEnglish == 0)
+            {
+                fixed_idobjname.fontSize = 14;
+                fixed_idobjname.text = "消しゴムツール";
+            }
+            else
+            {
+                fixed_idobjname.fontSize = 12;
+                fixed_idobjname.text = "Eraser tool";
+            }
+        }
     }
     public void FixedUITime(int tmpid = 0)
     {

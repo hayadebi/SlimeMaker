@@ -30,6 +30,8 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
     // Start is called before the first frame update
     void Start()
     {
+        if (GManager.instance.tmp_stagename != "")
+            stage_customname.text = GManager.instance.tmp_stagename;
         GManager.instance.debug_trg = false;
         if (this_y == 0 || this_x == 0 || this_y == 17 || this_x == 25)
             reset_id = 1;
@@ -170,9 +172,15 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
                 if (!tmp_notword)
                 {
                     if (stage_customname.text != "")
+                    {
+                        GManager.instance.tmp_stagename = stage_customname.text;
                         result_stage = "stage\n" + Application.version + "\n" + stage_customname.text;
+                    }
                     else
+                    {
+                        GManager.instance.tmp_stagename = "No stage name.";
                         result_stage = "stage\n" + Application.version + "\n" + "No stage name.";
+                    }
                     //------------------------------------
                     for (int y = 0; y < GManager.instance.test_y.Length;)
                     {

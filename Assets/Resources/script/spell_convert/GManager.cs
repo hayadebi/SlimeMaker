@@ -160,6 +160,7 @@ public class GManager : MonoBehaviour
     public bool sorttrg = true;
     public string check_onword = "";
     public string check_notword = "";
+    public string tmp_stagename="";
     private void Awake()
     {
         if (instance == null)
