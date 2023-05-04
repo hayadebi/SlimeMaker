@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using Unity.IO.Compression;
+using System;
 public class GManager : MonoBehaviour
 {
     public static GManager instance = null;
