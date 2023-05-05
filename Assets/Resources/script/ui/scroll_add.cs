@@ -14,9 +14,12 @@ public class scroll_add : MonoBehaviour
             check_maxobjnum = GManager.instance.gimmick_length;
             for(int i=1; i < GManager.instance.gimmick_length;)
             {
-                GameObject tmp = Instantiate(addcopy_target, transform.position, transform.rotation, transform);
-                clickbutton tmpui = tmp.GetComponent<clickbutton>();
-                tmpui.FixedUITime(i);
+                if (GManager.instance.stageobj_onset[i]==1)
+                {
+                    GameObject tmp = Instantiate(addcopy_target, transform.position, transform.rotation, transform);
+                    clickbutton tmpui = tmp.GetComponent<clickbutton>();
+                    tmpui.FixedUITime(i);
+                }
                 i++;
             }
         }

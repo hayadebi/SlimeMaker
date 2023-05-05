@@ -7405,6 +7405,9 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
 --- !u!114 &212603430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28988,6 +28991,9 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
 --- !u!1 &731430636
 GameObject:
   m_ObjectHideFlags: 0
@@ -29048,7 +29054,7 @@ MonoBehaviour:
   entertrg: 1
   not_goalslimetext: {fileID: 1323948149}
   objscript: {fileID: 58677798}
-  stage_customname: {fileID: 1917716415}
+  stage_customname: {fileID: 1890971697}
   quick_stage: 
 --- !u!114 &731430639
 MonoBehaviour:
@@ -32696,6 +32702,9 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
 --- !u!1 &814821190
 GameObject:
   m_ObjectHideFlags: 0
@@ -83577,6 +83586,9 @@ MonoBehaviour:
   EnableUI: {fileID: 6075476550222348434}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
 --- !u!222 &4852349867172997051
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -83711,6 +83723,9 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
 --- !u!224 &5999692244320238791
 RectTransform:
   m_ObjectHideFlags: 0

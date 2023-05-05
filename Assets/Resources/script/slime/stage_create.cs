@@ -20,7 +20,7 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
     public bool entertrg = true;
     public Text not_goalslimetext;
     public Text objscript;
-    public Text stage_customname;
+    public InputField stage_customname;
     [Multiline]
     public string quick_stage = "";
     private bool wheelstrg = false;
@@ -31,7 +31,7 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
     // Start is called before the first frame update
     void Start()
     {
-        if (GManager.instance.tmp_stagename != "")
+        if (GManager.instance.tmp_stagename != "" && stage_customname!=null)
             stage_customname.text = GManager.instance.tmp_stagename;
         GManager.instance.debug_trg = false;
         if (this_y == 0 || this_x == 0 || this_y == 17 || this_x == 25)
@@ -104,7 +104,23 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
                 GManager.instance.set_createid = select_id;
             else if (GManager.instance.fixed_createid)
                 select_id = GManager.instance.set_createid;
-
+            bool tmp_loop = true;
+            while (tmp_loop)
+            {
+                if (GManager.instance.stageobj_onset[select_id]==1)
+                {
+                    tmp_loop = false;
+                    break;
+                }
+                else
+                {
+                    select_id += addnum;
+                }
+                if (select_id >= GManager.instance.gimmick_length)
+                    select_id = 0;
+                else if (select_id < 0)
+                    select_id = GManager.instance.gimmick_length-1;
+            }
             GManager.instance.test_y[this_y].test_x[this_x] = select_id;
             img.sprite = GManager.instance.stageobj_createimg[select_id];
             if (GManager.instance.isEnglish == 0)

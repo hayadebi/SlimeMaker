@@ -35,7 +35,9 @@ public class clickbutton : MonoBehaviour
     public GameObject EnableUI = null;
     public float start_posy = -36;
     public float posy_add = 87;
-    
+    public Button dxbtn=null;
+    public Text dxtext = null;
+    public GameObject dxmark = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -70,6 +72,29 @@ public class clickbutton : MonoBehaviour
                 fixed_idobjname.text = "Eraser tool";
             }
         }
+        DateTime silver = new DateTime(2023, 9, 24);
+        DateTime gold = new DateTime(2023, 5, 5);
+        if (dxbtn != null && (GManager.instance.dx_mode ||((GManager.instance.AllSpanCheck(gold)>=0&& GManager.instance.AllSpanCheck(gold) <= 6) ||(GManager.instance.AllSpanCheck(silver) >= 0 && GManager.instance.AllSpanCheck(silver) <= 6))))
+        {
+            ;
+        }
+        else if (dxbtn != null)
+        {
+            ColorBlock tmpb=dxbtn.colors;
+            Color tmpc = tmpb.normalColor;
+            tmpc.a = 0.35f;
+            tmpb.normalColor = tmpc;
+            tmpc = dxtext.color;
+            tmpc.a = 0.35f;
+            dxtext.color = tmpc;
+            dxbtn.colors = tmpb;
+            dxmark.SetActive(false);
+        }
+
+    }
+    private void Update()
+    {
+        
     }
     public void FixedUITime(int tmpid = 0)
     {
@@ -124,7 +149,9 @@ public class clickbutton : MonoBehaviour
     }
     public void SetUI()
     {
-        if (GManager.instance.setmenu <= 0 &&(dxtrg == -1 || (dxtrg != -1 && GManager.instance.dx_mode)))
+        DateTime silver = new DateTime(2023, 9, 24);
+        DateTime gold = new DateTime(2023, 5, 5);
+        if (GManager.instance.setmenu <= 0 &&(dxtrg == -1 || (dxtrg != -1 && GManager.instance.dx_mode )|| ((GManager.instance.AllSpanCheck(gold) >= 0 && GManager.instance.AllSpanCheck(gold) <= 6) || (GManager.instance.AllSpanCheck(silver) >= 0 && GManager.instance.AllSpanCheck(silver) <= 6))))
         {
             GManager.instance.setrg = 0;
             GManager.instance.setmenu = 1;

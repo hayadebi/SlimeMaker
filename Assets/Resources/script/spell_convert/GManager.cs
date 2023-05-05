@@ -133,6 +133,7 @@ public class GManager : MonoBehaviour
         public string[] script;
     }
     public StageobjName[] stageobj_data;
+    public int[] stageobj_onset;
     public bool debug_trg = false;
     public int goal_num = 0;
     public bool cleartrg = false;
@@ -162,6 +163,17 @@ public class GManager : MonoBehaviour
     public string check_onword = "";
     public string check_notword = "";
     public string tmp_stagename="";
+    public int old_year = 2023;
+    [System.Serializable]
+    public struct DevDateTime
+    {
+        public int year;
+        public int month;
+        public int day;
+    }
+    [Header("ここからは各イベントのボタン")]
+    public DevDateTime devdays;
+    private DateTime checkdev = new DateTime(2003, 7, 28);
     private void Awake()
     {
         if (instance == null)
@@ -174,12 +186,69 @@ public class GManager : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    private void Start()
+    {
+        old_year = PlayerPrefs.GetInt("Year", 2023);
+        if(old_year != GetGameDay().Year)
+        {
+            old_year = GetGameDay().Year;
+            PlayerPrefs.SetInt("Year", old_year);
+            YearReset();
+        }
+    }
     private void Update()
     {
         if(instance.reset_time >= 0)
         {
             instance.reset_time -= Time.deltaTime;
         }
+    }
+    public void YearReset()
+    {
+        ;
+    }
+    public DateTime GetGameDay()
+    {
+        DateTime tmp = DateTime.Today;
+        return tmp;
+    }
+    public int AllSpanCheck(DateTime tmp_time)
+    {
+        int check_result = 0;
+        
+        DateTime today = DateTime.Today;
+        DateTime devday = new DateTime(instance.devdays.year, instance.devdays.month, instance.devdays.day);
+        if (instance.checkdev != devday)
+            today = devday;
+        DateTime newday = new DateTime(today.Year ,tmp_time.Month ,tmp_time.Day);
+        TimeSpan tmpdiff = newday - today;
+        check_result = (int)tmpdiff.TotalDays;
+        print(check_result.ToString());
+        return check_result;
+    }
+    public bool MonthBoolCheck(DateTime tmp_time)
+    {
+        bool check_result = false;
+        DateTime today = DateTime.Today;
+        DateTime devday = new DateTime(instance.devdays.year, instance.devdays.month, instance.devdays.day);
+        if (instance.checkdev != devday)
+            today = devday;
+        DateTime newday = new DateTime(today.Year, tmp_time.Month, tmp_time.Day);
+        if (newday.Month == today.Month)
+            check_result = true;
+        return check_result;
+    }
+    public int DaySpanCheck(DateTime tmp_time)
+    {
+        int check_result = 0;
+        DateTime today = DateTime.Today;
+        DateTime devday = new DateTime(instance.devdays.year, instance.devdays.month, instance.devdays.day);
+        if (instance.checkdev != devday)
+            today = devday;
+        DateTime newday = new DateTime(today.Year, tmp_time.Month, tmp_time.Day);
+        check_result = newday.Day - today.Day;
+        print(check_result.ToString());
+        return check_result;
     }
     public byte[] ComporessGZIP(string _str)
     {
