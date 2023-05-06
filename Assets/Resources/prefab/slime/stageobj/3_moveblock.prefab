@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 275625571496938624}
   - component: {fileID: 3782157729210680101}
   - component: {fileID: 1411908322802087919}
+  - component: {fileID: 8066794240905424605}
   m_Layer: 0
   m_Name: logbox
   m_TagString: Untagged
@@ -80,6 +81,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &8066794240905424605
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619499295160571450}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.010000001, y: 0.010000001, z: 0.010000001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0.010000001}
+  m_TimeToStationary: 0.5
 --- !u!1 &2397989102634269505
 GameObject:
   m_ObjectHideFlags: 0

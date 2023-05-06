@@ -19,6 +19,9 @@ public class npcsay : MonoBehaviour
     public bool starttrg = true;
     public GameObject uiobj=null;
     public Animator abool_c=null;
+    public int ev_checkid = 9999;
+    public int ev_checkstageselect = 9999;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,12 @@ public class npcsay : MonoBehaviour
         {
             saytrg = true;
             message += stage_id.ToString();
+            StartCoroutine(Talk());
+        }
+        else if (!saytrg && GManager.instance.globalev_stageselect == ev_checkstageselect && GManager.instance.globalev_id == ev_checkid && GManager.instance.walktrg && !GManager.instance.notsay && starttrg )
+        {
+            saytrg = true;
+            message = "ev"+ev_checkid+"_"+ev_checkstageselect.ToString();
             StartCoroutine(Talk());
         }
     }

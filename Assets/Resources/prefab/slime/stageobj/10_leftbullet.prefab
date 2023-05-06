@@ -41,6 +41,7 @@ GameObject:
   - component: {fileID: 8824837433991408665}
   - component: {fileID: 1165770776280609831}
   - component: {fileID: 3264409681029480146}
+  - component: {fileID: 3310715914565223594}
   m_Layer: 0
   m_Name: dai
   m_TagString: Untagged
@@ -109,6 +110,22 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &3310715914565223594
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5387308981644381285}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.015000001, y: 0.022000002, z: 0.009000001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: -0.002, z: 0.009000001}
+  m_TimeToStationary: 0.5
 --- !u!1 &5550042868335948978
 GameObject:
   m_ObjectHideFlags: 0
@@ -236,6 +253,7 @@ GameObject:
   - component: {fileID: 6927854341367818000}
   - component: {fileID: 6739294938284063914}
   - component: {fileID: 2820478190982916602}
+  - component: {fileID: 2810887932785794006}
   m_Layer: 0
   m_Name: bazooka
   m_TagString: Untagged
@@ -304,3 +322,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!208 &2810887932785794006
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8180357955664596456}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.008, y: 0.020000001, z: 0.007}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0.008, z: 0.018000001}
+  m_TimeToStationary: 0.5

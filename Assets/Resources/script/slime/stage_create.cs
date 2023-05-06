@@ -214,6 +214,7 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
                     //------------------------------------
                     string path = Application.persistentDataPath + "/stage00.txt";
                     bool isAppend = false; // 上書き or 追記
+                    print(result_stage);
                     using (var fs = new StreamWriter(path, isAppend, System.Text.Encoding.GetEncoding("UTF-8")))
                     {
                         if (quick_stage == "")

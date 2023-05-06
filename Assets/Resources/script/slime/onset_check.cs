@@ -32,10 +32,14 @@ public class onset_check : MonoBehaviour
     {
         if (eventday.Length > 1)
         {
+            DateTime devday = new DateTime(GManager.instance.devdays.year, GManager.instance.devdays.month, GManager.instance.devdays.day);
+            
             for (int i = 1; i < eventday.Length;)
             {
                 DateTime evday = new DateTime(eventday[i].year, eventday[i].month, eventday[i].day);
                 DateTime get_now = DateTime.Now;
+                if (GManager.instance.checkdev != devday && limit_maxhour[i]!=-1)
+                    get_now = new DateTime(GManager.instance.devdays.year, GManager.instance.devdays.month, GManager.instance.devdays.day,limit_minhour [i],0,0);
                 if (GManager.instance.AllSpanCheck(evday) >= 0 && GManager.instance.AllSpanCheck(evday) <= eventseasontime[i] && (limit_maxhour[i] == -1 || (limit_maxhour[i] != -1 && limit_maxhour[i] >= get_now.Hour && limit_minhour[i] <= get_now.Hour)))
                 {
                     if (eventbtn[i] != null)

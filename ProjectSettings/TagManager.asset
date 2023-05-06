@@ -20,6 +20,7 @@ TagManager:
   - icewall
   - icebullet
   - nightevent
+  - eye
   layers:
   - Default
   - TransparentFX

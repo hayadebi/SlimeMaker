@@ -173,7 +173,10 @@ public class GManager : MonoBehaviour
     }
     [Header("ここからは各イベントのボタン")]
     public DevDateTime devdays;
-    private DateTime checkdev = new DateTime(2003, 7, 28);
+    public DateTime checkdev = new DateTime(2003, 7, 28);
+    public int globalev_id = -1;
+    public int globalev_stageselect = -1;
+    public GameObject[] ev_ui;
     private void Awake()
     {
         if (instance == null)

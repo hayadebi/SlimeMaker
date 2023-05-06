@@ -38,6 +38,10 @@ public class clickbutton : MonoBehaviour
     public Button dxbtn=null;
     public Text dxtext = null;
     public GameObject dxmark = null;
+    [Header("イベント用")]
+    public int ev_id = -1;
+    public int ev_stageselect = -1;
+    public bool ev_uistrg = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -151,12 +155,19 @@ public class clickbutton : MonoBehaviour
     {
         DateTime silver = new DateTime(2023, 9, 24);
         DateTime gold = new DateTime(2023, 5, 5);
-        if (GManager.instance.setmenu <= 0 &&(dxtrg == -1 || (dxtrg != -1 && GManager.instance.dx_mode )|| ((GManager.instance.AllSpanCheck(gold) >= 0 && GManager.instance.AllSpanCheck(gold) <= 6) || (GManager.instance.AllSpanCheck(silver) >= 0 && GManager.instance.AllSpanCheck(silver) <= 6))))
+        if (!ev_uistrg && GManager.instance.setmenu <= 0 &&(dxtrg == -1 || (dxtrg != -1 && GManager.instance.dx_mode )|| ((GManager.instance.AllSpanCheck(gold) >= 0 && GManager.instance.AllSpanCheck(gold) <= 6) || (GManager.instance.AllSpanCheck(silver) >= 0 && GManager.instance.AllSpanCheck(silver) <= 6))))
         {
             GManager.instance.setrg = 0;
             GManager.instance.setmenu = 1;
             GManager.instance.walktrg = false;
             Instantiate(uiobj, transform.position, transform.rotation);
+        }
+        else if (ev_uistrg && GManager.instance.setmenu <= 0 )
+        {
+            GManager.instance.setrg = 0;
+            GManager.instance.setmenu = 1;
+            GManager.instance.walktrg = false;
+            Instantiate(GManager.instance.ev_ui[GManager.instance.globalev_id], transform.position, transform.rotation);
         }
         else
             GManager.instance.setrg = 1;
@@ -164,7 +175,13 @@ public class clickbutton : MonoBehaviour
     }
     void SceneChange()
     {
-        if(dxtrg != 999)
+        GManager.instance.globalev_id = -1;
+        GManager.instance.globalev_stageselect = -1;
+        if (ev_id != -1)
+            GManager.instance.globalev_id = ev_id;
+        if (ev_stageselect != -1)
+            GManager.instance.globalev_stageselect = ev_stageselect;
+        if (dxtrg != 999)
             GManager.instance.dx_stageid = dxtrg;
         GManager.instance.over = false;
         GManager.instance.walktrg = true;

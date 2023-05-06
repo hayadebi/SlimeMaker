@@ -301,6 +301,11 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: 0
+  ev_stageselect: -1
 --- !u!114 &6174572695552644857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,6 +736,11 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
 --- !u!1 &1022567360767373389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,6 +1122,11 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: 0
+  ev_stageselect: -1
 --- !u!114 &210731131728468769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1943,6 +1958,11 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: 0
+  ev_stageselect: -1
 --- !u!114 &8874002056871662728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2123,6 +2143,11 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: 0
+  ev_stageselect: -1
 --- !u!114 &2578859610876751402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2430,8 +2455,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5334632306282177179}
   m_HandleRect: {fileID: 3319047924113344731}
   m_Direction: 0
-  m_Value: 1
-  m_Size: 0.99999994
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2601,6 +2626,11 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: 0
+  ev_stageselect: -1
 --- !u!114 &5859242851356615409
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -90,6 +90,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5189536934113445902}
   - component: {fileID: 6496441354396877939}
+  - component: {fileID: 6997113544523420995}
   m_Layer: 8
   m_Name: 22_colorblock_white
   m_TagString: wall
@@ -125,3 +126,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &6997113544523420995
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9042491426681848350}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5

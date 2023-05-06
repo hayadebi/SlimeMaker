@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7960640514631947815}
   - component: {fileID: 5399918975064614619}
   - component: {fileID: 1111967595807411952}
+  - component: {fileID: -3873373116483683394}
   m_Layer: 8
   m_Name: 16_colorblock_blue
   m_TagString: wall
@@ -74,6 +75,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectobj: {fileID: 201432250980252153, guid: 252655d469677f24393b002b5230e6c9,
     type: 3}
+--- !u!208 &-3873373116483683394
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1221176690890123097}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &9072961918053171444
 GameObject:
   m_ObjectHideFlags: 0
