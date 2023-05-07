@@ -657,6 +657,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: eye
       objectReference: {fileID: 0}
+    - target: {fileID: 5533108670875760775, guid: 8dc9e1a4ac1e8bc40928e66ed834ed37,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5533108670875760775, guid: 8dc9e1a4ac1e8bc40928e66ed834ed37,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8dc9e1a4ac1e8bc40928e66ed834ed37, type: 3}
 --- !u!4 &6387708223734199300 stripped

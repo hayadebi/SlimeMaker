@@ -186,7 +186,7 @@ GameObject:
   - component: {fileID: 4093758075196183063}
   m_Layer: 8
   m_Name: 49_ghost
-  m_TagString: player
+  m_TagString: red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -359,7 +359,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.55, y: 1, z: 0.55}
+  m_Size: {x: 0.65, y: 1, z: 0.65}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &4517326599825336372
 MonoBehaviour:
@@ -376,7 +376,9 @@ MonoBehaviour:
   slimes:
   - {fileID: 0}
   - {fileID: 0}
-  target: {fileID: 0}
+  anim: {fileID: 2789272934307426390}
+  se: {fileID: 8300000, guid: 8d6573a4c65739f4293303d7750d60b5, type: 3}
+  effect: {fileID: 2947225888062350067, guid: 9b773fd28af2ee747916d2c9544401b9, type: 3}
 --- !u!195 &4093758075196183063
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -386,18 +388,18 @@ NavMeshAgent:
   m_GameObject: {fileID: 5417839558134045521}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_Radius: 0.25
+  m_Speed: 5
+  m_Acceleration: 12
+  avoidancePriority: 65
+  m_AngularSpeed: 180
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
+  m_AutoBraking: 0
   m_AutoRepath: 1
   m_Height: 1
   m_BaseOffset: 0.5
-  m_WalkableMask: 3
+  m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!1 &6091288946706148407
 GameObject:

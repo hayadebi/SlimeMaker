@@ -7408,6 +7408,9 @@ MonoBehaviour:
   dxbtn: {fileID: 0}
   dxtext: {fileID: 0}
   dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!114 &212603430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28994,6 +28997,9 @@ MonoBehaviour:
   dxbtn: {fileID: 0}
   dxtext: {fileID: 0}
   dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!1 &731430636
 GameObject:
   m_ObjectHideFlags: 0
@@ -32705,6 +32711,9 @@ MonoBehaviour:
   dxbtn: {fileID: 0}
   dxtext: {fileID: 0}
   dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!1 &814821190
 GameObject:
   m_ObjectHideFlags: 0
@@ -83589,6 +83598,9 @@ MonoBehaviour:
   dxbtn: {fileID: 0}
   dxtext: {fileID: 0}
   dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!222 &4852349867172997051
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -83726,6 +83738,9 @@ MonoBehaviour:
   dxbtn: {fileID: 0}
   dxtext: {fileID: 0}
   dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!224 &5999692244320238791
 RectTransform:
   m_ObjectHideFlags: 0

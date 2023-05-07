@@ -108,7 +108,7 @@ NavMeshSettings:
     serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
-    agentHeight: 2
+    agentHeight: 1
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
@@ -675,6 +675,7 @@ MonoBehaviour:
   dxmark: {fileID: 0}
   ev_id: -1
   ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!1 &379705251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1120,7 @@ MonoBehaviour:
   dxmark: {fileID: 0}
   ev_id: -1
   ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!1 &544573267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1641,6 +1643,7 @@ MonoBehaviour:
   dxmark: {fileID: 0}
   ev_id: -1
   ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!1 &956069852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,6 +1829,7 @@ MonoBehaviour:
   dxmark: {fileID: 0}
   ev_id: -1
   ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!1 &1070363049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1906,6 +1910,7 @@ MonoBehaviour:
   dxmark: {fileID: 0}
   ev_id: -1
   ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!114 &1070363052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3375,6 +3380,7 @@ MonoBehaviour:
   dxmark: {fileID: 0}
   ev_id: -1
   ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!1 &1561439734
 GameObject:
   m_ObjectHideFlags: 1
@@ -3582,6 +3588,7 @@ MonoBehaviour:
   dxmark: {fileID: 544573267}
   ev_id: -1
   ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!114 &1571140279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3859,6 +3866,7 @@ MonoBehaviour:
   dxmark: {fileID: 0}
   ev_id: -1
   ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!95 &1601123578
 Animator:
   serializedVersion: 3
@@ -4268,6 +4276,7 @@ MonoBehaviour:
   dxmark: {fileID: 0}
   ev_id: -1
   ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!1 &1802649748
 GameObject:
   m_ObjectHideFlags: 0
@@ -4790,6 +4799,7 @@ MonoBehaviour:
   dxmark: {fileID: 0}
   ev_id: -1
   ev_stageselect: -1
+  ev_uistrg: 0
 --- !u!1 &1983687318
 GameObject:
   m_ObjectHideFlags: 0

@@ -42,6 +42,7 @@ public class clickbutton : MonoBehaviour
     public int ev_id = -1;
     public int ev_stageselect = -1;
     public bool ev_uistrg = false;
+    public bool evreset_trg = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -175,8 +176,11 @@ public class clickbutton : MonoBehaviour
     }
     void SceneChange()
     {
-        GManager.instance.globalev_id = -1;
-        GManager.instance.globalev_stageselect = -1;
+        if (evreset_trg)
+        {
+            GManager.instance.globalev_id = -1;
+            GManager.instance.globalev_stageselect = -1;
+        }
         if (ev_id != -1)
             GManager.instance.globalev_id = ev_id;
         if (ev_stageselect != -1)
