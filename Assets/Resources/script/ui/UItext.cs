@@ -6,6 +6,7 @@ public class UItext : MonoBehaviour
 {
     public Text _text;
     public string ui_mode = "gamemode";
+    public float tmp_cleartime = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +43,7 @@ public class UItext : MonoBehaviour
         }
         if (ui_mode == "cleartime")
         {
+            tmp_cleartime = GManager.instance.cleartime;
             if (GManager.instance.isEnglish == 0)
             {
                 _text.fontSize = 28;

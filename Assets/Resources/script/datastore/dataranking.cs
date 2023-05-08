@@ -8,58 +8,68 @@ using UnityEngine.UI;
 
 public class dataranking : MonoBehaviour
 {
-    private string class_name = "Ev1_Stage1";
+    private string class_name = "DX0";
     private string field_name = "ct_ranking";
+    private string pname_name = "player_name";
+    private string time_name = "clear_time";
+    private string view_time = "time_text";
     public int query_limit = 50;
-    private List<string> all_namelist = null;
-    private List<string> all_timelist = null;
-    private List<string> all_datalist = null;
     public InputField get_namefield;
     public Text set_rankingtext;
     private List<NCMBObject> tmp_objlist = null;
-    private NCMBObject CreateClass=null;
+    private NCMBObject CreateClass = null;
     [Multiline]
     public string none_ranking;
+    public UItext ut;
     private List<float> rank_time;
     private List<int> rank_index;
+    private bool rankintrg = false;
     // Start is called before the first frame update
     void Start()
     {
-        if (GManager.instance.globalev_id != -1 && GManager.instance.globalev_stageselect != -1)
+        if (GManager.instance.globalev_id != -1)
         {
-            class_name = "Ev" + GManager.instance.globalev_id.ToString() + "_Stage" + GManager.instance.globalev_stageselect.ToString();
+            class_name = "DX" + GManager.instance.dx_stageid.ToString();
             FetchStage();
         }
     }
 
     public void ClickRnakingSet()
     {
-        GManager.instance.setrg = 0;
-        if(CreateClass==null)
+        if (!rankintrg)
+        {
+            rankintrg = true;
+            GManager.instance.setrg = 0;
             CreateClass = new NCMBObject(class_name);
-        bool tmp_notword = false;
-        for (int w = 0; w < GManager.instance.not_word.Length;)
-        {
-            if (get_namefield.text.Contains(GManager.instance.not_word[w]))
+            bool tmp_notword = false;
+            if (get_namefield.text == "") get_namefield.text = "No name";
+            for (int w = 0; w < GManager.instance.not_word.Length;)
             {
-                tmp_notword = true;
-                break;
+                if (get_namefield.text.Contains(GManager.instance.not_word[w]))
+                {
+                    tmp_notword = true;
+                    break;
+                }
+                w++;
             }
-            w++;
+            if (!tmp_notword)
+            {
+                ;
+            }
+            else if (tmp_notword)
+            {
+                if (GManager.instance.isEnglish == 0)
+                    get_namefield.text = "※規制された名前です";
+                else
+                    get_namefield.text = "※Regulated name.";
+            }
+            CreateClass[pname_name] = get_namefield.text;
+            CreateClass[time_name] = ut.tmp_cleartime;
+            CreateClass[view_time] = ut._text.text;
+            CreateClass.SaveAsync();
+            FetchStage();
         }
-        if(!tmp_notword )
-        {
-            ;
-        }
-        else if(tmp_notword)
-        {
-            if(GManager.instance.isEnglish == 0)
-                get_namefield.text = "※規制された名前です";
-            else
-                get_namefield.text = "※Regulated name.";
-        }
-        CreateClass[field_name] = get_namefield.text +"\n"+GManager.instance.cleartime.ToString ();
-        CreateClass.SaveAsync();
+        else GManager.instance.setrg = 1;
     }
     public void FetchStage()
     {
@@ -67,24 +77,11 @@ public class dataranking : MonoBehaviour
         //取得から配置
         NCMBQuery<NCMBObject> query = null;
         query = new NCMBQuery<NCMBObject>(class_name);
-        if (query == null)
-        {
-            CreateClass = new NCMBObject(class_name);
-        }
         //Scoreフィールドの降順でデータを取得
-        if (GManager.instance.sorttrg)
-        {
-            query.OrderByDescending(field_name);
-        }
-        else if (!GManager.instance.sorttrg)
-        {
-            query.OrderByAscending(field_name);
-        }
-
-
+        query.OrderByAscending(time_name);
         //検索件数を設定
         query.Limit = query_limit;
-
+        int i = 1;
         //データストアでの検索を行う
         query.FindAsync((List<NCMBObject> objList, NCMBException e) =>
         {
@@ -95,31 +92,12 @@ public class dataranking : MonoBehaviour
             }
             else
             {
-                int i = 0;
+                set_rankingtext.text = "";
                 //検索成功時の処理
                 foreach (NCMBObject obj in objList)
                 {
-                    string tmpdata = obj[field_name].ToString();
-                    all_datalist.Add(tmpdata);
-                    string[] rs = tmpdata.Split("\n".ToCharArray()); 
-                    for (int l=0;l<rs.Length;)
-                    {
-                        if (l == 0)
-                        {
-                            all_namelist.Add(rs[l]);
-                        }
-                        else if (l == 1)
-                        {
-                            all_timelist.Add(rs[l]);
-                        }
-                        l++;
-                    }
-                    i++;
-                }
-                for(int h = 0; h < all_timelist.Count;)
-                {
-
-                    h++;
+                    set_rankingtext.text += i.ToString() + "." + obj[pname_name].ToString() + "  " +obj[view_time]+"\n";
+                    i +=1;
                 }
             }
         });
