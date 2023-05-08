@@ -124,8 +124,10 @@ public class stage_generate : MonoBehaviour
             using (var fs = new StreamReader(path, System.Text.Encoding.GetEncoding("UTF-8")))
             {
                 string line = null;
+                string allline = "";
                 while ((line = fs.ReadLine()) != null)
                 {
+                    allline += line + "\n";
                     if (select_y > -1)
                     {
                         string[] arr = line.Split(',');
@@ -148,6 +150,7 @@ public class stage_generate : MonoBehaviour
                     }
                     select_y += 1;
                 }
+                print(allline);
 
             }
         }

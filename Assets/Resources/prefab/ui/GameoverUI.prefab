@@ -252,6 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: loadstage
   check_debug: 0
   check_story: 0
@@ -266,6 +267,19 @@ MonoBehaviour:
   notsay: 0
   _text: {fileID: 0}
   dxtrg: 999
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 0
 --- !u!114 &5566536398555400922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -617,6 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: title
   check_debug: 0
   check_story: 0
@@ -631,6 +646,19 @@ MonoBehaviour:
   notsay: 1
   _text: {fileID: 0}
   dxtrg: -1
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
 --- !u!114 &161032441115195109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -805,6 +833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: loadstage
   check_debug: 0
   check_story: 0
@@ -819,6 +848,19 @@ MonoBehaviour:
   notsay: 1
   _text: {fileID: 0}
   dxtrg: -1
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 0
 --- !u!114 &7034442138176916231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1656,6 +1698,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: loadstage
   check_debug: 1
   check_story: 0
@@ -1670,6 +1713,19 @@ MonoBehaviour:
   notsay: 1
   _text: {fileID: 0}
   dxtrg: -1
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 0
 --- !u!114 &5048727429575872488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2436,6 +2492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: createstage
   check_debug: 0
   check_story: 0
@@ -2450,6 +2507,19 @@ MonoBehaviour:
   notsay: 1
   _text: {fileID: 0}
   dxtrg: -1
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
 --- !u!114 &6314480109081798375
 MonoBehaviour:
   m_ObjectHideFlags: 0

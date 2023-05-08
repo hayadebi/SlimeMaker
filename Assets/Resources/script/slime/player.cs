@@ -203,6 +203,8 @@ public class player : MonoBehaviour
                         Instantiate(GManager.instance.all_ui[5], transform.position, transform.rotation);
                     else
                         Instantiate(GManager.instance.all_ui[6], transform.position, transform.rotation);
+                    if (GManager.instance.globalev_id != -1 && GManager.instance.globalev_stageselect != -1 && PlayerPrefs.GetInt("Ev" + GManager.instance.globalev_id.ToString() + "_" + GManager.instance.globalev_stageselect.ToString(), 0)<1)
+                        PlayerPrefs.SetInt("Ev" + GManager.instance.globalev_id.ToString() + "_" + GManager.instance.globalev_stageselect.ToString(), 1);
                 }
                 iTween.ShakePosition(cm.gameObject, iTween.Hash("x", 1f, "y", 1f, "time", 0.3f));
                 Destroy(gameObject, 0.1f);

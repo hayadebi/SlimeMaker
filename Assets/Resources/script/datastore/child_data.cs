@@ -26,9 +26,16 @@ public class child_data : MonoBehaviour
                 if(parent_data.all_btn[i] == this.gameObject)
                 {
                     child_id = i;
-                    stage_name = parent_data.all_namelist[i];
-                    stage_version = parent_data.all_versionlist[i];
-                    stage_alldata = parent_data.all_datalist[i];
+                    if (parent_data.all_namelist.Count > i)
+                        stage_name = parent_data.all_namelist[i];
+                    else
+                        stage_name = "No stage name.";
+                    if (parent_data.all_versionlist.Count > i)
+                        stage_version = parent_data.all_versionlist[i];
+                    else
+                        stage_version = Application.version.ToString();
+                    if (parent_data.all_datalist.Count > i)
+                        stage_alldata = parent_data.all_datalist[i];
                     ChildDataSet();
                 }
                 i++;

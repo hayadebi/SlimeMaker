@@ -100,10 +100,10 @@ public class datatest : MonoBehaviour
 
                     while ((line = rs.ReadLine()) != null)//本作では1行読み込んでステージデータかどうか判別してる
                     {
-                        if (check_line == 1 && (line == Application.version || line == "-1"))
+                        if (check_line == 1)
                         {
-                            if (line == Application.version) all_versionlist.Add(line);
-                            else if (line == "-1") all_versionlist.Add("共通");
+                            if (line.Contains("-1")) all_versionlist.Add("共通");
+                            else all_versionlist.Add(line);
                         }
                         else if (check_line == 2)
                         {
@@ -157,10 +157,11 @@ public class datatest : MonoBehaviour
         //print(_result);
         string[] arrayStr2 = _result.Split('-');
         byte[] arrayOut = new byte[arrayStr2.Length];
-        for (int i = 0; i < arrayStr2.Length; i++)
+        for (int i = 0; i < arrayStr2.Length;)
         {
             // 16進数文字列に変換
             arrayOut[i] = Convert.ToByte(arrayStr2[i], 16);
+            i++;
         }
         //print(GManager.instance.DeComporessGZIP(arrayOut));
         tmp = GManager.instance.DeComporessGZIP(arrayOut);

@@ -877,6 +877,9 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 2e93af9eb10aaf0409dbb6279a5001cc, type: 3}
   - {fileID: 4900000, guid: 2100b9c853a21524b9660c97fcdef364, type: 3}
   - {fileID: 4900000, guid: 31a210bd7d915b343abfa1300b99a502, type: 3}
+  - {fileID: 4900000, guid: 7558dfa0e5c6100418c829a64cdea003, type: 3}
+  - {fileID: 4900000, guid: 2387490f364b07c4e96c2d51138937ba, type: 3}
+  - {fileID: 4900000, guid: a8f8c56b2c2fbe841b8b0506a587a2e8, type: 3}
   not_word:
   - "\u3046\u3093\u3053"
   - "\u30A6\u30F3\u30B3"

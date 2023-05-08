@@ -180,6 +180,13 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
 --- !u!1 &611747686806042245
 GameObject:
   m_ObjectHideFlags: 0
@@ -957,6 +964,7 @@ MonoBehaviour:
   qrtxt: {fileID: 0}
   fmanager: {fileID: 1779145766184378291}
   inputspell: {fileID: 1480660426347735641}
+  servertrg: 0
 --- !u!114 &1779145766184378293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1873,6 +1881,13 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
 --- !u!1 &5957174797695159334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2586,6 +2601,13 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
 --- !u!1 &9222832446855001359
 GameObject:
   m_ObjectHideFlags: 0

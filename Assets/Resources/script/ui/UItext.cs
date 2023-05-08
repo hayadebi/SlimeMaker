@@ -44,7 +44,7 @@ public class UItext : MonoBehaviour
         {
             if (GManager.instance.isEnglish == 0)
             {
-                _text.fontSize = 30;
+                _text.fontSize = 28;
                 _text.text = "クリアタイム："+((int)(GManager.instance.cleartime/60)).ToString ()+"分"+ ((int)(GManager.instance.cleartime % 60)).ToString()+"秒";
             }
             else

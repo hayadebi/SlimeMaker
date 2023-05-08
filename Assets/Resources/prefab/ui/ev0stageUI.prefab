@@ -281,6 +281,7 @@ MonoBehaviour:
   ev_id: 1
   ev_stageselect: 2
   ev_uistrg: 0
+  evreset_trg: 1
 --- !u!114 &8024699377117260183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -733,6 +734,7 @@ MonoBehaviour:
   ev_id: 1
   ev_stageselect: 1
   ev_uistrg: 0
+  evreset_trg: 1
 --- !u!114 &6950998553180431893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1136,8 +1138,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 700152158569261732}
   m_HandleRect: {fileID: 7904024038219825380}
   m_Direction: 0
-  m_Value: 0
-  m_Size: 1
+  m_Value: 1
+  m_Size: 0.99999994
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1239,7 +1241,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 60
   m_Viewport: {fileID: 5507297196349258025}
   m_HorizontalScrollbar: {fileID: 6438548164721784122}
   m_VerticalScrollbar: {fileID: 4698947326176836164}
@@ -1597,6 +1599,7 @@ MonoBehaviour:
   ev_id: -1
   ev_stageselect: -1
   ev_uistrg: 0
+  evreset_trg: 1
 --- !u!1 &5588959323458377620
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,6 +2095,7 @@ MonoBehaviour:
   ev_id: 1
   ev_stageselect: 3
   ev_uistrg: 0
+  evreset_trg: 1
 --- !u!114 &8819237279499121886
 MonoBehaviour:
   m_ObjectHideFlags: 0
