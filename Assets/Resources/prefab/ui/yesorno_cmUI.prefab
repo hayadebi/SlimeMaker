@@ -447,6 +447,14 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 1
 --- !u!1 &7731214563779089287
 GameObject:
   m_ObjectHideFlags: 0
@@ -627,6 +635,14 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 0
 --- !u!1 &7731214564035166828
 GameObject:
   m_ObjectHideFlags: 0

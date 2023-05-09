@@ -866,7 +866,7 @@ MonoBehaviour:
   reset_time: 0
   set_createid: 0
   fixed_createid: 0
-  dx_mode: 1
+  dx_mode: 0
   dx_stageid: -1
   dx_filename:
   - {fileID: 4900000, guid: 1f65af72aa6cd024a902322b1e614bd0, type: 3}
@@ -880,6 +880,7 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 7558dfa0e5c6100418c829a64cdea003, type: 3}
   - {fileID: 4900000, guid: 2387490f364b07c4e96c2d51138937ba, type: 3}
   - {fileID: 4900000, guid: a8f8c56b2c2fbe841b8b0506a587a2e8, type: 3}
+  - {fileID: 4900000, guid: 0b87ea14f92d76e49aceb44db59482b3, type: 3}
   not_word:
   - "\u3046\u3093\u3053"
   - "\u30A6\u30F3\u30B3"
@@ -1032,12 +1033,13 @@ MonoBehaviour:
   devdays:
     year: 2003
     month: 7
-    day: 27
+    day: 28
   globalev_id: -1
   globalev_stageselect: -1
   ev_ui:
   - {fileID: 1022567359592090573, guid: 80d5c85d839d5394a8ae5fbc039bdc5a, type: 3}
   - {fileID: 5588959323815314418, guid: a86e9686ad5aaf84e81799e4e4927af3, type: 3}
+  loadscene_name: 
 --- !u!114 &6017326719407883951
 MonoBehaviour:
   m_ObjectHideFlags: 0

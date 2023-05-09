@@ -177,6 +177,7 @@ public class GManager : MonoBehaviour
     public int globalev_id = -1;
     public int globalev_stageselect = -1;
     public GameObject[] ev_ui;
+    public string loadscene_name="";
     private void Awake()
     {
         if (instance == null)

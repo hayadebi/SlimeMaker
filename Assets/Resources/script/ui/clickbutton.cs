@@ -43,6 +43,7 @@ public class clickbutton : MonoBehaviour
     public int ev_stageselect = -1;
     public bool ev_uistrg = false;
     public bool evreset_trg = true;
+    public bool loadnext = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -201,11 +202,22 @@ public class clickbutton : MonoBehaviour
         if (storyadd)
             GManager.instance.select_stage += 1;
         if (!storyadd || (storyadd && GManager.instance.select_stage < 7))
-            SceneManager.LoadScene(next_scene);
+        {
+            GManager.instance.loadscene_name = next_scene;
+            if(!loadnext )
+                SceneManager.LoadScene(next_scene);
+            else if (loadnext)
+                SceneManager.LoadScene("load");
+        }
         else
         {
             Resources.UnloadUnusedAssets();
             GManager.instance.select_stage = 0;
+            GManager.instance.loadscene_name = "title";
+            if (!loadnext)
+                SceneManager.LoadScene(next_scene);
+            else if (loadnext)
+                SceneManager.LoadScene("load");
             SceneManager.LoadScene("title");
         }
     }

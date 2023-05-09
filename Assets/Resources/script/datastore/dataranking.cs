@@ -40,7 +40,7 @@ public class dataranking : MonoBehaviour
         {
             rankintrg = true;
             GManager.instance.setrg = 0;
-            CreateClass = new NCMBObject(class_name);
+            
             bool tmp_notword = false;
             if (get_namefield.text == "") get_namefield.text = "No name";
             for (int w = 0; w < GManager.instance.not_word.Length;)
@@ -52,6 +52,7 @@ public class dataranking : MonoBehaviour
                 }
                 w++;
             }
+            bool notname = false;
             if (!tmp_notword)
             {
                 ;
@@ -62,12 +63,19 @@ public class dataranking : MonoBehaviour
                     get_namefield.text = "※規制された名前です";
                 else
                     get_namefield.text = "※Regulated name.";
+                notname = true;
+                GManager.instance.setrg = 1;
+                rankintrg = false;
             }
-            CreateClass[pname_name] = get_namefield.text;
-            CreateClass[time_name] = ut.tmp_cleartime;
-            CreateClass[view_time] = ut._text.text;
-            CreateClass.SaveAsync();
-            FetchStage();
+            if (!notname)
+            {
+                CreateClass = new NCMBObject(class_name);
+                CreateClass[pname_name] = get_namefield.text;
+                CreateClass[time_name] = ut.tmp_cleartime;
+                CreateClass[view_time] = ut._text.text;
+                CreateClass.SaveAsync();
+                FetchStage();
+            }
         }
         else GManager.instance.setrg = 1;
     }
