@@ -16,6 +16,7 @@ public class npcwalk : MonoBehaviour
     public AudioClip se;
     public GameObject effect;
     private NavMeshSurface nms=null;
+    private float nmstime = 0f;
     
     void Start()
     {
@@ -43,6 +44,7 @@ public class npcwalk : MonoBehaviour
         if (!GManager.instance.over && GManager.instance.walktrg&& starttrg && !eyetrg && (slimes[0]!=null || slimes[1]!=null))
         {
             walktime += Time.deltaTime;
+            nmstime += Time.deltaTime;
             if (walktime >= 2f)
             {
                 walktime = 0;
@@ -52,6 +54,11 @@ public class npcwalk : MonoBehaviour
             {
                 agent.destination = SetTarget().transform.position;
                 agent.speed = agentSP;
+            }
+            if (nmstime >= 15f)
+            {
+                nmstime = 0f;
+                nms.BuildNavMesh();
             }
         }
         else if ((GManager.instance.over || !GManager.instance.walktrg || (slimes[0] == null && slimes[1] == null)|| eyetrg) && agent.speed != 0)

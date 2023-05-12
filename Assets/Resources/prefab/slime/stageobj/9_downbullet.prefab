@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6807623768391048560}
   - component: {fileID: 7488159132056370747}
+  - component: {fileID: 3499554744767198115}
   m_Layer: 8
   m_Name: 9_downbullet
   m_TagString: wall
@@ -45,6 +46,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9, y: 1, z: 0.9}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!208 &3499554744767198115
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1307464694511050727}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.45, y: 0.5, z: 0.45}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2719206603698353953
 GameObject:
   m_ObjectHideFlags: 0
