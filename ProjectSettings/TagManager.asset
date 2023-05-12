@@ -21,6 +21,8 @@ TagManager:
   - icebullet
   - nightevent
   - eye
+  - bamboo
+  - takegoal
   layers:
   - Default
   - TransparentFX
