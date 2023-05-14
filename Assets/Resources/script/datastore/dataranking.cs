@@ -38,6 +38,7 @@ public class dataranking : MonoBehaviour
     {
         if (!rankintrg)
         {
+            Resources.UnloadUnusedAssets();
             rankintrg = true;
             GManager.instance.setrg = 0;
             

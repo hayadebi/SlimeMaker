@@ -1601,7 +1601,7 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
-  loadnext: 1
+  loadnext: 0
 --- !u!1 &956069852
 GameObject:
   m_ObjectHideFlags: 0
