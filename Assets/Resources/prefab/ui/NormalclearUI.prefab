@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.45098042, g: 0.33333334, b: 0.25882354, a: 1}
+  m_Color: {r: 0.45098042, g: 0.33333334, b: 0.25882354, a: 0.8509804}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -841,7 +841,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1935637386141921154}
   m_Direction: 2
   m_Value: 1
-  m_Size: 0.15388799
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1091,6 +1091,7 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
+  loadnext: 0
 --- !u!114 &341199090718576859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1977,6 +1978,7 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
+  loadnext: 0
 --- !u!114 &5298589964027965805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3110,6 +3112,7 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 1
   evreset_trg: 1
+  loadnext: 0
 --- !u!114 &3828381594765110136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3806,6 +3809,7 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
+  loadnext: 0
 --- !u!114 &298335093178561360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4440,6 +4444,7 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
+  loadnext: 0
 --- !u!114 &8977316903161494767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4765,6 +4770,7 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
+  loadnext: 0
 --- !u!114 &108346185433085903
 MonoBehaviour:
   m_ObjectHideFlags: 0

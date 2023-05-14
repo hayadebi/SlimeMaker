@@ -8,6 +8,7 @@ public class tanzaku : MonoBehaviour
     public takegoal[] takegs;
     public int set_setrg = 0;
     public GameObject effect;
+    private bool entertrg = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,8 +27,9 @@ public class tanzaku : MonoBehaviour
     }
     private void OnTriggerEnter(Collider col)
     {
-        if(col.tag == "player")
+        if(col.tag == "player" && !entertrg )
         {
+            entertrg = true;
             for (int i = 0; i < takegs.Length;)
             {
                 takegs[i].SetGoal(-1);

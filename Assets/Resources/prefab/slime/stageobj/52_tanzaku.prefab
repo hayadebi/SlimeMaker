@@ -84,7 +84,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  set_setrg: 999
+  set_setrg: 14
   effect: {fileID: 4720953479496493587, guid: 0e2ae2ac742e6be469f7b456f3b1f4af, type: 3}
 --- !u!1 &5316029877161004383
 GameObject:

@@ -59,7 +59,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.45098042, g: 0.33333334, b: 0.25882354, a: 1}
+  m_Color: {r: 0.45098042, g: 0.33333334, b: 0.25882354, a: 0.8509804}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -827,6 +827,14 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 0
 --- !u!1 &6671715949813362627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1048,3 +1056,11 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 0

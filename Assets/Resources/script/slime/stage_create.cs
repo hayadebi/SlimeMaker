@@ -157,12 +157,18 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
             bool goaltrg = false;
             int blueslime = 0;
             int redslime = 0;
+            bool taketrg = false;
+            int tanzaku = 0;
             for (int y = 0; y < GManager.instance.test_y.Length;)
             {
                 for (int x = 0; x < GManager.instance.test_y[y].test_x.Length;)
                 {
                     if (!goaltrg && GManager.instance.test_y[y].test_x[x] == 2)
                         goaltrg = true;
+                    else if (!taketrg && GManager.instance.test_y[y].test_x[x] == 51)
+                        taketrg = true;
+                    else if (GManager.instance.test_y[y].test_x[x] == 52)
+                        tanzaku += 1;
                     else if (GManager.instance.test_y[y].test_x[x] == 11)
                         blueslime += 1;
                     else if (GManager.instance.test_y[y].test_x[x] == 12)
@@ -171,7 +177,7 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
                 }
                 y++;
             }
-            if (goaltrg && blueslime == 1 && redslime == 1) 
+            if ((goaltrg || taketrg ) && blueslime == 1 && redslime == 1 && (tanzaku == 0 || tanzaku == 2)) 
             {
                 GManager.instance.setrg = 2;
                 GManager.instance.debug_trg = true;
@@ -240,13 +246,27 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
                     }
                 }
             }
+            else if(tanzaku != 0 && tanzaku!=2)
+            {
+                GManager.instance.setrg = 1;
+                if (GManager.instance.isEnglish == 0)
+                {
+                    not_goalslimetext.fontSize = 32;
+                    not_goalslimetext.text = "<color=red>※短冊を配置する場合は、必ず\"2個\"設置してください</color>";
+                }
+                else
+                {
+                    not_goalslimetext.fontSize = 28;
+                    not_goalslimetext.text = "<color=red>*If you are going to place strips of paper, be sure to place \"two\".</color>";
+                }
+            }
             else
             {
                 GManager.instance.setrg = 1;
                 if (GManager.instance.isEnglish == 0)
                 {
                     not_goalslimetext.fontSize = 32;
-                    not_goalslimetext.text = "<color=red>※最低でもゴールは1つの設置、そして兄弟スライムは両方\"1匹ずつ\"配置</color>";
+                    not_goalslimetext.text = "<color=red>※最低でもゴール系統は1つの設置、そして兄弟スライムは両方\"1匹ずつ\"配置</color>";
                 }
                 else
                 {

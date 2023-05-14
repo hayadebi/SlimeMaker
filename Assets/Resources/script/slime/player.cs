@@ -38,6 +38,8 @@ public class player : MonoBehaviour
     private GameObject cm;
     private Vector3 iceoldvec;
     private bool icese = false;
+    private GameObject[] goals=null;
+    private takegoal[] takegs=null;
     // Start is called before the first frame update
 
     void Start()
@@ -51,8 +53,21 @@ public class player : MonoBehaviour
         mXAxiz = body.transform.localEulerAngles;
         latestPos = character.transform.position;  //前回のPositionの更新
         cm = GameObject.Find("Main Camera");
+        Invoke(nameof(StartSet), 0.2f);
     }
-
+    void StartSet()
+    {
+        goals = GameObject.FindGameObjectsWithTag("takegoal");
+        if (goals != null && goals.Length >0)
+        {
+            takegs = new takegoal[goals.Length];
+            for (int i = 0; i < goals.Length;)
+            {
+                takegs[i] = goals[i].GetComponent<takegoal>();
+                i++;
+            }
+        }
+    }
     //視点回転に関する
     private  float maxYAngle = 135f;
     private float minYAngle = 45f;
@@ -199,6 +214,14 @@ public class player : MonoBehaviour
                 {
                     GManager.instance.setrg = 6;
                     GManager.instance.cleartrg = true;
+                    if (goals != null && goals.Length > 0)
+                    {
+                        for (int i = 0; i < takegs.Length;)
+                        {
+                            takegs[i].goal_tanzaku.SetActive (true);
+                            i++;
+                        }
+                    }
                     if (GManager.instance.debug_trg)
                         Instantiate(GManager.instance.all_ui[5], transform.position, transform.rotation);
                     else

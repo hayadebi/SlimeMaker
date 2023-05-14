@@ -60,6 +60,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f9ebea1ec32a61f43a566c326a51ec8d, type: 3}
   - {fileID: 8300000, guid: c9c773a07f24e9648b963a8de2ec3822, type: 3}
   - {fileID: 8300000, guid: e3ff8c55aafe93742a61e78863996b02, type: 3}
+  - {fileID: 8300000, guid: 7e55e261734775f4eb50a33f84576afe, type: 3}
 --- !u!82 &7327059648232550944
 AudioSource:
   m_ObjectHideFlags: 0
@@ -363,9 +364,9 @@ MonoBehaviour:
   - {fileID: 475356976192927378, guid: e2698f4fccb798440b8e8b3f8fd753a3, type: 3}
   - {fileID: 5417839558134045521, guid: 567f8be22ef814742b3d0c2ad05acedd, type: 3}
   - {fileID: 566148750076956135, guid: 5f41e6c08a861044a99ca001d2db181b, type: 3}
-  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
-  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
-  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 8598436953212556664, guid: 52c7740a72fe5a2488e19f607a01bdd0, type: 3}
+  - {fileID: 1070070137339465412, guid: 77a445927b1407b4aabae265fdc001c1, type: 3}
+  - {fileID: 811340078186271072, guid: 6d65443fc3c943e4a971363224c4b943, type: 3}
   - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
   - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
   - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
@@ -427,10 +428,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 35ab53696234cc94985927632f0f0f58, type: 3}
   - {fileID: 21300000, guid: d8e8b790a65d9d04a868935cc0133560, type: 3}
   - {fileID: 21300000, guid: 5f5a49bef74b6de4f8e122a3ef58f004, type: 3}
-  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
-  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
-  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
-  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: d8e8b790a65d9d04a868935cc0133560, type: 3}
+  - {fileID: 21300000, guid: ffcce1d84185a354485fbec97f495ec7, type: 3}
+  - {fileID: 21300000, guid: b730217743f75484284e29633df6406b, type: 3}
+  - {fileID: 21300000, guid: 9df7586b276eec046833a150bc29f3a5, type: 3}
   - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
   - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
   - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
@@ -749,23 +750,23 @@ MonoBehaviour:
     - "\u62BC\u305B\u308B\u3088"
     - I can push this block.
   - name:
-    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
-    - Moving Blocks
+    - "\u9858\u3044\u5834\u6240"
+    - Where to make a wish
     script:
-    - "\u62BC\u305B\u308B\u3088"
-    - I can push this block.
+    - "\u3042\u306A\u305F\u306E\u9858\u3044\u3092\u98FE\u308A\u307E\u3057\u3087\u3046"
+    - Decorate your wish!
   - name:
-    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
-    - Moving Blocks
+    - "\u77ED\u518A"
+    - strip of paper
     script:
-    - "\u62BC\u305B\u308B\u3088"
-    - I can push this block.
+    - "\u9858\u3044\u3092\u3053\u3053\u306B\u8A18\u3059\u306E\u3067\u3059"
+    - I hereby inscribe my wishes.
   - name:
-    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
-    - Moving Blocks
+    - "\u4E03\u5915\u306EBGM"
+    - BGM for star festival
     script:
-    - "\u62BC\u305B\u308B\u3088"
-    - I can push this block.
+    - "\u66F2\u306B\u9858\u3044\u3092\u8FBC\u3081\u3066\u2026"
+    - "Make a wish on a song\u2026"
   - name:
     - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
     - Moving Blocks
@@ -862,7 +863,7 @@ MonoBehaviour:
   - test_x: 0100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b0000000c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
   - test_x: 0100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   notsay: 0
-  gimmick_length: 51
+  gimmick_length: 54
   reset_time: 0
   set_createid: 0
   fixed_createid: 0
@@ -883,6 +884,11 @@ MonoBehaviour:
   - {fileID: 4900000, guid: 0b87ea14f92d76e49aceb44db59482b3, type: 3}
   - {fileID: 4900000, guid: 374cce3996a3afc48b5726395ec4c71d, type: 3}
   - {fileID: 4900000, guid: 331942545e5ce9049b9f55400a8d0244, type: 3}
+  - {fileID: 4900000, guid: ec11910b77591db429a3980cb4ae6429, type: 3}
+  - {fileID: 4900000, guid: 51e292017471e2b488424a00f4b315c5, type: 3}
+  - {fileID: 4900000, guid: 9195d57a762e2b740b1022c6844cb458, type: 3}
+  - {fileID: 4900000, guid: 2dd3c1e2d2917fc49aa5d03872a99f3f, type: 3}
+  - {fileID: 4900000, guid: 7905fa32421ffd140b45f33ca8983c4a, type: 3}
   not_word:
   - "\u3046\u3093\u3053"
   - "\u30A6\u30F3\u30B3"
@@ -1035,12 +1041,13 @@ MonoBehaviour:
   devdays:
     year: 2003
     month: 7
-    day: 28
+    day: 7
   globalev_id: -1
   globalev_stageselect: -1
   ev_ui:
   - {fileID: 1022567359592090573, guid: 80d5c85d839d5394a8ae5fbc039bdc5a, type: 3}
   - {fileID: 5588959323815314418, guid: a86e9686ad5aaf84e81799e4e4927af3, type: 3}
+  - {fileID: 1347944802121447397, guid: 8512bc363ab07be42bd3af8e0407a40c, type: 3}
   loadscene_name: 
 --- !u!114 &6017326719407883951
 MonoBehaviour:
