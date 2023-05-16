@@ -4,6 +4,7 @@ using UnityEngine;
 using System.IO;
 using Unity.IO.Compression;
 using System;
+using UnityEngine.SceneManagement;
 public class GManager : MonoBehaviour
 {
     public static GManager instance = null;
@@ -178,6 +179,14 @@ public class GManager : MonoBehaviour
     public int globalev_stageselect = -1;
     public GameObject[] ev_ui;
     public string loadscene_name="";
+    //ミニゲーム
+    public float normalgame_gravity = -9.81f;
+    public float minigame_gravity = -6.31f;
+    public bool minislime_blue = false;
+    public bool minislime_red = false;
+    public float mini_loadtime = 0;
+    private float mini_tmptime = 0f;
+    public bazooka bz=null;
     private void Awake()
     {
         if (instance == null)
@@ -205,6 +214,25 @@ public class GManager : MonoBehaviour
         if(instance.reset_time >= 0)
         {
             instance.reset_time -= Time.deltaTime;
+        }
+        if(SceneManager.GetActiveScene().name == "minigame" && Physics.gravity != new Vector3(0, instance.minigame_gravity, 0))
+        {
+            Physics.gravity = new Vector3(0, instance.minigame_gravity, 0);
+        }
+        else if (SceneManager.GetActiveScene().name != "minigame" && Physics.gravity != new Vector3(0, instance.normalgame_gravity, 0))
+        {
+            Physics.gravity = new Vector3(0, instance.normalgame_gravity, 0);
+        }
+        if(instance.mini_loadtime>0)
+        {
+            instance.mini_tmptime += Time.deltaTime;
+            if(instance.mini_tmptime >= instance.mini_loadtime)
+            {
+                instance.mini_loadtime = 0;
+                instance.mini_tmptime = 0;
+                if (bz != null)
+                    bz.Shot();
+            }
         }
     }
     public void YearReset()

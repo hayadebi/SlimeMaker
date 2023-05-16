@@ -24,6 +24,7 @@ public class soundM : MonoBehaviour
         }
         else if( GManager.instance.setrg != -1 && GManager.instance.setrg != 99)
         {
+            audioS.Stop();
             audioS.PlayOneShot(se[GManager.instance.setrg]);
             GManager.instance.setrg = -1;
         }

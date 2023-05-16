@@ -9,6 +9,7 @@ public class togetrap : MonoBehaviour
     public int offtrg = 0;
     public float check_time = 3f;
     private float count_time;
+    public float shake_power = 0.24f;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,7 +26,7 @@ public class togetrap : MonoBehaviour
             {
                 count_time = 0;
                 GManager.instance.setrg = 3;
-                iTween.ShakePosition(this.gameObject, iTween.Hash("x",0.24f, "y", 0.24f, "time", 0.24f));
+                iTween.ShakePosition(this.gameObject, iTween.Hash("x", shake_power, "y", shake_power, "time", 0.24f));
                 if (offtrg == 0)
                 {
                     this.gameObject.tag = "ground";

@@ -6,9 +6,10 @@ public class bazooka : MonoBehaviour
 {
     public GameObject shoteffect;
     public Transform shotpos;
-    public float bulletspeed=8;
+    public float bulletspeed = 8;
     private int shotnumber = 1;
     public GameObject Bullet;
+    public GameObject[] Slimes;
     private GameObject tmp_bullet = null;
     public Animator anim;
     private float count_time = 0f;
@@ -17,8 +18,14 @@ public class bazooka : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(minigametrg )
+        if (minigametrg)
+        {
+            GManager.instance.bz = this.GetComponent<bazooka>();
+            GManager.instance.minislime_blue = false;
+            GManager.instance.minislime_red = false;
+            GManager.instance.mini_loadtime = 5f;
             Invoke(nameof(StartShot), 1f);
+        }
     }
 
     // Update is called once per frame
@@ -31,7 +38,7 @@ public class bazooka : MonoBehaviour
             else if (!anim.GetBool("Abool"))
             {
                 count_time += Time.deltaTime;
-                if(count_time >= shot_time)
+                if (count_time >= shot_time)
                 {
                     count_time = 0;
                     Shot();
@@ -45,20 +52,29 @@ public class bazooka : MonoBehaviour
     }
     public void Shot()
     {
-        anim.SetBool("Abool", true);
-        Instantiate(shoteffect, shotpos.transform.position, this.transform.rotation);
-        GManager.instance.setrg = 9;
-        if (Bullet != null)
+        if (!GManager.instance.over)
         {
-            var tmp = Instantiate(Bullet, shotpos.transform.position, this.transform.rotation);
-            tmp_bullet = tmp;
+            int tmpnum = 0;
+            anim.SetBool("Abool", true);
+            Instantiate(shoteffect, shotpos.transform.position, this.transform.rotation);
+            GManager.instance.setrg = 9;
+            GameObject tmp = null;
             if (minigametrg)
+            {
+                if (!GManager.instance.minislime_blue) { tmpnum = 0; GManager.instance.minislime_blue = true; }
+                else if (!GManager.instance.minislime_red) { tmpnum = 1; GManager.instance.minislime_red = true; }
+                Instantiate(Slimes[tmpnum], shotpos.transform.position, this.transform.rotation);
+            }
+            else
+                tmp = Instantiate(Bullet, shotpos.transform.position, this.transform.rotation);
+            tmp_bullet = tmp;
+            if (minigametrg && tmp != null)
             {
                 // 向きの生成（Z成分の除去と正規化）
                 Vector3 shotForward = Vector3.Scale((shotpos.transform.position - transform.position), new Vector3(1, 1, 0)).normalized;
-                tmp.GetComponent<Rigidbody>().velocity = shotForward * bulletspeed;
+                tmp.GetComponent<Rigidbody>().velocity = shotForward * Random.Range(bulletspeed - 0.4f, bulletspeed + 0.4f);
             }
-            else
+            else if (tmp != null)
                 tmp.GetComponent<Rigidbody>().velocity = -transform.forward * bulletspeed;
         }
     }

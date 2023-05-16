@@ -24,6 +24,7 @@ TagManager:
   - bamboo
   - takegoal
   - pinsmash
+  - addpower
   layers:
   - Default
   - TransparentFX
