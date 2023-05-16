@@ -6,23 +6,25 @@ public class bazooka : MonoBehaviour
 {
     public GameObject shoteffect;
     public Transform shotpos;
-    private float bulletspeed=8;
+    public float bulletspeed=8;
     private int shotnumber = 1;
     public GameObject Bullet;
     private GameObject tmp_bullet = null;
     public Animator anim;
     private float count_time = 0f;
     private float shot_time = 3f;
+    public bool minigametrg = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if(minigametrg )
+            Invoke(nameof(StartShot), 1f);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GManager.instance.walktrg && !GManager.instance.over && tmp_bullet == null)
+        if (GManager.instance.walktrg && !GManager.instance.over && tmp_bullet == null && !minigametrg)
         {
             if (anim.GetBool("Abool"))
                 anim.SetBool("Abool", false);
@@ -37,7 +39,11 @@ public class bazooka : MonoBehaviour
             }
         }
     }
-    void Shot()
+    void StartShot()
+    {
+        Shot();
+    }
+    public void Shot()
     {
         anim.SetBool("Abool", true);
         Instantiate(shoteffect, shotpos.transform.position, this.transform.rotation);
@@ -46,7 +52,14 @@ public class bazooka : MonoBehaviour
         {
             var tmp = Instantiate(Bullet, shotpos.transform.position, this.transform.rotation);
             tmp_bullet = tmp;
-            tmp.GetComponent<Rigidbody>().velocity = -transform.forward *bulletspeed;
+            if (minigametrg)
+            {
+                // 向きの生成（Z成分の除去と正規化）
+                Vector3 shotForward = Vector3.Scale((shotpos.transform.position - transform.position), new Vector3(1, 1, 0)).normalized;
+                tmp.GetComponent<Rigidbody>().velocity = shotForward * bulletspeed;
+            }
+            else
+                tmp.GetComponent<Rigidbody>().velocity = -transform.forward * bulletspeed;
         }
     }
 }

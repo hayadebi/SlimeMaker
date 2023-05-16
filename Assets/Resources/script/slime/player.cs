@@ -40,6 +40,7 @@ public class player : MonoBehaviour
     private bool icese = false;
     private GameObject[] goals=null;
     private takegoal[] takegs=null;
+    private GameObject adcmpos = null;
     // Start is called before the first frame update
 
     void Start()
@@ -53,6 +54,7 @@ public class player : MonoBehaviour
         mXAxiz = body.transform.localEulerAngles;
         latestPos = character.transform.position;  //前回のPositionの更新
         cm = GameObject.Find("Main Camera");
+        adcmpos = GameObject.Find("adcmpos");
         Invoke(nameof(StartSet), 0.2f);
     }
     void StartSet()
@@ -206,6 +208,8 @@ public class player : MonoBehaviour
                 GManager.instance.goal_num += 1;
                 GManager.instance.setrg = 7;
                 Instantiate(GManager.instance.all_ui[4], transform.position, transform.rotation);
+                if (adcmpos != null)
+                    Instantiate(GManager.instance.all_ui[8], adcmpos.transform.position, adcmpos.transform.rotation);
                 if (GManager.instance.goal_num < 2)
                 {
                     GManager.instance.setrg = 5;
