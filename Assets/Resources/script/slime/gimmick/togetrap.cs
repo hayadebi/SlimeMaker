@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class togetrap : MonoBehaviour
 {
@@ -40,5 +41,10 @@ public class togetrap : MonoBehaviour
                 _sprite.sprite = on_or_off[offtrg];
             }
         }
+    }
+    private void OnTriggerExit(Collider col)
+    {
+        if (SceneManager.GetActiveScene().name == "minigame" && col.tag == "player" && this.gameObject.tag == "ground" && !GManager.instance.over && col.GetComponent<pinsmash>() && ((col.GetComponent<pinsmash>().bluetrg && GManager.instance.minislime_blue) || (!col.GetComponent<pinsmash>().bluetrg && GManager.instance.minislime_red)))
+            GManager.instance.minigame_score += 200;
     }
 }

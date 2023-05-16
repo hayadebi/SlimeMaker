@@ -179,13 +179,15 @@ public class GManager : MonoBehaviour
     public int globalev_stageselect = -1;
     public GameObject[] ev_ui;
     public string loadscene_name="";
-    //ミニゲーム
+    [Header("ここからはミニゲーム")]
     public float normalgame_gravity = -9.81f;
     public float minigame_gravity = -6.31f;
     public bool minislime_blue = false;
     public bool minislime_red = false;
     public float mini_loadtime = 0;
     private float mini_tmptime = 0f;
+    public GameObject[] ministages;
+    public int minigame_score = 0;
     public bazooka bz=null;
     private void Awake()
     {

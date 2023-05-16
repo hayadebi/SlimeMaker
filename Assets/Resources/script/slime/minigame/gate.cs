@@ -21,6 +21,7 @@ public class gate : MonoBehaviour
     {
         if (col.tag == "player")
         {
+            GManager.instance.minigame_score += 100;
             GManager.instance.setrg = 18;
             Vector3 tmp = col.transform.position;
             tmp.x = target_tppos.position.x;

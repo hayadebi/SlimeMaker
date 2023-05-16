@@ -23,6 +23,7 @@ public class bazooka : MonoBehaviour
             GManager.instance.bz = this.GetComponent<bazooka>();
             GManager.instance.minislime_blue = false;
             GManager.instance.minislime_red = false;
+            GManager.instance.minigame_score = 0;
             GManager.instance.mini_loadtime = 5f;
             Invoke(nameof(StartShot), 1f);
         }
