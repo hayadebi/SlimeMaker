@@ -84,7 +84,7 @@ public class pinsmash : MonoBehaviour
             _audio.Stop();
             // 向きの生成（Z成分の除去と正規化）
             Vector3 shotForward = Vector3.Scale((col.ClosestPointOnBounds(this.transform.position) - transform.position), new Vector3(1, 1, 0)).normalized;
-            rb.velocity = shotForward * -Random.Range(4 - 0.4f, 4 + 0.4f);
+            rb.velocity = shotForward * -Random.Range(4 - 0.3f, 4 + 0.3f);
             _audio.PlayOneShot(se[0]);
         }
         if(rb!=null &&col.tag=="red" && !dstrg)

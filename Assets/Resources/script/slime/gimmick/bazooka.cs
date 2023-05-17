@@ -15,6 +15,7 @@ public class bazooka : MonoBehaviour
     private float count_time = 0f;
     private float shot_time = 3f;
     public bool minigametrg = false;
+    public PhysicMaterial pm = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,8 @@ public class bazooka : MonoBehaviour
             GManager.instance.minislime_red = false;
             GManager.instance.minigame_score = 0;
             GManager.instance.mini_loadtime = 5f;
+            if (pm != null)
+                pm.bounciness = 0.99f;
             Invoke(nameof(StartShot), 1f);
         }
     }
@@ -73,7 +76,7 @@ public class bazooka : MonoBehaviour
             {
                 // 向きの生成（Z成分の除去と正規化）
                 Vector3 shotForward = Vector3.Scale((shotpos.transform.position - transform.position), new Vector3(1, 1, 0)).normalized;
-                tmp.GetComponent<Rigidbody>().velocity = shotForward * Random.Range(bulletspeed - 0.4f, bulletspeed + 0.4f);
+                tmp.GetComponent<Rigidbody>().velocity = shotForward * Random.Range(bulletspeed - 0.3f, bulletspeed + 0.3f);
             }
             else if (tmp != null)
                 tmp.GetComponent<Rigidbody>().velocity = -transform.forward * bulletspeed;
