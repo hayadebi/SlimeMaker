@@ -185,10 +185,12 @@ public class GManager : MonoBehaviour
     public bool minislime_blue = false;
     public bool minislime_red = false;
     public float mini_loadtime = 0;
-    private float mini_tmptime = 0f;
+    public float mini_tmptime = 0f;
     public GameObject[] ministages;
     public int minigame_score = 0;
     public bazooka bz=null;
+    public bool adstrg = false;
+    public int tmp_bosscount = 90;
     private void Awake()
     {
         if (instance == null)

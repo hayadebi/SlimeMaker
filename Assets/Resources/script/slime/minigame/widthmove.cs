@@ -8,6 +8,7 @@ public class widthmove : MonoBehaviour
     public float max_widthmove = 3f;
     public float movetime = 2f;
     private float tmp_time = 0;
+    public bool movetrg = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,7 @@ public class widthmove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GManager.instance.walktrg && !GManager.instance.over)
+        if(GManager.instance.walktrg && !GManager.instance.over && movetrg)
         {
             tmp_time += Time.deltaTime;
             if (tmp_time >= movetime*2)
@@ -34,7 +35,7 @@ public class widthmove : MonoBehaviour
     }
     void MoveTween()
     {
-        if (GManager.instance.walktrg && !GManager.instance.over)
+        if (GManager.instance.walktrg && !GManager.instance.over && movetrg)
         {
             iTween.MoveTo(gameObject, iTween.Hash("x", start_x, "time", movetime / 2));
             iTween.MoveTo(gameObject, iTween.Hash("x", start_x +max_widthmove, "time", movetime/2, "delay", movetime / 2));

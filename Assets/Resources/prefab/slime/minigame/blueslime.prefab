@@ -106,7 +106,8 @@ MonoBehaviour:
   addpower: 5
   bluetrg: 1
   effect: {fileID: 2833650646105358060, guid: c7d383f769866f748a548ff95f6da982, type: 3}
-  GameOverUI: {fileID: 0}
+  GameOverUI: {fileID: 7142404404672269102, guid: ed1388e9b9531ca45830b5e1f9382ca7,
+    type: 3}
 --- !u!82 &7105363216290510329
 AudioSource:
   m_ObjectHideFlags: 0
@@ -307,7 +308,7 @@ GameObject:
   m_Component:
   - component: {fileID: 480985168844824239}
   - component: {fileID: 5756643323664886315}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: CharaShadeSmall_8dir_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}

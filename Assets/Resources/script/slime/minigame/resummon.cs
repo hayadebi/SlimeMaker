@@ -8,6 +8,7 @@ public class resummon : MonoBehaviour
     public GameObject tmpobj=null;
     private float tmp_time = 0;
     public float retime = 10f;
+    public widthmove wm = null;
     // Start is called before the first frame update
     void Start()
     {

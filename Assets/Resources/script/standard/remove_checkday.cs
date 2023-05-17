@@ -12,6 +12,8 @@ public class remove_checkday : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (PlayerPrefs.GetString("notdxtrg", "FALSE") == "TRUE")
+            GManager.instance.dx_mode = true;
         if (!GManager.instance.dx_mode || PlayerPrefs.GetString("notdxtrg","FALSE")=="TRUE")//DX版以外を検知
         {
             DateTime today = new DateTime(DateTime.Today.Year, DateTime.Today.Month, DateTime.Today.Day, DateTime.Now.Hour, DateTime.Now.Minute, DateTime.Now.Second);
@@ -22,19 +24,18 @@ public class remove_checkday : MonoBehaviour
             if(GManager.instance.dx_mode && check_minutes>max_minutes)//デイリー1時間を堪能し終わったら
             {
                 GManager.instance.dx_mode = false;
+                PlayerPrefs.SetString("notdxtrg", "FALSE");
+                PlayerPrefs.Save();
             }
-
+            if (check_result > max_day && GManager.instance.dx_mode)//別の日を検知
+            {
+                GManager.instance.dx_mode = false;
+                PlayerPrefs.SetString("notdxtrg", "FALSE");
+                PlayerPrefs.Save();
+                ;
+            }
             if (check_result > max_day&&!GManager.instance.dx_mode)//別の日を検知
             {
-                //GManager.instance.dx_mode = true;
-                //PlayerPrefs.SetString("notdxtrg", "TRUE");
-                //PlayerPrefs.SetInt("daily_year", DateTime.Today.Year);
-                //PlayerPrefs.SetInt("daily_month", DateTime.Today.Month);
-                //PlayerPrefs.SetInt("daily_day", DateTime.Today.Day);
-                //PlayerPrefs.SetInt("daily_hour", DateTime.Now.Hour);
-                //PlayerPrefs.SetInt("daily_min", DateTime.Now.Minute);
-                //PlayerPrefs.SetInt("daily_sec", DateTime.Now.Second);
-                //PlayerPrefs.Save();
                 ;
             }
             else if(GManager.instance.dx_mode || check_result <= max_day)

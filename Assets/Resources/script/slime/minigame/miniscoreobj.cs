@@ -25,17 +25,25 @@ public class miniscoreobj : MonoBehaviour
     private float tmp_z = 0;
     public Transform set_parentpos = null;
     public resummon rs = null;
+    public widthmove wm = null;
+    public bool bosstrg = false;
     // Start is called before the first frame update
     void Start()
     {
+        if(GManager.instance.adstrg && bosstrg )
+        {
+            hp_count = GManager.instance.tmp_bosscount;
+        }
         if (rs != null)
             rs.tmpobj = this.gameObject;
         tmp_x = transform.localScale.x;
         tmp_z = transform.localScale.z;
         if (_sprite != null)
             old_sprite = _sprite.sprite;
-        if(startanimtrg)
+        if (wm != null) wm.movetrg = true;
+        if (startanimtrg)
             Invoke("TweenAnim_" + tweenanim_set.ToString(), 0.001f);
+
     }
 
     // Update is called once per frame
@@ -54,6 +62,8 @@ public class miniscoreobj : MonoBehaviour
                 pm.bounciness += remove_pm;
             if (hp_count < 1)
                 dstrg = true;
+            if (bosstrg && hp_count != GManager.instance.tmp_bosscount)
+                GManager.instance.tmp_bosscount = hp_count;
             if (set_setrg > -1)
                 GManager.instance.setrg = set_setrg;
             
@@ -66,6 +76,7 @@ public class miniscoreobj : MonoBehaviour
                 Invoke("TweenAnim_" + 0.ToString(), 0.001f);
             if (dstrg)
             {
+                if (wm != null) wm.movetrg = false;
                 if (effect != null && !set_parentpos)
                 {
                     GameObject tobj=Instantiate(effect, transform.position, transform.rotation);
@@ -82,9 +93,9 @@ public class miniscoreobj : MonoBehaviour
                 }
                 GManager.instance.minigame_score += destroy_getscore;
                 if (destroytime == 0f || destroytime == -1)
-                    Destroy(gameObject);
+                    Destroy(this.gameObject.gameObject);
                 else
-                    Destroy(gameObject, destroytime);
+                    Destroy(this.gameObject.gameObject, destroytime);
             }
         }
     }

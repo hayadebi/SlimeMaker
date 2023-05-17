@@ -857,7 +857,7 @@ GameObject:
   - component: {fileID: 4828406599262361775}
   - component: {fileID: 8461715300221264761}
   m_Layer: 5
-  m_Name: ondx
+  m_Name: ranking_temp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -90,6 +90,7 @@ public class pinsmash : MonoBehaviour
         if(rb!=null &&col.tag=="red" && !dstrg)
         {
             dstrg = true;
+            GManager.instance.minigame_score -= 500;
             if (bluetrg)
                 GManager.instance.minislime_blue = false;
             else if (!bluetrg)

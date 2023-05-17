@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 public class UItext : MonoBehaviour
 {
     public Text _text;
@@ -47,7 +48,7 @@ public class UItext : MonoBehaviour
             if (GManager.instance.isEnglish == 0)
             {
                 _text.fontSize = 28;
-                _text.text = "クリアタイム："+((int)(GManager.instance.cleartime/60)).ToString ()+"分"+ ((int)(GManager.instance.cleartime % 60)).ToString()+"秒";
+                _text.text = "クリアタイム：" + ((int)(GManager.instance.cleartime / 60)).ToString() + "分" + ((int)(GManager.instance.cleartime % 60)).ToString() + "秒";
             }
             else
             {
@@ -55,7 +56,44 @@ public class UItext : MonoBehaviour
                 _text.text = "Clear time：" + ((int)(GManager.instance.cleartime / 60)).ToString() + " minutes and " + ((int)(GManager.instance.cleartime % 60)).ToString() + " seconds";
             }
         }
-        if(ui_mode == "appversion")
+        else if (ui_mode == "miniscore")
+        {
+            _text.text = "score:" + GManager.instance.minigame_score.ToString();
+        }
+        else if (ui_mode == "minigameend")
+        {
+            GManager.instance.adstrg = false;
+            if (GManager.instance.minigame_score >= 100000)
+            {
+                GManager.instance.dx_mode = true;
+                PlayerPrefs.SetString("notdxtrg", "TRUE");
+                PlayerPrefs.SetInt("daily_year", DateTime.Today.Year);
+                PlayerPrefs.SetInt("daily_month", DateTime.Today.Month);
+                PlayerPrefs.SetInt("daily_day", DateTime.Today.Day);
+                PlayerPrefs.SetInt("daily_hour", DateTime.Now.Hour);
+                PlayerPrefs.SetInt("daily_min", DateTime.Now.Minute);
+                PlayerPrefs.SetInt("daily_sec", DateTime.Now.Second);
+                PlayerPrefs.Save();
+                if (GManager.instance.isEnglish == 0)
+                {
+                    _text.fontSize = 21;
+                    _text.text = "10万スコア達成！\n報酬としてDXコンテンツが1時間解放されます！";
+                }
+                else
+                {
+                    _text.fontSize = 19;
+                    _text.text = "100,000 score achieved! As a reward,\n DX content will be released for one hour!";
+                }
+            }
+            else
+            {
+                if (GManager.instance.isEnglish == 0)
+                    _text.text = "100000スコアまで残り"+(100000-GManager.instance.minigame_score).ToString()+"！";
+                else
+                    _text.text = (100000 - GManager.instance.minigame_score).ToString()+" left to score 100,000!";
+            }
+        }
+        if (ui_mode == "appversion")
         {
             _text.text = "Version：" + Application.version;
         }
