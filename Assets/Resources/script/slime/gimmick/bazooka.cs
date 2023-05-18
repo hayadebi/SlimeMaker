@@ -26,10 +26,10 @@ public class bazooka : MonoBehaviour
             GManager.instance.minislime_red = false;
             if(!GManager.instance.adstrg )
                 GManager.instance.minigame_score = 0;
-            GManager.instance.mini_loadtime = 6f;
+            
             if (pm != null)
                 pm.bounciness = 0.99f;
-            Invoke(nameof(StartShot), 2f);
+            Invoke(nameof(StartShot), 3f);
         }
     }
 
@@ -53,6 +53,7 @@ public class bazooka : MonoBehaviour
     }
     void StartShot()
     {
+        GManager.instance.mini_loadtime = 6f;
         Shot();
     }
     public void Shot()

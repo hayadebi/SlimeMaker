@@ -776,6 +776,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!1 &379705251
 GameObject:
   m_ObjectHideFlags: 0
@@ -1223,6 +1225,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!1 &544573267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1694,6 +1698,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 1
+  adstrg: 0
+  daysavetrg: 0
 --- !u!1 &956069852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1882,6 +1888,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!1 &1070363049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1965,6 +1973,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &1070363052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3315,6 +3325,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!1 &1523368433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,6 +3636,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &1571140279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3904,6 +3918,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!95 &1601123578
 Animator:
   serializedVersion: 3
@@ -4316,6 +4332,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!1 &1802649748
 GameObject:
   m_ObjectHideFlags: 0
@@ -4797,6 +4815,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!1 &1983687318
 GameObject:
   m_ObjectHideFlags: 0
@@ -4904,8 +4924,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroytrg: 1
-  next_scene: minigame
-  check_debug: 0
+  next_scene: loadstage
+  check_debug: 1
   check_story: 0
   storyadd: 0
   Webcm_off: {fileID: 0}
@@ -4913,9 +4933,9 @@ MonoBehaviour:
   animname: Abool
   destroy_obj: {fileID: 0}
   destroy_time: 1
-  uiobj: {fileID: 0}
+  uiobj: {fileID: 7733966037317380922, guid: aff723996bde9dd408ed4765db3fb959, type: 3}
   title_starttrg: 0
-  notsay: 0
+  notsay: 1
   _text: {fileID: 0}
   dxtrg: -1
   fixed_selectid: -1
@@ -4932,6 +4952,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &2013487977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4991,7 +5013,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2013487976}
-        m_MethodName: NextScene
+        m_MethodName: SetUI
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5194,6 +5216,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &2068871032
 MonoBehaviour:
   m_ObjectHideFlags: 0

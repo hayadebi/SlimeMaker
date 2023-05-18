@@ -30,23 +30,28 @@ public class onset_check : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
+        Invoke("TimeEventset", 0.3f);
+    }
+    void TimeEventset()
+    {
         if (eventday.Length > 1)
         {
             DateTime devday = new DateTime(GManager.instance.devdays.year, GManager.instance.devdays.month, GManager.instance.devdays.day);
-            
+
             for (int i = 1; i < eventday.Length;)
             {
                 DateTime evday = new DateTime(eventday[i].year, eventday[i].month, eventday[i].day);
                 DateTime get_now = DateTime.Now;
-                if (GManager.instance.checkdev != devday && limit_maxhour[i]!=-1)
-                    get_now = new DateTime(GManager.instance.devdays.year, GManager.instance.devdays.month, GManager.instance.devdays.day,limit_minhour [i],0,0);
+                if (GManager.instance.checkdev != devday && limit_maxhour[i] != -1)
+                    get_now = new DateTime(GManager.instance.devdays.year, GManager.instance.devdays.month, GManager.instance.devdays.day, limit_minhour[i], 0, 0);
                 if (GManager.instance.AllSpanCheck(evday) >= 0 && GManager.instance.AllSpanCheck(evday) <= eventseasontime[i] && (limit_maxhour[i] == -1 || (limit_maxhour[i] != -1 && limit_maxhour[i] >= get_now.Hour && limit_minhour[i] <= get_now.Hour)))
                 {
                     if (eventbtn[i] != null)
                     {
                         eventbtn[0].SetActive(false);
                         eventbtn[i].SetActive(true);
-                        if (EvGimmicks[i].ev_gimmicks.Length > 0)
+                        if (GManager.instance.dx_mode || EvGimmicks[i].ev_gimmicks.Length > 0)
                         {
                             for (int l = 0; l < EvGimmicks[i].ev_gimmicks.Length;)
                             {
@@ -59,7 +64,9 @@ public class onset_check : MonoBehaviour
                 }
                 i++;
             }
+
         }
+
 
         tmp_text = PlayerPrefs.GetString("all_onset", "");
         if (tmp_text != "")
@@ -72,8 +79,19 @@ public class onset_check : MonoBehaviour
                 i++;
             }
         }
+        if (GManager.instance.dx_mode)
+        {
+            for (int i = 1; i < eventday.Length;)
+            {
+                for (int l = 0; l < EvGimmicks[i].ev_gimmicks.Length;)
+                {
+                    GManager.instance.stageobj_onset[EvGimmicks[i].ev_gimmicks[l]] = 1;
+                    l++;
+                }
+                i++;
+            }
+        }
     }
-
     // Update is called once per frame
     void Update()
     {

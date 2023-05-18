@@ -70,15 +70,16 @@ public class pinsmash : MonoBehaviour
             _audio.Stop();
             _audio.PlayOneShot(se[1]);
         }
-        if (rb != null && col.tag == "addpower" )
+        
+    }
+    private void OnTriggerStay(Collider col)
+    {
+        if (rb != null && col.tag == "addpower")
         {
             // 向きの生成（Z成分の除去と正規化）
             Vector3 shotForward = Vector3.Scale((col.ClosestPointOnBounds(this.transform.position) - transform.position), new Vector3(1, 1, 0)).normalized;
             rb.velocity = shotForward * -Random.Range(addpower - 0.4f, addpower + 0.4f);
         }
-    }
-    private void OnTriggerStay(Collider col)
-    {
         if (rb != null && col.tag == "pinsmash" && col.ClosestPointOnBounds(this.transform.position).y <= this.transform.position.y && (Input.GetMouseButton(0) || Input.GetMouseButton(1)))
         {
             _audio.Stop();

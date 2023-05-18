@@ -80,16 +80,23 @@ public class clickbutton : MonoBehaviour
                 fixed_idobjname.text = "Eraser tool";
             }
         }
+        
+       
+        Invoke("TimeEventset", 0.3f);
+
+    }
+    void TimeEventset()
+    {
         DateTime silver = new DateTime(2023, 9, 24);
         DateTime gold = new DateTime(2023, 5, 5);
         DateTime happy = new DateTime(2023, 7, 28);
-        if (dxbtn != null && (GManager.instance.dx_mode || GManager.instance.AllSpanCheck(happy) == 0 || ((GManager.instance.AllSpanCheck(gold)>=0&& GManager.instance.AllSpanCheck(gold) <= 6) ||(GManager.instance.AllSpanCheck(silver) >= 0 && GManager.instance.AllSpanCheck(silver) <= 6))))
+        if (dxbtn != null && (GManager.instance.dx_mode || GManager.instance.AllSpanCheck(happy) == 0 || ((GManager.instance.AllSpanCheck(gold) >= 0 && GManager.instance.AllSpanCheck(gold) <= 6) || (GManager.instance.AllSpanCheck(silver) >= 0 && GManager.instance.AllSpanCheck(silver) <= 6))))
         {
             ;
         }
         else if (dxbtn != null)
         {
-            ColorBlock tmpb=dxbtn.colors;
+            ColorBlock tmpb = dxbtn.colors;
             Color tmpc = tmpb.normalColor;
             tmpc.a = 0.35f;
             tmpb.normalColor = tmpc;
@@ -99,7 +106,6 @@ public class clickbutton : MonoBehaviour
             dxbtn.colors = tmpb;
             dxmark.SetActive(false);
         }
-
     }
     private void Update()
     {
