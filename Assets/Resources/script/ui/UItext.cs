@@ -63,7 +63,7 @@ public class UItext : MonoBehaviour
         else if (ui_mode == "minigameend")
         {
             GManager.instance.adstrg = false;
-            if (GManager.instance.minigame_score >= 100000)
+            if (GManager.instance.minigame_score >= 150000)
             {
                 GManager.instance.dx_mode = true;
                 PlayerPrefs.SetString("notdxtrg", "TRUE");
@@ -77,20 +77,20 @@ public class UItext : MonoBehaviour
                 if (GManager.instance.isEnglish == 0)
                 {
                     _text.fontSize = 21;
-                    _text.text = "10万スコア達成！\n報酬としてDXコンテンツが1時間解放されます！";
+                    _text.text = "15万スコア達成！\n報酬としてDXコンテンツが1時間解放されます！";
                 }
                 else
                 {
                     _text.fontSize = 19;
-                    _text.text = "100,000 score achieved! As a reward,\n DX content will be released for one hour!";
+                    _text.text = "150,000 score achieved! As a reward,\n DX content will be released for one hour!";
                 }
             }
             else
             {
                 if (GManager.instance.isEnglish == 0)
-                    _text.text = "100000スコアまで残り"+(100000-GManager.instance.minigame_score).ToString()+"！";
+                    _text.text = "150000スコアまで残り"+(150000-GManager.instance.minigame_score).ToString()+"！";
                 else
-                    _text.text = (100000 - GManager.instance.minigame_score).ToString()+" left to score 100,000!";
+                    _text.text = (150000 - GManager.instance.minigame_score).ToString()+" left to score 150,000!";
             }
         }
         if (ui_mode == "appversion")

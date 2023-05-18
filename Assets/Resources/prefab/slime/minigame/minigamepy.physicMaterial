@@ -9,6 +9,6 @@ PhysicMaterial:
   m_Name: minigamepy
   dynamicFriction: 0
   staticFriction: 0
-  bounciness: 0.99
+  bounciness: 0.8630008
   frictionCombine: 1
   bounceCombine: 3
