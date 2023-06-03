@@ -259,7 +259,7 @@ public class GManager : MonoBehaviour
         DateTime newday = new DateTime(today.Year ,tmp_time.Month ,tmp_time.Day);
         TimeSpan tmpdiff = newday - today;
         check_result = (int)tmpdiff.TotalDays;
-        print(check_result.ToString());
+        //print(check_result.ToString());
         return check_result;
     }
     public bool MonthBoolCheck(DateTime tmp_time)

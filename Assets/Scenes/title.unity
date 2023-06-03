@@ -1697,7 +1697,7 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
-  loadnext: 1
+  loadnext: 0
   adstrg: 0
   daysavetrg: 0
 --- !u!1 &956069852
@@ -3455,8 +3455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 8927286059148630775, guid: cb6a302c7cb00ab42a4c4eb107558222,
-    type: 3}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &1561439736
 Transform:
   m_ObjectHideFlags: 1
@@ -4875,7 +4874,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2013487974
 RectTransform:
   m_ObjectHideFlags: 0

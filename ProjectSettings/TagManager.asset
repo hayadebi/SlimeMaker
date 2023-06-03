@@ -25,6 +25,12 @@ TagManager:
   - takegoal
   - pinsmash
   - addpower
+  - obj
+  - noactive
+  - btn_red
+  - wall_red
+  - btn_blue
+  - wall_blue
   layers:
   - Default
   - TransparentFX

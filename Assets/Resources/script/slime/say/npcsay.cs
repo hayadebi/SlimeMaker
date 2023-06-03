@@ -44,7 +44,7 @@ public class npcsay : MonoBehaviour
     }
     private void OnTriggerEnter(Collider col)
     {
-        if (!saytrg && GManager.instance.storymode && GManager.instance.select_stage == stage_id && GManager.instance.walktrg && !GManager.instance.notsay && !starttrg&&GManager.instance.dx_stageid==-1)
+        if (!saytrg && col.tag=="player" && GManager.instance.storymode && GManager.instance.select_stage == stage_id && GManager.instance.walktrg && !GManager.instance.notsay && !starttrg&&GManager.instance.dx_stageid==-1)
         {
             saytrg = true;
             message += stage_id.ToString();

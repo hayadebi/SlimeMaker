@@ -311,6 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6fc5745aaefb4f4485be4c530a1047f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroytrg: 1
   next_scene: loadstage
   check_debug: 0
   check_story: 1
@@ -323,6 +324,24 @@ MonoBehaviour:
   uiobj: {fileID: 0}
   title_starttrg: 0
   notsay: 0
+  _text: {fileID: 0}
+  dxtrg: -1
+  fixed_selectid: -1
+  fixed_idobjimg: {fileID: 0}
+  fixed_idobjname: {fileID: 0}
+  EnableUI: {fileID: 0}
+  start_posy: -36
+  posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &1083753524795962020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -911,6 +930,8 @@ MonoBehaviour:
   starttrg: 0
   uiobj: {fileID: 0}
   abool_c: {fileID: 8074917599631300184}
+  ev_checkid: 9999
+  ev_checkstageselect: 9999
 --- !u!114 &5860460209624186640
 MonoBehaviour:
   m_ObjectHideFlags: 0

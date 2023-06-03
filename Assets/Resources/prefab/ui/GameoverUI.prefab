@@ -281,6 +281,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 0
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &5566536398555400922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -661,6 +663,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &161032441115195109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -864,6 +868,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 0
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &7034442138176916231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1255,7 +1261,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5733419750179766557
 Transform:
   m_ObjectHideFlags: 0
@@ -1589,7 +1595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4667324812238015410
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2049,6 +2055,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 0
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &5048727429575872488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3239,6 +3247,8 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &6314480109081798375
 MonoBehaviour:
   m_ObjectHideFlags: 0

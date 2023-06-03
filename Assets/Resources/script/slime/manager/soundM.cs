@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class soundM : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class soundM : MonoBehaviour
         }
         else if( GManager.instance.setrg != -1 && GManager.instance.setrg != 99)
         {
-            audioS.Stop();
+            if(SceneManager.GetActiveScene().name== "minigame") audioS.Stop();
             audioS.PlayOneShot(se[GManager.instance.setrg]);
             GManager.instance.setrg = -1;
         }

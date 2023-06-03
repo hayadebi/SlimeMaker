@@ -7411,6 +7411,10 @@ MonoBehaviour:
   ev_id: -1
   ev_stageselect: -1
   ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!114 &212603430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17844,8 +17848,12 @@ MonoBehaviour:
   m_ShowCustomSorter: 0
   breakBeforeColorGrading: 0
   m_BeforeTransparentBundles: []
-  m_BeforeStackBundles: []
-  m_AfterStackBundles: []
+  m_BeforeStackBundles:
+  - assemblyQualifiedName: PostProcessingStackEffekseerBeforeStackSettings, Effekseer.PostProcessing,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_AfterStackBundles:
+  - assemblyQualifiedName: PostProcessingStackEffekseerAfterStackSettings, Effekseer.PostProcessing,
+      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!1 &484971052
 GameObject:
   m_ObjectHideFlags: 0
@@ -29000,6 +29008,10 @@ MonoBehaviour:
   ev_id: -1
   ev_stageselect: -1
   ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!1 &731430636
 GameObject:
   m_ObjectHideFlags: 0
@@ -32714,6 +32726,10 @@ MonoBehaviour:
   ev_id: -1
   ev_stageselect: -1
   ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!1 &814821190
 GameObject:
   m_ObjectHideFlags: 0
@@ -83601,6 +83617,10 @@ MonoBehaviour:
   ev_id: -1
   ev_stageselect: -1
   ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!222 &4852349867172997051
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -83741,6 +83761,10 @@ MonoBehaviour:
   ev_id: -1
   ev_stageselect: -1
   ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
 --- !u!224 &5999692244320238791
 RectTransform:
   m_ObjectHideFlags: 0
