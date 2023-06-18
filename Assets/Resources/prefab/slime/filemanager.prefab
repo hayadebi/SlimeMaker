@@ -268,6 +268,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isEnglish: 0
+  LanguageList:
+  - ja
+  - en
+  - sv
+  - de
+  - ru
+  - ko
   walktrg: 1
   seMax: 0.045
   audioMax: 0.075
@@ -1038,6 +1045,8 @@ MonoBehaviour:
   - "\u8AD6\u7834"
   - "\u75C5\u6C17"
   - "\u6027\u7656"
+  - DX
+  - ONLINE_
   sorttrg: 1
   check_onword: 
   check_notword: 
@@ -1065,6 +1074,7 @@ MonoBehaviour:
   bz: {fileID: 0}
   adstrg: 0
   tmp_bosscount: 90
+  isplaying_stage: 
 --- !u!114 &6017326719407883951
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -366,6 +366,7 @@ GameObject:
   - component: {fileID: 11488896}
   - component: {fileID: 11439138}
   - component: {fileID: 5427793741419878697}
+  - component: {fileID: 3196150981745011353}
   m_Layer: 5
   m_Name: StoryText
   m_TagString: Untagged
@@ -468,6 +469,27 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
+--- !u!114 &3196150981745011353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  checktime: 0
+  realtimeconvert: 1
+  oldstring: 
 --- !u!1 &188898
 GameObject:
   m_ObjectHideFlags: 0
@@ -480,6 +502,7 @@ GameObject:
   - component: {fileID: 22288898}
   - component: {fileID: 11488900}
   - component: {fileID: 1758532024357946126}
+  - component: {fileID: 2038683285355857572}
   m_Layer: 5
   m_Name: NameText
   m_TagString: Untagged
@@ -562,6 +585,27 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
   m_EffectDistance: {x: 2, y: -2}
   m_UseGraphicAlpha: 0
+--- !u!114 &2038683285355857572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 28
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  checktime: 1
+  realtimeconvert: 1
+  oldstring: 
 --- !u!1 &188900
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,7 +913,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetTextObject: {fileID: 188894}
   punchObject: {fileID: 188900}
-  writingSpeed: 60
+  writingSpeed: 90
   punctuationPause: 0.25
   hiddenTextColor: {r: 1, g: 1, b: 1, a: 0}
   writeWholeWords: 0

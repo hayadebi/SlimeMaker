@@ -8,8 +8,10 @@ using UnityEngine.SceneManagement;
 public class GManager : MonoBehaviour
 {
     public static GManager instance = null;
-    [Header("次のコメントまで汎用変数")]
+    [Header("UniLangで言語管理")]
     public int isEnglish = 0;
+    [Header("上記に値する言語達の一覧")]
+    public string[] LanguageList;
     public bool walktrg = true;
     public float seMax = 0.008f;
     public float audioMax = 0.01f;
@@ -163,7 +165,7 @@ public class GManager : MonoBehaviour
     public bool sorttrg = true;
     public string check_onword = "";
     public string check_notword = "";
-    public string tmp_stagename="";
+    public string tmp_stagename = "";
     public int old_year = 2023;
     [System.Serializable]
     public struct DevDateTime
@@ -178,7 +180,7 @@ public class GManager : MonoBehaviour
     public int globalev_id = -1;
     public int globalev_stageselect = -1;
     public GameObject[] ev_ui;
-    public string loadscene_name="";
+    public string loadscene_name = "";
     [Header("ここからはミニゲーム")]
     public float normalgame_gravity = -9.81f;
     public float minigame_gravity = -6.31f;
@@ -188,9 +190,10 @@ public class GManager : MonoBehaviour
     public float mini_tmptime = 0f;
     public GameObject[] ministages;
     public int minigame_score = 0;
-    public bazooka bz=null;
+    public bazooka bz = null;
     public bool adstrg = false;
     public int tmp_bosscount = 90;
+    public string isplaying_stage;
     private void Awake()
     {
         if (instance == null)
@@ -206,7 +209,7 @@ public class GManager : MonoBehaviour
     private void Start()
     {
         old_year = PlayerPrefs.GetInt("Year", 2023);
-        if(old_year != GetGameDay().Year)
+        if (old_year != GetGameDay().Year)
         {
             old_year = GetGameDay().Year;
             PlayerPrefs.SetInt("Year", old_year);
@@ -215,11 +218,11 @@ public class GManager : MonoBehaviour
     }
     private void Update()
     {
-        if(instance.reset_time >= 0)
+        if (instance.reset_time >= 0)
         {
             instance.reset_time -= Time.deltaTime;
         }
-        if(SceneManager.GetActiveScene().name == "minigame" && Physics.gravity != new Vector3(0, instance.minigame_gravity, 0))
+        if (SceneManager.GetActiveScene().name == "minigame" && Physics.gravity != new Vector3(0, instance.minigame_gravity, 0))
         {
             Physics.gravity = new Vector3(0, instance.minigame_gravity, 0);
         }
@@ -227,10 +230,10 @@ public class GManager : MonoBehaviour
         {
             Physics.gravity = new Vector3(0, instance.normalgame_gravity, 0);
         }
-        if(instance.mini_loadtime>0)
+        if (instance.mini_loadtime > 0)
         {
             instance.mini_tmptime += Time.deltaTime;
-            if(instance.mini_tmptime >= instance.mini_loadtime)
+            if (instance.mini_tmptime >= instance.mini_loadtime)
             {
                 instance.mini_loadtime = 0;
                 instance.mini_tmptime = 0;
@@ -251,12 +254,12 @@ public class GManager : MonoBehaviour
     public int AllSpanCheck(DateTime tmp_time)
     {
         int check_result = 0;
-        
+
         DateTime today = DateTime.Today;
         DateTime devday = new DateTime(instance.devdays.year, instance.devdays.month, instance.devdays.day);
         if (instance.checkdev != devday)
             today = devday;
-        DateTime newday = new DateTime(today.Year ,tmp_time.Month ,tmp_time.Day);
+        DateTime newday = new DateTime(today.Year, tmp_time.Month, tmp_time.Day);
         TimeSpan tmpdiff = newday - today;
         check_result = (int)tmpdiff.TotalDays;
         //print(check_result.ToString());

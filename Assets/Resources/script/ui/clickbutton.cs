@@ -46,6 +46,7 @@ public class clickbutton : MonoBehaviour
     public bool loadnext = false;
     public bool adstrg = false;
     public bool daysavetrg = false;
+    public bool unilangtrg = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -54,7 +55,7 @@ public class clickbutton : MonoBehaviour
             GManager.instance.slime_titleui = true;
             SetUI();
         }
-        if (EnableUI != null&&fixed_selectid == -1)
+        if (EnableUI != null && fixed_selectid == -1)
         {
             if (GManager.instance.isEnglish == 0)
             {
@@ -80,8 +81,22 @@ public class clickbutton : MonoBehaviour
                 fixed_idobjname.text = "Eraser tool";
             }
         }
-        
-       
+
+        if (unilangtrg)
+        {
+            if(GManager.instance.isEnglish==0)
+                _text.text = "Language:日本語";
+            else if (GManager.instance.isEnglish == 1)
+                _text.text = "Language:English";
+            else if (GManager.instance.isEnglish == 2)
+                _text.text = "Language:Spanish";
+            else if (GManager.instance.isEnglish == 3)
+                _text.text = "Language:German";
+            else if (GManager.instance.isEnglish == 4)
+                _text.text = "Language:Russian";
+            else if (GManager.instance.isEnglish == 5)
+                _text.text = "Language:한국어";
+        }
         Invoke("TimeEventset", 0.3f);
 
     }
@@ -107,6 +122,37 @@ public class clickbutton : MonoBehaviour
             dxmark.SetActive(false);
         }
     }
+    public void UniSet()
+    {
+        if (GManager.instance.isEnglish == 0)
+            GManager.instance.isEnglish=1;
+        else if (GManager.instance.isEnglish == 1)
+            GManager.instance.isEnglish = 2;
+        else if (GManager.instance.isEnglish == 2)
+            GManager.instance.isEnglish = 3;
+        else if (GManager.instance.isEnglish == 3)
+            GManager.instance.isEnglish = 4;
+        else if (GManager.instance.isEnglish == 4)
+            GManager.instance.isEnglish = 5;
+        else if (GManager.instance.isEnglish == 5)
+            GManager.instance.isEnglish = 0;
+        GManager.instance.setrg = 8;
+        if (unilangtrg)
+        {
+            if (GManager.instance.isEnglish == 0)
+                _text.text = "Language:日本語";
+            else if (GManager.instance.isEnglish == 1)
+                _text.text = "Language:English";
+            else if (GManager.instance.isEnglish == 2)
+                _text.text = "Language:Spanish";
+            else if (GManager.instance.isEnglish == 3)
+                _text.text = "Language:German";
+            else if (GManager.instance.isEnglish == 4)
+                _text.text = "Language:Russian";
+            else if (GManager.instance.isEnglish == 5)
+                _text.text = "Language:한국어";
+        }
+    }
     private void Update()
     {
         
@@ -121,7 +167,7 @@ public class clickbutton : MonoBehaviour
         if (fixed_idobjname != null)
         {
             fixed_idobjname.fontSize = 22;
-            fixed_idobjname.text = GManager.instance.stageobj_data[fixed_selectid].name[GManager.instance.isEnglish];
+            fixed_idobjname.text = GManager.instance.stageobj_data[fixed_selectid].name[0];
         }
     }
     public void FixedCreate()

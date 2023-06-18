@@ -201,8 +201,9 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
                     }
                     else
                     {
-                        GManager.instance.tmp_stagename = "No stage name.";
-                        result_stage = "stage\n" + Application.version + "\n" + "No stage name.";
+                        string randomtmp = ((int)UnityEngine.Random.Range(0, 9999)).ToString();
+                        GManager.instance.tmp_stagename = "No stage name."+randomtmp;
+                        result_stage = "stage\n" + Application.version + "\n" + "No stage name." + randomtmp;
                     }
                     //------------------------------------
                     for (int y = 0; y < GManager.instance.test_y.Length;)

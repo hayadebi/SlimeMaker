@@ -7,11 +7,11 @@ public class jplocal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(Application.systemLanguage == SystemLanguage.Japanese)
+        if(Application.systemLanguage == SystemLanguage.Japanese && !GManager.instance.slime_titleui)
         {
             GManager.instance.isEnglish = 0;
         }
-        else
+        else if(!GManager.instance.slime_titleui)
         {
             GManager.instance.isEnglish = 1;
         }
