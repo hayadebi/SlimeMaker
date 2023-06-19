@@ -129,7 +129,9 @@ MonoBehaviour:
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  checktime: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
   oldstring: 
 --- !u!1 &658328204422401083
 GameObject:
@@ -231,7 +233,9 @@ MonoBehaviour:
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  checktime: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
   oldstring: 
 --- !u!114 &582947924045835907
 MonoBehaviour:
@@ -560,7 +564,9 @@ MonoBehaviour:
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  checktime: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
   oldstring: 
 --- !u!114 &3899055610430927542
 MonoBehaviour:
@@ -659,7 +665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -14106.985, y: 9553.243}
+  m_AnchoredPosition: {x: 0, y: -0.0023093112}
   m_SizeDelta: {x: 0, y: 1920}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &2360422218262837609
@@ -1287,13 +1293,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnglishText: "\u3010\u30DF\u30CB\u30B2\u30FC\u30E0\u6982\u8981\u3011\r\n\u30BF\u30A4\u30C8\u30EB\uFF1A2\u5339\u306F\u30B9\u30E9\u30A4\u30E0\u30D4\u30F3\u30DC\u30FC\u30EB\r\n\u30B8\u30E3\u30F3\u30EB\uFF1A\u30D4\u30F3\u30DC\u30FC\u30EB\r\n\r\n\u672C\u4F5C\u306F2\u5339\u306F\u30B9\u30E9\u30A4\u30E0\u5144\u5F1F\u30B7\u30EA\u30FC\u30BA\u306E\u6D3E\u751F\u4F5C\u54C1\u3067\u3001\r\n2\u3064\u306E\u30B9\u30E9\u30A4\u30E0\u30DC\u30FC\u30EB\u3092\u6253\u3061\u8FD4\u3057\u3001\u30E2\u30F3\u30B9\u30BF\u30FC\u3084\u5B9D\u7BB1\u7B49\u306B\u3076\u3064\u3051\u3066\r\n\u30B9\u30B3\u30A2\u3092\u7A3C\u3050\u30D4\u30F3\u30DC\u30FC\u30EB\u306A\u30B2\u30FC\u30E0\u6027\u3067\u3059\u3002\r\n\r\n\u64CD\u4F5C\u306F\u30DE\u30A6\u30B9\u30AF\u30EA\u30C3\u30AF\u64CD\u4F5C\u306E\u307F\u3067\u3001\r\n\u30AF\u30EA\u30C3\u30AF\u3059\u308B\u3068\u30B9\u30E9\u30A4\u30E0\u30DC\u30FC\u30EB\u3092\u6253\u3061\u8FD4\u3059\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002\r\n\r\n2\u3064\u306E\u30B9\u30E9\u30A4\u30E0\u30DC\u30FC\u30EB\u4E21\u65B9\u304C\u6B7B\u306C\u3068\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC\u3002\r\n\u7247\u65B9\u3067\u3082\u751F\u304D\u6B8B\u3063\u3066\u3044\u308C\u3070\u3001\u6642\u9593\u5DEE\u3067\u6B7B\u3093\u3060\u7247\u65B9\u306F\u5FA9\u6D3B\u3067\u304D\u307E\u3059\u3002\r\n\r\n\u30E2\u30F3\u30B9\u30BF\u30FC\u3084\u5B9D\u7BB1\u3001\u6A3D\u306F\u4F55\u5EA6\u3082\u3076\u3064\u3051\u308B\u3068\u8010\u4E45\u5024\u304C0\u306B\u306A\u3063\u3066\u6D88\u6EC5\u3057\u307E\u3059\u3002\r\n\u3082\u306E\u306B\u3088\u3063\u3066\u306F\u30C9\u30ED\u30C3\u30D7\u54C1\u304C\u51FA\u3066\u304F\u308B\u306E\u3067\u3001\u3069\u3093\u3069\u3093\u3076\u3064\u3051\u307E\u3057\u3087\u3046\u3002\r\n\r\n\u53F3\u4E0A\u306EUI\u306B\u8868\u793A\u3055\u308C\u3066\u3044\u308B\"BP\"\u3068\u306F\u3001\r\n\u30D0\u30A6\u30F3\u30C9\u30D1\u30EF\u30FC(\u30B9\u30E9\u30A4\u30E0\u30DC\u30FC\u30EB\u306E\u5F3E\u6027)\u306E\u3053\u3068\u3067\u3059\u3002\r\n\u30D0\u30A6\u30F3\u30C9\u30D1\u30EF\u30FC\u306F\u30E2\u30F3\u30B9\u30BF\u30FC\u306B\u5F53\u305F\u308B\u3053\u3068\u3067\u6E1B\u5C11\u3057\u3066\u3057\u307E\u3044\u307E\u3059\u3002\r\n\u30C9\u30ED\u30C3\u30D7\u3068\u3057\u3066\u51FA\u3066\u304F\u308B\u56DE\u5FA9\u30A2\u30A4\u30C6\u30E0\u306B\u5F53\u305F\u308B\u3053\u3068\u3067\u3001\r\nBP\u3092\u5168\u5FEB\u3059\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002\r\n\r\n\r\n"
+  EnglishText: "Outline of the mini-game\r\nTitle: 2 Animals are Slime Pinball\r\nGenre:
+    Pinball\r\n\r\nThis title is a derivative of the 2 Slime Brothers series,\r\nIt
+    is a pinball game in which two slime balls are hit back and forth,\r\n hitting
+    monsters, treasure chests, etc.\r\n The game is a pinball game in which players
+    try to earn a score by hitting monsters,\r\n treasure chests,\r\n and other objects
+    with two slime balls.\r\n\r\nControls are by mouse click only,\r\n Clicking the
+    mouse button launches the slime balls back at the player.\r\n\r\nThe game is
+    over when both slime balls die.\r\nIf one of them survives, the dead one can
+    be revived by a time delay.\r\n\r\nMonsters, treasure chests,\r\n and barrels
+    will disappear when their durability value becomes 0 if they are hit repeatedly.\r\nSome
+    items will produce drops,\r\n so hit them as often as you can.\r\n\r\nWhat is
+    \"BP\" displayed in the upper right UI? Bound Power \r\n(elasticity of slime
+    ball).\r\nBouncing power decreases when you hit a monster.\r\nBP can be fully
+    recovered by hitting recovery items that appear as drops,\r\n BP can be fully
+    recovered.\r\n\r\n"
   englishFontSize: 38
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  checktime: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 1
   oldstring: 
 --- !u!114 &7017177971834678489
 MonoBehaviour:
@@ -2023,7 +2045,9 @@ MonoBehaviour:
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  checktime: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
   oldstring: 
 --- !u!114 &8215947865367924031
 MonoBehaviour:

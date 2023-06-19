@@ -187,6 +187,10 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
+  loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &611747686806042245
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,7 +532,6 @@ GameObject:
   - component: {fileID: 3969442052517751359}
   - component: {fileID: 4101242223439497626}
   - component: {fileID: 3222031182895379313}
-  - component: {fileID: 4891848796267997808}
   m_Layer: 5
   m_Name: uesornoText
   m_TagString: Untagged
@@ -608,15 +611,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Open Twitter to share your stage.
-
-    Want to continue sharing?'
+  EnglishText: 
   englishFontSize: 20
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &3222031182895379313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -632,31 +636,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &4891848796267997808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1324857554361488294}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  englishText: 'Failed to share stage data.
-
-    There is a problem on the server
-    side or with the stage data.
-
-    If you can''t fix it and the failure continues,
-    please contact @hayadebi on Twitter.'
-  englishFontSize: 18
-  nosetTrg: 0
-  textimage: {fileID: 0}
-  textsprite: {fileID: 0}
-  enfont: {fileID: 0}
-  starttrg: 0
 --- !u!1 &1510825732505773299
 GameObject:
   m_ObjectHideFlags: 0
@@ -780,13 +759,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Yes.
+  EnglishText: 
   englishFontSize: 32
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &1640761850117006328
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,6 +780,7 @@ GameObject:
   - component: {fileID: 2657005519503362121}
   - component: {fileID: 8357279530156051344}
   - component: {fileID: 7727101151378830048}
+  - component: {fileID: 3755347369899799907}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -865,6 +848,28 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u30B9\u30C6\u30FC\u30B8\u30C7\u30FC\u30BF\u3092\u9001\u4FE1\u30FB\u5171\u6709\u4E2D\u2026\u2026"
+--- !u!114 &3755347369899799907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640761850117006328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &1779145766184378290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1392,13 +1397,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: No.
+  EnglishText: 
   englishFontSize: 32
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &4963397372052872224
 GameObject:
   m_ObjectHideFlags: 0
@@ -1492,15 +1500,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Open Twitter to share your stage.
-
-    Want to continue sharing?'
+  EnglishText: 
   englishFontSize: 20
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1285078974977189477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1528,15 +1537,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Send to server to share stage.
-
-    Continue sharing?'
+  EnglishText: 
   englishFontSize: 20
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &5012033873581952253
 GameObject:
   m_ObjectHideFlags: 0
@@ -1888,6 +1898,10 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
+  loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &5957174797695159334
 GameObject:
   m_ObjectHideFlags: 0
@@ -2608,6 +2622,10 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
+  loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &9222832446855001359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2621,7 +2639,6 @@ GameObject:
   - component: {fileID: 2854772126648759485}
   - component: {fileID: 7889695691419706521}
   - component: {fileID: 5172578162083398710}
-  - component: {fileID: 5778651042850240178}
   m_Layer: 5
   m_Name: uesornoText
   m_TagString: Untagged
@@ -2701,15 +2718,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Open Twitter to share your stage.
-
-    Want to continue sharing?'
+  EnglishText: 
   englishFontSize: 20
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &5172578162083398710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2725,28 +2743,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -1}
   m_UseGraphicAlpha: 1
---- !u!114 &5778651042850240178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9222832446855001359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  englishText: 'You have successfully shared stage data.
-
-    Let''s go back to stage
-    editing once.'
-  englishFontSize: 20
-  nosetTrg: 0
-  textimage: {fileID: 0}
-  textsprite: {fileID: 0}
-  enfont: {fileID: 0}
-  starttrg: 0
 --- !u!1001 &4785430971451744373
 PrefabInstance:
   m_ObjectHideFlags: 0

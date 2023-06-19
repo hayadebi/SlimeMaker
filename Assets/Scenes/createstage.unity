@@ -1478,6 +1478,7 @@ GameObject:
   - component: {fileID: 58677799}
   - component: {fileID: 58677798}
   - component: {fileID: 58677797}
+  - component: {fileID: 58677800}
   m_Layer: 5
   m_Name: objdata
   m_TagString: Untagged
@@ -1560,6 +1561,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 58677795}
   m_CullTransparentMesh: 0
+--- !u!114 &58677800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58677795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 1
+  humantrg: 0
+  oldstring: 
 --- !u!1 &67766477
 GameObject:
   m_ObjectHideFlags: 0
@@ -7415,6 +7438,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &212603430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8579,13 +8603,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Create reset
+  EnglishText: 
   englishFontSize: 20
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &237331206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20969,13 +20996,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Test play
+  EnglishText: 
   englishFontSize: 20
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &556764254
 GameObject:
   m_ObjectHideFlags: 0
@@ -29012,6 +29042,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &731430636
 GameObject:
   m_ObjectHideFlags: 0
@@ -32730,6 +32761,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &814821190
 GameObject:
   m_ObjectHideFlags: 0
@@ -36980,13 +37012,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Gimmick fixation: OFF'
+  EnglishText: 
   englishFontSize: 14
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 1
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &914625662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40217,13 +40252,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Return to title
+  EnglishText: 
   englishFontSize: 18
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &1005299942
 GameObject:
   m_ObjectHideFlags: 0
@@ -52122,13 +52160,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Please enter a stage name.
+  EnglishText: 
   englishFontSize: 20
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 1
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1322899633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52277,16 +52318,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Use the mouse wheel, click and hold to create stages as you like!
-
-    (You
-    must clear the stage in test play before it can be released to the public.)'
+  EnglishText: 
   englishFontSize: 24
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 1
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &1325482000
 GameObject:
   m_ObjectHideFlags: 0
@@ -82688,13 +82729,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: "Click on the gimmick to\n immobilize the selection."
+  EnglishText: 
   englishFontSize: 24
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1182447732767910340
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -83621,6 +83665,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!222 &4852349867172997051
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -83765,6 +83810,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!224 &5999692244320238791
 RectTransform:
   m_ObjectHideFlags: 0
@@ -84423,15 +84469,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Fantia limited stage.1
-
-    <size=12>created by @hayadebi</size>'
+  EnglishText: 
   englishFontSize: 16
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &6878612206321916656
 GameObject:
   m_ObjectHideFlags: 0

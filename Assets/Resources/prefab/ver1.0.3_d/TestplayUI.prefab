@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 6671715949302277853}
   - component: {fileID: 6671715949302277851}
   - component: {fileID: 6671715949302277850}
+  - component: {fileID: 3497647272838675303}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -364,6 +365,28 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1.05
   m_Text: "\u30B9\u30C6\u30FC\u30B8\u30AF\u30EA\u30A2\u3092\u78BA\u8A8D\u3067\u304D\u307E\u3057\u305F\u3002\n\u4F5C\u6210\u3057\u305F\u30B9\u30C6\u30FC\u30B8\u3092\u5171\u6709\u30FB\u914D\u5E03\u3057\u307E\u3059\u304B\uFF1F"
+--- !u!114 &3497647272838675303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6671715949302277852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &6671715949307656352
 GameObject:
   m_ObjectHideFlags: 0
@@ -835,6 +858,9 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &6671715949813362627
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,3 +1090,6 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0

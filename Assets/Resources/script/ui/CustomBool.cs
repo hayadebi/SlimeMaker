@@ -21,8 +21,8 @@ public class CustomBool : MonoBehaviour
     }
     void SetBoolText()
     {
-        if (GManager.instance.sorttrg) _text.text = name_true[GManager.instance.isEnglish];
-        else if (!GManager.instance.sorttrg) _text.text = name_false[GManager.instance.isEnglish];
+        if (GManager.instance.sorttrg) _text.text = name_true[0];
+        else if (!GManager.instance.sorttrg) _text.text = name_false[0];
     }
     public void SetClickBool()
     {

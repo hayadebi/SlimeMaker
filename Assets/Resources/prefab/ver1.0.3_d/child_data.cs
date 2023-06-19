@@ -52,19 +52,8 @@ namespace UniLang
         }
         public void ChildDataSet()
         {
-            if (GManager.instance.isEnglish == 0)
-            {
-                nameText.text = "ステージ名：" + stage_name;
-                versionText.text = "バージョン：" + stage_version;
-            }
-            else
-            {
-                nameText.text = "Stage name：" + stage_name;
-                if (stage_version != "共通")
-                    versionText.text = "Version：" + stage_version;
-                else if (stage_version == "共通")
-                    versionText.text = "Version：common";
-            }
+            nameText.text = "ステージ名：" + stage_name;
+            versionText.text = "バージョン：" + stage_version;
         }
         public void ClickStageServer()
         {

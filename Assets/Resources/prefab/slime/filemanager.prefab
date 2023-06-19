@@ -879,7 +879,7 @@ MonoBehaviour:
   reset_time: 0
   set_createid: 0
   fixed_createid: 0
-  dx_mode: 1
+  dx_mode: 0
   dx_stageid: -1
   dx_filename:
   - {fileID: 4900000, guid: 1f65af72aa6cd024a902322b1e614bd0, type: 3}

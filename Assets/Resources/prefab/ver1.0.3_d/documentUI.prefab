@@ -108,7 +108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -12399.368, y: 7606.1763}
+  m_AnchoredPosition: {x: 0.000938286, y: -0.00110787}
   m_SizeDelta: {x: 0, y: 3200}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &488909318768305665
@@ -481,7 +481,9 @@ MonoBehaviour:
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  checktime: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
   oldstring: 
 --- !u!114 &1447827957302671259
 MonoBehaviour:
@@ -929,22 +931,59 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnglishText: "\u25A0\u64CD\u4F5C\u65B9\u6CD5\r\n-\u57FA\u672C\u7684\u306B\u306F\u30DE\u30A6\u30B9\u3068WASD\u64CD\u4F5C\u306E\u307F\u3002\r\n\u25A0\u7D39\u4ECB\r\n-\u672C\u4F5C\u306FUnity1\u9031\u9593\u30B2\u30FC\u30E0\u30B8\u30E3\u30E0
-    \u304A\u984C\u300C2\u300D\u3067\u516C\u958B\u3057\u305F\r\n  \u300C2\u5339\u306F\u30B9\u30E9\u30A4\u30E0\u5144\u5F1F\uFF01\u300D\u306E\u30EA\u30E1\u30A4\u30AF\u4F5C\u54C1\u3067\u3059\u3002
-    \r\n-\u30EA\u30E1\u30A4\u30AF\u5143\u306E\u3088\u3046\u306B\u30012\u5339\u306E\u30B9\u30E9\u30A4\u30E0\u3092\u540C\u6642\u306B\u64CD\u4F5C\u3059\u308B\u30D1\u30BA\u30EB\u30A2\u30AF\u30B7\u30E7\u30F3\u306A\u30B2\u30FC\u30E0\u6027\u3067\u3001\r\n 
-    \u305D\u3053\u306B\u30B9\u30C6\u30FC\u30B8\u4F5C\u6210\u6A5F\u80FD\u3068\u30C7\u30FC\u30BF\u30B9\u30C8\u30A2\u3092\u7528\u3044\u305F\u5171\u6709\u6A5F\u80FD\u304C\u5B9F\u88C5\u3055\u308C\u3066\u3044\u307E\u3059\u3002\r\n\u25A0\"\u30B9\u30C8\u30FC\u30EA\u30FC\u30E2\u30FC\u30C9\"\u3068\u30B9\u30C6\u30FC\u30B8\u30D7\u30EC\u30A4\u5171\u901A\r\n-\u30EA\u30E1\u30A4\u30AF\u5143\u304B\u3089\u7269\u8A9E\u3092\u88DC\u8DB3\u3057\u3064\u3064\u3001\u51686\u30B9\u30C6\u30FC\u30B8\u3042\u308A\u307E\u3059\u3002\r\n-\u30B9\u30C6\u30FC\u30B8\u30D7\u30EC\u30A4\u5171\u901A\u306A\u306E\u3067\u3059\u304C\u3001WASD\u3067\u30B9\u30E9\u30A4\u30E0\u5144\u5F1F\u3092\u540C\u6642\u64CD\u4F5C\u3067\u304D\u307E\u3059\u3002\r\n\u79FB\u52D5\u306E\u969B\u3001\u6A2A\u65B9\u5411\u306F\u5144\u5F1F\u3067\u9006\u65B9\u5411\u306B\u52D5\u304D\u307E\u3059(\u4F8B\uFF1AD\u30AD\u30FC\u3067\u306F\u5144\u304C\u53F3\u3001\u5F1F\u304C\u5DE6\u3078\u52D5\u304F)\r\n\u25A0\"\u307F\u3093\u306A\u306E\u30B9\u30C6\u30FC\u30B8\u30E2\u30FC\u30C9\"\r\n-\u30C7\u30FC\u30BF\u30B9\u30C8\u30A2\u3092\u7528\u3044\u3066\u5171\u6709\u3055\u308C\u305F\u30B9\u30C6\u30FC\u30B8\u9054\u304C\u3053\u3053\u306B\u8868\u793A\u3055\u308C\u307E\u3059\u3002\r\n-200\u4EF6\u307E\u3067\u8868\u793A\u3055\u308C\u308B\u4ED5\u69D8\u3067\u3001\u305D\u308C\u3092\u8D85\u3048\u305F\u5834\u5408\u306F\u3001\r\n 
-    \u53E4\u3044\u30B9\u30C6\u30FC\u30B8\u304B\u3089\u5185\u81D3\u30B9\u30C6\u30FC\u30B8\u3068\u3057\u3066\"\u307F\u3093\u306A\u304B\u3089\u306E\u6311\u6226\u72B6\"\u306B\u8F09\u305B\u307E\u3059\u3002\r\n\u25A0\"\u30B9\u30C6\u30FC\u30B8\u4F5C\u6210\u30E2\u30FC\u30C9\"\r\n-\u3053\u3053\u3067\u30B9\u30C6\u30FC\u30B8\u3092\u4F5C\u6210\u3067\u304D\u307E\u3059\u3002\r\n-\u30DE\u30A6\u30B9\u306E\u307F\u306E\u64CD\u4F5C\u3067\u3001\u81EA\u7531\u306B\u30AE\u30DF\u30C3\u30AF\u306A\u3069\u3092\u914D\u7F6E\u3067\u304D\u307E\u3059\u3002\r\n-\u305F\u3060\u3057\u3001\u30C6\u30B9\u30C8\u30D7\u30EC\u30A4\u3067\u81EA\u3089\u30AF\u30EA\u30A2\u3059\u308B\u307E\u3067\u306F\u516C\u958B\u3067\u304D\u307E\u305B\u3093\u3002\r\n(DX\u7248\u3067\u306F\u3001\u30A4\u30D9\u30F3\u30C8\u671F\u9593\u5916\u3067\u3082\u30A4\u30D9\u30F3\u30C8\u30AE\u30DF\u30C3\u30AF\u3092\u4F7F\u7528\u3067\u304D\u307E\u3059)\r\n-----------------------------------------------------------\r\n\u30FB\u30DE\u30A6\u30B9\u30DB\u30A4\u30FC\u30EB\u56DE\u8EE2\r\n\u3000\u30DE\u30B9\u306B\u30AB\u30FC\u30BD\u30EB\u3092\u5408\u308F\u305B\u3066\u308B\u6642\u306B\u3059\u308B\u3068\u8A2D\u7F6E\u30AE\u30DF\u30C3\u30AF\u3092\u4E00\u6C17\u306B\u5207\u308A\u66FF\u3048\u308C\u308B\u3002\r\n\u30FB\u5DE6\u30AF\u30EA\u30C3\u30AF\r\n\u3000\u305D\u306E\u6642\u306B\u5408\u308F\u305B\u3066\u3044\u308B\u30DE\u30B9\u306E\u8A2D\u7F6E\u30AE\u30DF\u30C3\u30AF\u3092\u614E\u91CD\u306B\u5207\u308A\u66FF\u3048\u308C\u308B\u3002\r\n\u30FB\u5DE6\u30AF\u30EA\u30C3\u30AF\u9577\u62BC\u3057\u30AB\u30FC\u30BD\u30EB\u79FB\u52D5\r\n\u3000\u79FB\u52D5\u4E2D\u5408\u308F\u305B\u3066\u308B\u30DE\u30B9\u306E\u8A2D\u7F6E\u30AE\u30DF\u30C3\u30AF\u3092\u6B21\u3005\u5207\u308A\u66FF\u3048\u308C\u308B\u3002\r\n\u30FB\"\u30C6\u30B9\u30C8\u30D7\u30EC\u30A4\"\r\n\u3000\u3053\u3053\u304B\u3089\u4F5C\u6210\u30B9\u30C6\u30FC\u30B8\u30C7\u30FC\u30BF\u3092\u30C6\u30B9\u30C8\u30D7\u30EC\u30A4\u3002\u81EA\u3089\u30AF\u30EA\u30A2\u3059\u308B\u307E\u3067\u306F\u5171\u6709\u3067\u304D\u306A\u3044\u3002\r\n\u30FB\u5171\u6709\r\n\u3000\u30C7\u30FC\u30BF\u30B9\u30C8\u30A2\u3092\u901A\u3057\u3066\u30B9\u30C6\u30FC\u30B8\u30C7\u30FC\u30BF\u3092\u30B5\u30FC\u30D0\u30FC\u306B\u9001\u4FE1\u3057\u307E\u3059\u3002\r\n\u3000\u9001\u4FE1\u30FB\u5171\u6709\u3055\u308C\u305F\u30B9\u30C6\u30FC\u30B8\u306F\"\u307F\u3093\u306A\u306E\u30B9\u30C6\u30FC\u30B8\"\u306B\u3066\u8868\u793A\u3055\u308C\u3001\u30D7\u30EC\u30A4\u3067\u304D\u307E\u3059\u3002\r\n-----------------------------------------------------------\r\n\u25A0\u307F\u3093\u306A\u304B\u3089\u306E\u6311\u6226\u72B6\u203BDX\u7248\u3001\u307E\u305F\u306FDX\u30E2\u30FC\u30C9\u304C\u30DF\u30CB\u30B2\u30FC\u30E0\u3067ON\u306B\u306A\u3063\u3066\u3044\u308B\u6642\u9650\u5B9A\r\n-\u958B\u767A\u8005\u81EA\u8EAB\u304C\u4F5C\u6210\u3057\u305F\u30B9\u30C6\u30FC\u30B8\u3084\u9650\u5B9A\u30B9\u30C6\u30FC\u30B8\u3001\r\n 
-    \u30D7\u30EC\u30A4\u6E08\u307F\u306E\u904E\u53BB\u30A4\u30D9\u30F3\u30C8\u30B9\u30C6\u30FC\u30B8\u3084\u53E4\u3044\u5171\u6709\u30B9\u30C6\u30FC\u30B8\u306A\u3069\u304C\u3053\u3053\u306B\u307E\u3068\u3081\u3089\u308C\u3001\r\n 
-    \u5185\u81D3\u30B9\u30C6\u30FC\u30B8\u3068\u3057\u3066\u904A\u3076\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002\r\n\u25A0\u30A4\u30D9\u30F3\u30C8\r\n-\u6BCE\u5E741\u5E74\u9593\u3092\u901A\u3057\u3066\u30A4\u30D9\u30F3\u30C8\u3084\u5B63\u7BC0\u7B49\u306B\u5FDC\u3058\u3066\u3001\u5185\u8535\u3055\u308C\u3066\u3044\u308B\u30A4\u30D9\u30F3\u30C8\u304C\u81EA\u52D5\u3067\u958B\u50AC\u3055\u308C\u307E\u3059\u3002\r\n-Twitter(@hayadebi)\u306E\u65B9\u3067\u30A4\u30D9\u30F3\u30C8\u306E\u544A\u77E5\u3092\u3057\u3066\u3044\u307E\u3059\u306E\u3067\u3001\u8A73\u3057\u3044\u3053\u3068\u306F\u305D\u3061\u3089\u304B\u3089\u3002\r\n\u25A0\u30DF\u30CB\u30B2\u30FC\u30E0\r\n-\u6BCE\u65E5\u6311\u6226\u3067\u304D\u308B\u30DF\u30CB\u30B2\u30FC\u30E0\u306710\u4E07\u70B9\u4EE5\u4E0A\u306E\u30B9\u30B3\u30A2\u3092\u53D6\u308C\u308B\u3068\u3001\r\n 
-    \u5831\u916C\u3068\u3057\u3066DX\u30B3\u30F3\u30C6\u30F3\u30C4\u304C1\u6642\u9593\u958B\u653E\u3055\u308C\u307E\u3059\uFF01\r\n\u25A0\u30CD\u30C3\u30C8\u30EF\u30FC\u30AF\u901A\u4FE1\u306B\u3064\u3044\u3066\r\n-\"\u307F\u3093\u306A\u306E\u30B9\u30C6\u30FC\u30B8\u30E2\u30FC\u30C9\"\u3067\u306E\u5171\u6709\u30B9\u30C6\u30FC\u30B8\u95B2\u89A7\u3001\"\u30B9\u30C6\u30FC\u30B8\u4F5C\u6210\u30E2\u30FC\u30C9\"\u3067\u306E\u30B9\u30C6\u30FC\u30B8\u30C7\u30FC\u30BF\u5171\u6709\u3001\r\n 
-    \u30E9\u30F3\u30AD\u30F3\u30B0\u6A5F\u80FD\u3001\u5E83\u544A\u3067\u901A\u4FE1\u3092\u884C\u3044\u307E\u3059\u3002\r\n-\u4E0A\u8A18\u9805\u76EE\u6642\u4EE5\u5916\u3067\u306F\u4E00\u5207\u901A\u4FE1\u306F\u884C\u308F\u308C\u305A\u3001\u884C\u3046\u305D\u306E\u9593\u306E\u3053\u3068\u306F\u958B\u767A\u8005\u306B\u4E00\u5207\u4F1D\u308F\u308A\u307E\u305B\u3093\u3002\r\n-\u901A\u4FE1\u306E\u3042\u308B\u8981\u7D20\u3092\u697D\u3057\u3080\u5834\u5408\u306F\u3001\u30A4\u30F3\u30BF\u30FC\u30CD\u30C3\u30C8\u304C\u6709\u52B9\u306A\u74B0\u5883\u3067\u904A\u3073\u307E\u3057\u3087\u3046\u3002\r\n\u25A0DX\u7248\u306E\u305D\u306E\u4ED6\u304A\u307E\u3051\r\n-Fantia\u6709\u6599\u30D7\u30E9\u30F3\u306E4\u304B\u6708\u5206\u7121\u6599\u5238\u3082\u4ED8\u5C5E\u3002\r\n-\u80CC\u666F\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u578B\u306E\u5E83\u544A\u3092\u524A\u9664(ver1.0.3~)\r\n\u25A0\u516C\u5F0F\u30B5\u30A4\u30C8\r\n-\"\u30CF\u30E4\u30C7\u30D3\u306E\u30B2\u30FC\u30E0\u5DE5\u623F\"(https://unitygamehayadebi.jimdofree.com/)\u3068\u3044\u3046\u516C\u5F0F\u30B5\u30A4\u30C8\u3067\u3001\r\n 
-    \u4F5C\u54C1\u306E\u6700\u65B0\u60C5\u5831\u306A\u3069\u3092\u767A\u4FE1\u3057\u3066\u3044\u307E\u3059\u3002\r\n-\u30A2\u30D7\u30C7\u306B\u3064\u3044\u3066\u306E\u304A\u77E5\u3089\u305B\u3084\u3001\u5272\u5F15\u30BB\u30FC\u30EB\u60C5\u5831\u3092\u77E5\u308A\u305F\u3044\u6642\u306A\u3069\u306F\u30C1\u30A7\u30C3\u30AF\u3057\u3066\u307F\u307E\u3057\u3087\u3046\u3002\r\n\r\n\r\n"
+  EnglishText: "\u25A0Operation Methods\r\n-Basically only mouse and WASD operation.\r\n\r\n\u25A0Introduction\r\n-This
+    work is a remake of \"2 Slime Brothers! This is a remake of \"2 Slime Brothers!
+    \r\nThis game is a remake of \"2 Slimes Brothers!\",\r\n a puzzle-action game
+    in which you control 2 slimes at the same time,\r\n with the ability to create
+    and share stages together.\r\nStory Mode\" and stage play are common.\r\n-The
+    story is supplemented from the original remake, and there are 6 stages in total.\r\n-The
+    stage play is common, but you can use WASD to control the slime brothers at the
+    same time.\r\nWhen moving, the brothers move in opposite directions horizontally
+    \r\n(e.g., the D key moves the older brother to the right and the younger brother
+    to the left).\r\n\"Everyone's Stage Mode\".\r\n-The stages that have been shared
+    using the data store are displayed here.\r\n-If the number of shared stages exceeds
+    200,\r\n the oldest stages will be added to the \"Challenge from Everyone\" list
+    as internal stages.\r\n\r\n\u25A0Stage creation mode\r\n-You can create stages
+    here.\r\n-You can freely place gimmicks, etc. using only the mouse.\r\n-You can
+    create your own stages,\r\n but you cannot release them to the public until you
+    have cleared the stage yourself in test play.\r\n(In the DX version, you can
+    use event gimmicks even outside of the event period.)\r\n-----------------------------------------------------------\r\nMouse
+    wheel rotation\r\n\u3000When you move the cursor to a square,\r\n  you can switch
+    the gimmicks at once.\r\nLeft click\r\n\u3000When the cursor is over a square,\r\n 
+    you can carefully switch the gimmick.\r\nLeft click and hold to move the cursor\r\n\u3000You
+    can switch the gimmicks in the square you are moving to one after another.\r\nTest
+    Play\r\n\u3000From here, you can test play the stage data you have created.\r\n 
+    You can't share your stage data until you clear it.\r\nShare\r\n\u3000Send stage
+    data to the server through the data store.\r\n\u3000The stage data sent and shared
+    will be displayed on \"Everyone's Stages\" and can be played.\r\n-----------------------------------------------------------\r\n\r\n\u25A0Challenge
+    Letters from Everyone\r\n-Stage data is sent to the server through the shared
+    data store,\r\n  The stages created by the developers themselves, limited stages,
+    stages from past events,\r\n old shared stages,\r\n etc. are collected here and
+    can be played as internal stages.\r\n\r\n\u25A0Events\r\nBuilt-in events are
+    automatically held throughout the year according to events,\r\n seasons, etc.\r\n-Twitter
+    (@hayadebi) is the place to post event announcements,\r\n so please visit there
+    for more information.\r\n\r\n\u25A0Mini games\r\n-When you get a score of 100,000
+    points or more in the mini-games that you can try every day,\r\n DX contents
+    will be opened for one hour as a reward!\r\nAbout Network Communication\r\n-Communication
+    is used for viewing shared stages in \"Everyone's Stage Mode\",\r\n sharing stage
+    data in \"Create Stage Mode\",\r\n ranking functions, and advertisements.\r\n-With
+    the exception of the above items, no communication will take place,\r\n and the
+    developer will not be notified of anything that takes place during such communication.\r\n-If
+    you want to enjoy the elements with communication,\r\n please play in an environment
+    where the Internet is available.\r\n\r\n\u25A0Other extras of the DX version\r\n-A
+    free 4-month voucher for Fantia paid plan is also included.\r\n-Removed background
+    object type ads (ver1.0.3~)\r\nOfficial website\r\n-Official site \"Hayadevi's
+    Game Workshop\"\r\n(https://unitygamehayadebi.jimdofree.com/), \r\nwhere you
+    can find the latest information about the game.\r\n-Check it out if you want
+    to know about apps,\r\n discount sale information, and so on."
   englishFontSize: 30
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  checktime: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 1
   oldstring: 
 --- !u!114 &6056772924726874711
 MonoBehaviour:

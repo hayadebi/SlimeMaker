@@ -31,8 +31,11 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
     // Start is called before the first frame update
     void Start()
     {
-        if (GManager.instance.tmp_stagename != "" && stage_customname!=null)
+        if (GManager.instance.tmp_stagename != "" && stage_customname != null)
+        {
+            if (stage_customname.text.Contains("No stage name.")) GManager.instance.tmp_stagename = "No stage name.";
             stage_customname.text = GManager.instance.tmp_stagename;
+        }
         GManager.instance.debug_trg = false;
         if (this_y == 0 || this_x == 0 || this_y == 17 || this_x == 25)
             reset_id = 1;
@@ -107,7 +110,7 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
             bool tmp_loop = true;
             while (tmp_loop)
             {
-                if (GManager.instance.stageobj_onset[select_id]==1)
+                if (GManager.instance.stageobj_onset[select_id] == 1)
                 {
                     tmp_loop = false;
                     break;
@@ -119,20 +122,14 @@ public class stage_create : MonoBehaviour, IPointerEnterHandler,IPointerExitHand
                 if (select_id >= GManager.instance.gimmick_length)
                     select_id = 0;
                 else if (select_id < 0)
-                    select_id = GManager.instance.gimmick_length-1;
+                    select_id = GManager.instance.gimmick_length - 1;
             }
             GManager.instance.test_y[this_y].test_x[this_x] = select_id;
             img.sprite = GManager.instance.stageobj_createimg[select_id];
-            if (GManager.instance.isEnglish == 0)
-            {
-                objscript.fontSize = 28;
-                objscript.text = GManager.instance.stageobj_data[select_id].name[0] + "：" + GManager.instance.stageobj_data[select_id].script[0];
-            }
-            else
-            {
-                objscript.fontSize = 24;
-                objscript.text = GManager.instance.stageobj_data[select_id].name[1] + "：" + GManager.instance.stageobj_data[select_id].script[1];
-            }
+
+            objscript.fontSize = 28;
+            objscript.text = GManager.instance.stageobj_data[select_id].name[0] + "：" + GManager.instance.stageobj_data[select_id].script[0];
+
             addtrg = true;
         }
         else

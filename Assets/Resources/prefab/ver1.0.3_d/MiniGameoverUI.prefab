@@ -190,6 +190,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 1
+  unilangtrg: 0
 --- !u!1 &602304309217726237
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +435,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 4220356506255896030}
   m_Direction: 2
   m_Value: 1
-  m_Size: 1
+  m_Size: 0.303
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -764,6 +765,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 1
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &2071477084680319235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1068,7 +1070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -249.999, y: 118.19446}
+  m_AnchoredPosition: {x: 0.000045776367, y: 0}
   m_SizeDelta: {x: 0, y: 1000}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &548631402203483962
@@ -1217,13 +1219,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Give up today's challenge.
+  EnglishText: 
   englishFontSize: 22
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &3006161001568722223
 GameObject:
   m_ObjectHideFlags: 0
@@ -1331,15 +1336,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Retry from the continuation.
-
-    <size=20>(Ads will be enabled)</size>'
+  EnglishText: 
   englishFontSize: 22
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &3884961956518557619
 GameObject:
   m_ObjectHideFlags: 0
@@ -1541,13 +1547,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Top 50 Score Ranking
+  EnglishText: 
   englishFontSize: 23
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &4329217915833395416
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,13 +2332,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Save scores to ranking
+  EnglishText: 
   englishFontSize: 10
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &6693936753603062091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2558,7 +2570,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8567959311039270937}
   m_HandleRect: {fileID: 6512274651499253498}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3376,6 +3388,7 @@ GameObject:
   - component: {fileID: 4026372886256187871}
   - component: {fileID: 7648481923208183334}
   - component: {fileID: 7536710128987028006}
+  - component: {fileID: 4988008668010116911}
   m_Layer: 5
   m_Name: scoretext
   m_TagString: Untagged
@@ -3473,6 +3486,28 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 2.5, y: -3}
   m_UseGraphicAlpha: 1
+--- !u!114 &4988008668010116911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7536710128987028007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 1
+  humantrg: 0
+  oldstring: 
 --- !u!1 &7832986005209798545
 GameObject:
   m_ObjectHideFlags: 0
@@ -3560,6 +3595,7 @@ GameObject:
   - component: {fileID: 1286340073975890848}
   - component: {fileID: 7870999258144755371}
   - component: {fileID: 5960618123566004032}
+  - component: {fileID: 5215732662082090230}
   m_Layer: 5
   m_Name: gametext
   m_TagString: Untagged
@@ -3657,6 +3693,28 @@ MonoBehaviour:
   _text: {fileID: 1286340073975890848}
   ui_mode: minigameend
   tmp_cleartime: 0
+--- !u!114 &5215732662082090230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7870999258144755364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 1
+  humantrg: 0
+  oldstring: 
 --- !u!1 &8309806979598846147
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,13 +3806,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Enter the name displayed in the ranking....
+  EnglishText: 
   englishFontSize: 10
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &8376269524237888260
 GameObject:
   m_ObjectHideFlags: 0

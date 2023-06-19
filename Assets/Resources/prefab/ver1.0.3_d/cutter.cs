@@ -45,6 +45,11 @@ public class cutter : MonoBehaviour
         {
             colmode.move_num *= -1;
             colmode.count_time = 0;
+           if(rb != null) rb.velocity = Vector3.zero;
+        }
+        else if (col.tag != "ground" && rb != null && rb.velocity != Vector3.zero)
+        {
+            rb.velocity = Vector3.zero;
         }
     }
 }

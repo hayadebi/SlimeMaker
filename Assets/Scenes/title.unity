@@ -264,13 +264,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Everyone's stage mode
+  EnglishText: 
   englishFontSize: 24
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &180160681
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,6 +781,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &379705251
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,15 +976,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Nightmare events
-
-    <size=18>(Limited-time event)</size>'
+  EnglishText: 
   englishFontSize: 18
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &440707074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1227,6 +1232,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &544573267
 GameObject:
   m_ObjectHideFlags: 0
@@ -1697,9 +1703,10 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
-  loadnext: 0
+  loadnext: 1
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &956069852
 GameObject:
   m_ObjectHideFlags: 0
@@ -1890,6 +1897,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &1070363049
 GameObject:
   m_ObjectHideFlags: 0
@@ -1975,6 +1983,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &1070363052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2131,13 +2140,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: ALT+ENTER for full screen switching.
+  EnglishText: 
   englishFontSize: 28
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1093618452
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2397,15 +2409,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Star festival events
-
-    <size=18>(Limited-time event)</size>'
+  EnglishText: 
   englishFontSize: 18
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1201863609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2985,15 +2998,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'A challenge from the developer
-
-    <size=18>(Deluxe Edition only)</size>'
+  EnglishText: 
   englishFontSize: 18
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1470711243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3327,6 +3341,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &1523368433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3377,13 +3392,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: ALT+ENTER for full screen switching.
+  EnglishText: 
   englishFontSize: 28
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1523368436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3637,6 +3655,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &1571140279
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3919,6 +3938,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!95 &1601123578
 Animator:
   serializedVersion: 3
@@ -4080,13 +4100,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Mode for creating stages
+  EnglishText: 
   englishFontSize: 24
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1622616375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4333,6 +4356,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &1802649748
 GameObject:
   m_ObjectHideFlags: 0
@@ -4816,6 +4840,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!1 &1983687318
 GameObject:
   m_ObjectHideFlags: 0
@@ -4953,6 +4978,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &2013487977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5071,6 +5097,7 @@ GameObject:
   - component: {fileID: 2058002626}
   - component: {fileID: 2058002625}
   - component: {fileID: 2058002624}
+  - component: {fileID: 2058002627}
   m_Layer: 5
   m_Name: version
   m_TagString: Untagged
@@ -5153,6 +5180,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058002622}
   m_CullTransparentMesh: 0
+--- !u!114 &2058002627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058002622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 1
+  humantrg: 0
+  oldstring: 
 --- !u!1 &2068871030
 GameObject:
   m_ObjectHideFlags: 0
@@ -5217,6 +5266,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &2068871032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5486,13 +5536,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Story mode
+  EnglishText: 
   englishFontSize: 30
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &2139247517
 MonoBehaviour:
   m_ObjectHideFlags: 0

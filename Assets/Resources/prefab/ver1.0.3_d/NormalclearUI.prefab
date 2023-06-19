@@ -107,13 +107,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Top 50 Clear Time Ranking
+  EnglishText: 
   englishFontSize: 23
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &128943285907944246
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,13 +466,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Top 50 Clear Time Ranking
+  EnglishText: 
   englishFontSize: 23
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &2014039696550052417
 GameObject:
   m_ObjectHideFlags: 0
@@ -1389,6 +1395,7 @@ GameObject:
   - component: {fileID: 3545075175423990916}
   - component: {fileID: 4905092988495554213}
   - component: {fileID: 1551289487767335001}
+  - component: {fileID: 2147106261024843366}
   m_Layer: 5
   m_Name: timetext
   m_TagString: Untagged
@@ -1471,6 +1478,28 @@ MonoBehaviour:
   _text: {fileID: 4905092988495554213}
   ui_mode: cleartime
   tmp_cleartime: 0
+--- !u!114 &2147106261024843366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2814953730266463368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 1
+  humantrg: 0
+  oldstring: 
 --- !u!1 &2877410502894678963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1924,13 +1953,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Enter the name displayed in the ranking....
+  EnglishText: 
   englishFontSize: 10
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &3821724311834135325
 GameObject:
   m_ObjectHideFlags: 0
@@ -2462,6 +2494,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &341199090718576859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2881,6 +2914,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &6779208929366378258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3138,13 +3172,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Save scores to ranking
+  EnglishText: 
   englishFontSize: 10
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &5105624221691053827
 GameObject:
   m_ObjectHideFlags: 0
@@ -3157,6 +3194,7 @@ GameObject:
   - component: {fileID: 2217583923981337232}
   - component: {fileID: 2146478301369227293}
   - component: {fileID: 938175939037071099}
+  - component: {fileID: 6225672239512215689}
   m_Layer: 5
   m_Name: timetext
   m_TagString: Untagged
@@ -3239,6 +3277,28 @@ MonoBehaviour:
   _text: {fileID: 2146478301369227293}
   ui_mode: cleartime
   tmp_cleartime: 0
+--- !u!114 &6225672239512215689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5105624221691053827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 1
+  humantrg: 0
+  oldstring: 
 --- !u!1 &5222473110382495285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3443,6 +3503,7 @@ GameObject:
   - component: {fileID: 3002900362147351318}
   - component: {fileID: 1706293461923150723}
   - component: {fileID: 5362003587641752698}
+  - component: {fileID: 6437965174843222589}
   m_Layer: 5
   m_Name: timetext
   m_TagString: Untagged
@@ -3525,6 +3586,28 @@ MonoBehaviour:
   _text: {fileID: 1706293461923150723}
   ui_mode: cleartime
   tmp_cleartime: 0
+--- !u!114 &6437965174843222589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5249704019853342843}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 1
+  humantrg: 0
+  oldstring: 
 --- !u!1 &5298589963166296272
 GameObject:
   m_ObjectHideFlags: 0
@@ -3807,6 +3890,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &5298589964027965805
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3998,13 +4082,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: "Stage clear\uFF01"
+  EnglishText: 
   englishFontSize: 50
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &5604836555241598510
 GameObject:
   m_ObjectHideFlags: 0
@@ -4017,6 +4104,7 @@ GameObject:
   - component: {fileID: 8752038634931523610}
   - component: {fileID: 6387035038137692052}
   - component: {fileID: 2143798807908104172}
+  - component: {fileID: 8879689969068654471}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -4099,6 +4187,28 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 1, y: -2}
   m_UseGraphicAlpha: 1
+--- !u!114 &8879689969068654471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5604836555241598510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &5980365445464022493
 GameObject:
   m_ObjectHideFlags: 0
@@ -4281,13 +4391,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Enter the name displayed in the ranking....
+  EnglishText: 
   englishFontSize: 10
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &6085217224060135768
 GameObject:
   m_ObjectHideFlags: 0
@@ -5286,6 +5399,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &3828381594765110136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5998,13 +6112,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Save scores to ranking
+  EnglishText: 
   englishFontSize: 10
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &8633153394566087297
 GameObject:
   m_ObjectHideFlags: 0
@@ -6287,6 +6404,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &298335093178561360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6532,13 +6650,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: "Stage clear\uFF01"
+  EnglishText: 
   englishFontSize: 52
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &8633153395471300865
 GameObject:
   m_ObjectHideFlags: 0
@@ -6925,6 +7046,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &8977316903161494767
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7253,6 +7375,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &108346185433085903
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7370,13 +7493,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: "Stage clear\uFF01"
+  EnglishText: 
   englishFontSize: 50
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1001 &5740623479633633170
 PrefabInstance:
   m_ObjectHideFlags: 0

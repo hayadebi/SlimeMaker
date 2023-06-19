@@ -487,8 +487,9 @@ MonoBehaviour:
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  checktime: 0
+  updatetime: 0
   realtimeconvert: 1
+  humantrg: 0
   oldstring: 
 --- !u!1 &188898
 GameObject:
@@ -603,8 +604,9 @@ MonoBehaviour:
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  checktime: 1
+  updatetime: 0.3
   realtimeconvert: 1
+  humantrg: 0
   oldstring: 
 --- !u!1 &188900
 GameObject:

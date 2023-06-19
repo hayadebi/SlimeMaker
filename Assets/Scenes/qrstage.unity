@@ -411,13 +411,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: "\uFF1AHow to line up"
+  EnglishText: 
   englishFontSize: 24
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &571423782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,13 +1317,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Everyone's Stage
+  EnglishText: 
   englishFontSize: 58
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 1
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1211113363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1412,13 +1418,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Enter words excluding ...
+  EnglishText: 
   englishFontSize: 16
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1241544518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1551,13 +1560,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Search settings
+  EnglishText: 
   englishFontSize: 52
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &1418239709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1649,13 +1661,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Enter the words you want to include...
+  EnglishText: 
   englishFontSize: 16
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &1433183662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2267,6 +2282,17 @@ MonoBehaviour:
   EnableUI: {fileID: 0}
   start_posy: -36
   posy_add: 87
+  dxbtn: {fileID: 0}
+  dxtext: {fileID: 0}
+  dxmark: {fileID: 0}
+  ev_id: -1
+  ev_stageselect: -1
+  ev_uistrg: 0
+  evreset_trg: 1
+  loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &1677695271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2408,13 +2434,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Search start
+  EnglishText: 
   englishFontSize: 24
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &1754297069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2467,6 +2496,7 @@ GameObject:
   - component: {fileID: 2107145242}
   - component: {fileID: 2107145244}
   - component: {fileID: 2107145243}
+  - component: {fileID: 2107145245}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -2534,6 +2564,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107145241}
   m_CullTransparentMesh: 0
+--- !u!114 &2107145245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107145241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 1
+  humantrg: 0
+  oldstring: 
 --- !u!222 &51986473576858809
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3535,13 +3587,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: "Your shared stages will also be\n enjoyed by other users."
+  EnglishText: 
   englishFontSize: 30
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 1
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &2182341632254556076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3614,13 +3669,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Read the Stage QR Code
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!114 &2182341632502532065
 MonoBehaviour:
   m_ObjectHideFlags: 0
