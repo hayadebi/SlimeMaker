@@ -194,6 +194,7 @@ public class GManager : MonoBehaviour
     public bool adstrg = false;
     public int tmp_bosscount = 90;
     public string isplaying_stage;
+    public string plusalpha = "";
     private void Awake()
     {
         if (instance == null)

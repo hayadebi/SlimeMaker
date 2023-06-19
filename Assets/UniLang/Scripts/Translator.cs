@@ -46,15 +46,24 @@ namespace UniLang {
             if (string.IsNullOrEmpty(req.error)) {
                 var json = JArray.Parse(req.text);
                 var results = new List<TranslatedTextPair>();
-
-                foreach (var v in (JArray)(json[0])) {
-                    results.Add(new TranslatedTextPair(
-                            (string)(v[1]),
-                            (string)(v[0])
-                        )
-                    );
+                try
+                {
+                    foreach (var v in (JArray)(json[0]))
+                    {
+                        results.Add(new TranslatedTextPair(
+                                (string)(v[1]),
+                                (string)(v[0])
+                            )
+                        );
+                    }
+                    result(results.ToArray());
                 }
-                result(results.ToArray());
+                catch(System.Exception e)
+                {
+                    print(e);
+                    result(null);
+                }
+                
             }
             else
                 result(null);

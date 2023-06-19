@@ -91,12 +91,12 @@ public class onlineranking : MonoBehaviour
         //データストアでの検索を行う
         query.FindAsync((List<NCMBObject> objList, NCMBException e) =>
         {
-            if (e != null)
+            if (e != null && set_rankingtext!=null)
             {
                 //検索失敗時の処理
                 set_rankingtext.text = none_ranking;
             }
-            else
+            else if(set_rankingtext!=null)
             {
                 set_rankingtext.text = "";
                 //検索成功時の処理

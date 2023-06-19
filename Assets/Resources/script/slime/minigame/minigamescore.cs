@@ -39,7 +39,7 @@ public class minigamescore : MonoBehaviour
             if (GManager.instance.minigame_score > 999999999)
                 GManager.instance.minigame_score = 999999999;
             oldscore = GManager.instance.minigame_score;
-            viewtext.text = "SCORE:" + oldscore.ToString();
+            viewtext.text = "スコア:" + oldscore.ToString();
             iTween.ScaleTo(transform.parent.gameObject, iTween.Hash("x", viewx * 2f, "y", viewy * 2f, "time", 0.15f));
             iTween.ScaleTo(transform.parent.gameObject, iTween.Hash("x", viewx, "y", viewy, "time", 0.2f, "delay", 0.151f));
         }

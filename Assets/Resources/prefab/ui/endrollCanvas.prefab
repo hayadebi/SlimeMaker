@@ -107,13 +107,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Return to Title
+  EnglishText: 
   englishFontSize: 22
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &2066284552964715153
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,15 +209,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Two are slime brother makers
-
-    ~endroll~'
+  EnglishText: 
   englishFontSize: 64
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &3102635045702117789
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,18 +315,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: "\u25A0Projects/Stories\nHAYADEVI\n\n\u25A03D Model/Animation\nHayadevi\n\n\u25A0Map/UI/other
-    design\nHAYADEVI\n\n\u25A0System/Programming\nSystem/Programming\n\n\u25A0Debugging/Test
-    play\nMushroom family members\nHAYADEVI\n\n\u25A0Video shooting/editing\nHAYADEVI\n\n\u25A0Providing
-    materials\n\u25C6BGM\n\u30A4\u30EF\u30B7\u30ED\u97F3\u697D\u7D20\u6750 \u69D8\n-Title\n-Stage\n-End
-    Event\n-End roll\n\u25C6Sound\n\u52B9\u679C\u97F3\u30E9\u30DC\nFC\u97F3\u5DE5\u5834\n\n\n\n\n\n\n\n\n\n\n\n\n\nStory
-    Mode End(?)\n\n...Continue to Slime Dystopia"
+  EnglishText: "\u25A0Projects/Stories\nHAYADEBI\n\n\u25A03D Model/Animation\nHAYADEBI\n\n\u25A0Map/UI/other
+    design\nHAYADEBI\n\n\u25A0System/Programming\nHAYADEBI\n\n\u25A0Debugging/Test
+    play\nMushroom family members\nHAYADEBI\n\n\u25A0Video shooting/editing\nHAYADEBI\n\n\u25A0Providing
+    materials\n\u30FBBGM\nMusic by Iwashiro Music Material\n  \n  \n  \n\u30FBSound\nSound
+    Effects Lab\nFC Sound Factory\n\n\n\n\n\n\n\n\n\n\n\n\n\n\u3000\u3000Story Mode
+    End\n\n\u3000\u3000...Continue to Slime Dystopia"
   englishFontSize: 40
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 1
+  oldstring: 
 --- !u!1 &4639529066513668149
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,6 +612,7 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
 --- !u!114 &5390498713582515936
 MonoBehaviour:
   m_ObjectHideFlags: 0

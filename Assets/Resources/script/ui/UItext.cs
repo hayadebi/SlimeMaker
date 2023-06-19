@@ -65,7 +65,7 @@ public class UItext : MonoBehaviour
         }
         if (ui_mode == "appversion")
         {
-            _text.text = "バージョン：" + Application.version;
+            _text.text = "バージョン：" + Application.version+GManager.instance.plusalpha;
         }
     }
     // Update is called once per frame

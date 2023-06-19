@@ -30,7 +30,7 @@ public class bazookasecond : MonoBehaviour
                 secondText.enabled = true;
                 pin.enabled = true;
                 old_second = (int)(GManager.instance.mini_loadtime- GManager.instance.mini_tmptime);
-                secondText.text = secondtemplate[GManager.instance.isEnglish] + "\n" + old_second.ToString() + secondisEnglish[GManager.instance.isEnglish];
+                secondText.text = secondtemplate[0] + "\n" + old_second.ToString() + secondisEnglish[0];
             }
             if (!GManager.instance.minislime_blue && !blue.enabled)
                 blue.enabled = true;
@@ -43,7 +43,7 @@ public class bazookasecond : MonoBehaviour
             if (old_second != (int)(GManager.instance.mini_loadtime - GManager.instance.mini_tmptime))
             {
                 old_second = (int)(GManager.instance.mini_loadtime - GManager.instance.mini_tmptime);
-                secondText.text = secondtemplate[GManager.instance.isEnglish] + "\n" + old_second.ToString() + secondisEnglish[GManager.instance.isEnglish];
+                secondText.text = secondtemplate[0] + "\n" + old_second.ToString() + secondisEnglish[0];
             }
         }
         else if(bazookaon)

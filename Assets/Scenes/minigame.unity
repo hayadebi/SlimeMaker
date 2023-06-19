@@ -3576,6 +3576,7 @@ GameObject:
   - component: {fileID: 620860634}
   - component: {fileID: 620860633}
   - component: {fileID: 620860632}
+  - component: {fileID: 620860635}
   m_Layer: 5
   m_Name: secondText
   m_TagString: Untagged
@@ -3658,6 +3659,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620860630}
   m_CullTransparentMesh: 0
+--- !u!114 &620860635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 620860630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 1
+  humantrg: 0
+  oldstring: 
 --- !u!1 &635544301
 GameObject:
   m_ObjectHideFlags: 0
@@ -10974,6 +10997,7 @@ GameObject:
   - component: {fileID: 1827877457}
   - component: {fileID: 1827877456}
   - component: {fileID: 1827877459}
+  - component: {fileID: 1827877460}
   m_Layer: 5
   m_Name: view_score
   m_TagString: Untagged
@@ -11047,7 +11071,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SCORE:999999999
+  m_Text: "\u30B9\u30B3\u30A2:999999999"
 --- !u!222 &1827877458
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11070,6 +11094,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   viewtext: {fileID: 1827877457}
   addtext: {fileID: 1782064005}
+--- !u!114 &1827877460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1827877454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EnglishText: 
+  englishFontSize: 0
+  nosetTrg: 0
+  textimage: {fileID: 0}
+  textsprite: {fileID: 0}
+  enfont: {fileID: 0}
+  updatetime: 0
+  realtimeconvert: 1
+  humantrg: 0
+  oldstring: 
 --- !u!1 &1838086470
 GameObject:
   m_ObjectHideFlags: 0
