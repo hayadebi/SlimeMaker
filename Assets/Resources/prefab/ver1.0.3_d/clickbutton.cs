@@ -102,7 +102,7 @@ public class clickbutton : MonoBehaviour
     }
     void TimeEventset()
     {
-        DateTime silver = new DateTime(2023, 9, 24);
+        DateTime silver = new DateTime(2023, 9, 21);
         DateTime gold = new DateTime(2023, 5, 5);
         DateTime happy = new DateTime(2023, 7, 28);
         if (dxbtn != null && (GManager.instance.dx_mode || GManager.instance.AllSpanCheck(happy) == 0 || ((GManager.instance.AllSpanCheck(gold) >= 0 && GManager.instance.AllSpanCheck(gold) <= 6) || (GManager.instance.AllSpanCheck(silver) >= 0 && GManager.instance.AllSpanCheck(silver) <= 6))))

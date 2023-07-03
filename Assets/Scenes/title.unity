@@ -1703,7 +1703,7 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
-  loadnext: 1
+  loadnext: 0
   adstrg: 0
   daysavetrg: 0
   unilangtrg: 0
@@ -4899,7 +4899,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2013487974
 RectTransform:
   m_ObjectHideFlags: 0
