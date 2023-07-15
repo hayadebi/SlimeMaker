@@ -1075,7 +1075,8 @@ MonoBehaviour:
   adstrg: 0
   tmp_bosscount: 90
   isplaying_stage: 
-  plusalpha: d
+  plusalpha: a
+  tmpget_devcoin: 0
 --- !u!114 &6017326719407883951
 MonoBehaviour:
   m_ObjectHideFlags: 0

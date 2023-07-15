@@ -32,6 +32,8 @@ public class clickbtn : MonoBehaviour
     [Header("0=アイテム,1=クラフトレシピ")]
     public int set_buytype = -1;
 
+    public string targeturl = "";
+
     // Start is called before the first frame update
     void Start()
     {
@@ -50,6 +52,12 @@ public class clickbtn : MonoBehaviour
             GManager.instance.setrg = 6;
             anim_.SetInteger(a_name, a_setnumber);
         }
+    }
+    public void CheckUser()
+    {
+        string tmp = targeturl;
+        Application.OpenURL(tmp);
+        this.gameObject.SetActive(false);
     }
     public void settingClick()
     {

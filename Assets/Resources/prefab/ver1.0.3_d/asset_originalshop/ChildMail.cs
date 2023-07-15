@@ -20,8 +20,8 @@ public class ChildMail : MonoBehaviour
     public GameObject checkUI;
     public Text messagetitletext;
     public Text messagedoctext;
-    public Text bonusgettext;
     public transmailopen transbtn;
+    public string tmpchildobj;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +29,11 @@ public class ChildMail : MonoBehaviour
     }
     private void Update()
     {
-        if (!parenttrg && movetrg && movetrg != oldmove && ShopManager.instance.tmpchildobj != "")
+        if (!parenttrg && movetrg && movetrg != oldmove && tmpchildobj != "")
         {
             oldmove = movetrg;
             child_obj = new NCMBObject("GameNews");
-            child_obj.ObjectId = ShopManager.instance.tmpchildobj;
+            child_obj.ObjectId = tmpchildobj;
             child_obj.FetchAsync();
             Invoke(nameof(CoolMail), 0.31f);
         }
@@ -51,33 +51,22 @@ public class ChildMail : MonoBehaviour
         {
             ischeck_icon.enabled = false;
         }
-        if ("YpY9012nWJzXaBuS" == ShopManager.instance.tmpchildobj && PlayerPrefs.GetString(ShopManager.instance.tmpchildobj, "false") == "true") Destroy(gameObject);
+        if ("YpY9012nWJzXaBuS" == tmpchildobj && PlayerPrefs.GetString(tmpchildobj, "false") == "true") Destroy(gameObject);
     }
     public void MailOpen()
     {
-        if(bonus_trg)
-        {
-            bonusgettext.text = "ボーナスを受け取る";
-        }
-        else if(!bonus_trg)
-        {
-            bonusgettext.text = "ボーナス：無し";
-            PlayerPrefs.SetString(child_obj.ObjectId.ToString(), "true");
-            PlayerPrefs.Save();
-        }
         audioS.PlayOneShot(onse);
         //処理
         checkUI.SetActive(true);
-        messagetitletext.text = child_obj["messagetitle"].ToString();
-        messagedoctext.text = child_obj["messagedoc"].ToString();
-        transbtn.targetchild = this.GetComponent<ChildMail>();
+        if(messagetitletext!=null) messagetitletext.text = child_obj["messagetitle"].ToString();
+        if(messagedoctext!=null) messagedoctext.text = child_obj["messagedoc"].ToString();
+        if(transbtn!=null) transbtn.targetchild = this.GetComponent<ChildMail>();
     }
     public void MailBonus()
     {
         if (bonus_trg)
         {
             bonus_trg = false;
-            bonusgettext.text = "ボーナス：無し";
             GManager.instance.setrg = 27;
         }
         else

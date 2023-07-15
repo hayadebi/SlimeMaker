@@ -30,10 +30,6 @@ public class miniscoreobj : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(GManager.instance.adstrg && bosstrg )
-        {
-            hp_count = GManager.instance.tmp_bosscount;
-        }
         if (rs != null)
             rs.tmpobj = this.gameObject;
         tmp_x = transform.localScale.x;

@@ -191,6 +191,7 @@ MonoBehaviour:
   adstrg: 0
   daysavetrg: 1
   unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!1 &602304309217726237
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,8 +435,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5938549893674121308}
   m_HandleRect: {fileID: 4220356506255896030}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 1
+  m_Value: 1.0000013
+  m_Size: 0.303
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -766,6 +767,7 @@ MonoBehaviour:
   adstrg: 1
   daysavetrg: 0
   unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!1 &2071477084680319235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,14 +1065,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 8102315966677626214}
   - {fileID: 1263338022635215722}
+  - {fileID: 8102315966677626214}
   m_Father: {fileID: 9106056270773457167}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -249.99901, y: -0.0009452415}
+  m_AnchoredPosition: {x: 0.000030517578, y: -0.0009452415}
   m_SizeDelta: {x: 0, y: 1000}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &548631402203483962
@@ -1308,7 +1310,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7D9A\u304D\u304B\u3089\u518D\u6311\u6226\n<size=20>(\u5E83\u544A\u304C\u6709\u52B9\u306B\u306A\u308A\u307E\u3059)</size>"
+  m_Text: "\u30DF\u30CB\u30B2\u30FC\u30E0\u306B\u518D\u6311\u6226"
 --- !u!114 &3006161001568722220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,12 +1469,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4173756449598829622}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2282957201352618793}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2570,7 +2572,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8567959311039270937}
   m_HandleRect: {fileID: 6512274651499253498}
   m_Direction: 0
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -3209,16 +3211,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7508775516035384425}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2282957201352618793}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 107, y: -938.5}
+  m_AnchoredPosition: {x: 107.00007, y: -938.4999}
   m_SizeDelta: {x: 800, y: 1801}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &7157709915499158089
@@ -3662,7 +3664,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "100000\u30B9\u30B3\u30A2\u307E\u3067\u6B8B\u308A40000\uFF01"
+  m_Text: "\u7372\u5F97\u30C7\u30D3\u30B3\u30A4\u30F3\uFF1A+9999DC"
 --- !u!114 &7870999258144755371
 MonoBehaviour:
   m_ObjectHideFlags: 0

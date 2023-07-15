@@ -47,6 +47,7 @@ public class clickbutton : MonoBehaviour
     public bool adstrg = false;
     public bool daysavetrg = false;
     public bool unilangtrg = false;
+    public bool mpurseuser_trg = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -210,24 +211,28 @@ public class clickbutton : MonoBehaviour
     }
     public void SetUI()
     {
-        DateTime silver = new DateTime(2023, 9, 24);
-        DateTime gold = new DateTime(2023, 5, 5);
-        if (!ev_uistrg && GManager.instance.setmenu <= 0 &&(dxtrg == -1 || (dxtrg != -1 && GManager.instance.dx_mode )|| ((GManager.instance.AllSpanCheck(gold) >= 0 && GManager.instance.AllSpanCheck(gold) <= 6) || (GManager.instance.AllSpanCheck(silver) >= 0 && GManager.instance.AllSpanCheck(silver) <= 6))))
+        if (!mpurseuser_trg || (mpurseuser_trg && ShopManager.instance.mpurseuser_on))
         {
-            GManager.instance.setrg = 0;
-            GManager.instance.setmenu = 1;
-            GManager.instance.walktrg = false;
-            Instantiate(uiobj, transform.position, transform.rotation);
+            DateTime silver = new DateTime(2023, 9, 24);
+            DateTime gold = new DateTime(2023, 5, 5);
+            if (!ev_uistrg && GManager.instance.setmenu <= 0 && (dxtrg == -1 || (dxtrg != -1 && GManager.instance.dx_mode) || ((GManager.instance.AllSpanCheck(gold) >= 0 && GManager.instance.AllSpanCheck(gold) <= 6) || (GManager.instance.AllSpanCheck(silver) >= 0 && GManager.instance.AllSpanCheck(silver) <= 6))))
+            {
+                GManager.instance.setrg = 0;
+                GManager.instance.setmenu = 1;
+                GManager.instance.walktrg = false;
+                Instantiate(uiobj, transform.position, transform.rotation);
+            }
+            else if (ev_uistrg && GManager.instance.setmenu <= 0)
+            {
+                GManager.instance.setrg = 0;
+                GManager.instance.setmenu = 1;
+                GManager.instance.walktrg = false;
+                Instantiate(GManager.instance.ev_ui[GManager.instance.globalev_id], transform.position, transform.rotation);
+            }
+            else
+                GManager.instance.setrg = 27;
         }
-        else if (ev_uistrg && GManager.instance.setmenu <= 0 )
-        {
-            GManager.instance.setrg = 0;
-            GManager.instance.setmenu = 1;
-            GManager.instance.walktrg = false;
-            Instantiate(GManager.instance.ev_ui[GManager.instance.globalev_id], transform.position, transform.rotation);
-        }
-        else
-            GManager.instance.setrg = 1;
+        else GManager.instance.setrg = 27;
 
     }
     void SceneChange()

@@ -21,24 +21,24 @@ public class remove_checkday : MonoBehaviour
             TimeSpan tmpdiff = checkday - today;
             check_result = Math.Abs((int)tmpdiff.TotalDays);
             check_minutes = Math.Abs((int)tmpdiff.TotalMinutes);
-            if(GManager.instance.dx_mode && check_minutes>max_minutes)//デイリー1時間を堪能し終わったら
-            {
-                GManager.instance.dx_mode = false;
-                PlayerPrefs.SetString("notdxtrg", "FALSE");
-                PlayerPrefs.Save();
-            }
-            if (check_result > max_day && GManager.instance.dx_mode)//別の日を検知
-            {
-                GManager.instance.dx_mode = false;
-                PlayerPrefs.SetString("notdxtrg", "FALSE");
-                PlayerPrefs.Save();
-                ;
-            }
+            //if(GManager.instance.dx_mode && check_minutes>max_minutes)//デイリー1時間を堪能し終わったら
+            //{
+            //    GManager.instance.dx_mode = false;
+            //    PlayerPrefs.SetString("notdxtrg", "FALSE");
+            //    PlayerPrefs.Save();
+            //}
+            //if (check_result > max_day && GManager.instance.dx_mode)//別の日を検知
+            //{
+            //    GManager.instance.dx_mode = false;
+            //    PlayerPrefs.SetString("notdxtrg", "FALSE");
+            //    PlayerPrefs.Save();
+            //    ;
+            //}
             if (check_result > max_day&&!GManager.instance.dx_mode)//別の日を検知
             {
                 ;
             }
-            else if(GManager.instance.dx_mode || check_result <= max_day)
+            else if(check_result <= max_day)//||GManager.instance.dx_mode)
                 Destroy(gameObject);
         }
     }

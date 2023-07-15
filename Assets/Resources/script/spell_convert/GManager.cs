@@ -195,6 +195,7 @@ public class GManager : MonoBehaviour
     public int tmp_bosscount = 90;
     public string isplaying_stage;
     public string plusalpha = "";
+    public float tmpget_devcoin=0;
     private void Awake()
     {
         if (instance == null)

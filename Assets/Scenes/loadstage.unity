@@ -208,6 +208,7 @@ MonoBehaviour:
   adstrg: 0
   daysavetrg: 0
   unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &180356843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5447,6 +5448,7 @@ MonoBehaviour:
   adstrg: 0
   daysavetrg: 0
   unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &834300425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5809,6 +5811,7 @@ MonoBehaviour:
   adstrg: 0
   daysavetrg: 0
   unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &1296712651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6117,6 +6120,7 @@ MonoBehaviour:
   adstrg: 0
   daysavetrg: 0
   unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &1450292657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7333,6 +7337,7 @@ MonoBehaviour:
   adstrg: 0
   daysavetrg: 0
   unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &2632779248091978032
 MonoBehaviour:
   m_ObjectHideFlags: 0
