@@ -157,14 +157,29 @@ public class player : MonoBehaviour
     }
     private void OnTriggerStay(Collider col)
     {
-        if (!GManager.instance.over && GManager.instance.walktrg && col.tag == "icewall"&& !goaltrg && icetrg )
+        if (!GManager.instance.over && GManager.instance.walktrg)
         {
-            icewall_time += Time.deltaTime;
-            if(icewall_time >= 3f)
+            if (col.tag == "icewall" && !goaltrg && icetrg)
             {
-                icetrg = false;
-                icese = false;
-                icewall_time = 0;
+                icewall_time += Time.deltaTime;
+                if (icewall_time >= 3f)
+                {
+                    icetrg = false;
+                    icese = false;
+                    icewall_time = 0;
+                }
+
+            }
+            if (!GManager.instance.over&&(col.tag == "red" || col.tag == "bullet" || col.tag == "icebullet"))
+            {
+                GManager.instance.setrg = 4;
+                if (col.tag == "bullet")
+                    Destroy(col.gameObject);
+                iTween.ShakePosition(cm.gameObject, iTween.Hash("x", 1f, "y", 1f, "time", 0.3f));
+                GManager.instance.over = true;
+                Instantiate(GManager.instance.all_ui[2], transform.position, transform.rotation);
+                Instantiate(GManager.instance.all_ui[7], transform.position, transform.rotation);
+                Destroy(gameObject, 0.1f);
             }
         }
     }

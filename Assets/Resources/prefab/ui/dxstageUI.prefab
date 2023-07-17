@@ -91,15 +91,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'App gimmick stage . Ice
-
-    <size=12>created by @hayadebi</size>'
+  EnglishText: 
   englishFontSize: 14
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &366255536316256687
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,15 +228,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Past shared stages. Neon town
-
-    <size=11>Original version:1.0.2</size>'
+  EnglishText: 
   englishFontSize: 14
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &730717524052401317
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +412,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &4807249543727208780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -612,6 +618,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &6174572695552644857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -801,6 +811,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &8464441184132282944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1253,6 +1267,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!1 &1022567360767373389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,6 +1535,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &9198110988962695033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1637,15 +1659,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Past shared stages. Ship
-
-    <size=11>Original version:1.0.2</size>'
+  EnglishText: 
   englishFontSize: 14
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &1199817248194081389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,15 +1760,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage4.Spinning chasing game
-
-    <size=12>Event:Nightmare</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &2084155779445581010
 GameObject:
   m_ObjectHideFlags: 0
@@ -1873,15 +1897,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage2.Younger brother wish
-
-    <size=12>Event:Star festival</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &2195681934506492352
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,15 +2088,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage EX.Wish beyond...
-
-    <size=12>Event:Star festival</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &2558601074243195696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2245,6 +2271,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &210731131728468769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2351,14 +2381,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: "Periodically summarize developer stages,\n limited stages, old shared
-    stages, etc."
+  EnglishText: 
   englishFontSize: 11
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &3097774613468559353
 GameObject:
   m_ObjectHideFlags: 0
@@ -2450,15 +2482,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage1.Beginning of Darkness
-
-    <size=12>Event:Nightmare</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &3168304167112770586
 GameObject:
   m_ObjectHideFlags: 0
@@ -2633,6 +2666,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &2717544977298382436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2753,13 +2790,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: A challenge from all of us
+  EnglishText: 
   englishFontSize: 24
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &3653843450351363378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2925,15 +2965,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage EX.Evil spirits
-
-    <size=12>Event:Nightmare</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &4025030413790547570
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,7 +3053,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u904E\u53BB\u5171\u6709\u30B9\u30C6\u30FC\u30B8.\u76DF\u53CB\u306E\u8FF7\u5BAE\n<size=13>\u5909\u63DB\u524D\u306E\u5143\u30D0\u30FC\u30B8\u30E7\u30F3\uFF1A1.0.2</size>"
+  m_Text: "\u30A2\u30D7\u30C7\u30AE\u30DF\u30C3\u30AF\u30B9\u30C6\u30FC\u30B8.\u5973\u795E\u3068\u6697\u95C7\n<size=14>\u4F5C\u6210\u8005\uFF1A@hayadebi</size>"
 --- !u!114 &7792297286819651700
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3025,15 +3066,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Past shared stages.Labyrinth of Allies
-
-    <size=11>Original version:1.0.2</size>'
+  EnglishText: 
   englishFontSize: 13
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &4254040281218446703
 GameObject:
   m_ObjectHideFlags: 0
@@ -3125,15 +3167,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Developer Stage.3
-
-    <size=12>created by @hayadebi</size>'
+  EnglishText: 
   englishFontSize: 16
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &4425521110354229242
 GameObject:
   m_ObjectHideFlags: 0
@@ -3308,6 +3351,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &4669694671316704110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3371,7 +3418,7 @@ RectTransform:
   m_Children:
   - {fileID: 6108278673124885507}
   m_Father: {fileID: 2532124048815609759}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3510,6 +3557,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &6011593399499153733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3699,6 +3750,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &1295389238843495061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3902,6 +3957,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &4767357605675725931
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4164,7 +4223,7 @@ RectTransform:
   m_Children:
   - {fileID: 4766226239472571174}
   m_Father: {fileID: 2532124048815609759}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4303,6 +4362,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &7990034649975349070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4352,9 +4415,9 @@ RectTransform:
   - {fileID: 8663861444719865133}
   - {fileID: 6601877788815771197}
   - {fileID: 6318432445692569323}
+  - {fileID: 6465454595091753036}
   - {fileID: 900787399950393597}
   - {fileID: 6634644910974120104}
-  - {fileID: 6465454595091753036}
   - {fileID: 6210380174691024788}
   - {fileID: 3114255369362265476}
   - {fileID: 9031110005496830475}
@@ -4504,16 +4567,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage4.Wish fulfillment difficulties
-
-    <size=12>Event:Star
-    festival</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &5774002044619647193
 GameObject:
   m_ObjectHideFlags: 0
@@ -4687,6 +4750,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &8874002056871662728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4876,6 +4943,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &3293821773381109853
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5078,6 +5149,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &2578859610876751402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5127,7 +5202,7 @@ RectTransform:
   m_Children:
   - {fileID: 5573599970038481237}
   m_Father: {fileID: 2532124048815609759}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5266,6 +5341,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &2797425766532317194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5455,6 +5534,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &2947542369198125773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5575,15 +5658,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage2.Shy chasing game
-
-    <size=12>Event:Nightmare</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &6841545605634033507
 GameObject:
   m_ObjectHideFlags: 0
@@ -5675,15 +5759,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage5.Intense chasing game
-
-    <size=12>Event:Nightmare</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &7208708352434502933
 GameObject:
   m_ObjectHideFlags: 0
@@ -5775,15 +5860,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage3.Ibarra''s chasing game
-
-    <size=12>Event:Nightmare</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &7395072575274798529
 GameObject:
   m_ObjectHideFlags: 0
@@ -6032,6 +6118,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &1024351777069247664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6152,15 +6242,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Fantia limited stage.1
-
-    <size=12>created by @hayadebi</size>'
+  EnglishText: 
   englishFontSize: 16
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &8097857804667476308
 GameObject:
   m_ObjectHideFlags: 0
@@ -6252,15 +6343,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage1.Beginning of a wish
-
-    <size=12>Event:Star festival</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &8236234537855658634
 GameObject:
   m_ObjectHideFlags: 0
@@ -6352,15 +6444,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Ev Stage3.Older brother wish
-
-    <size=12>Event:Star festival</size>'
+  EnglishText: 
   englishFontSize: 15
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &8397221230353873865
 GameObject:
   m_ObjectHideFlags: 0
@@ -6659,6 +6752,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &7938265041663147743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6861,6 +6958,10 @@ MonoBehaviour:
   ev_uistrg: 0
   evreset_trg: 1
   loadnext: 0
+  adstrg: 0
+  daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &5859242851356615409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7075,13 +7176,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: "App gimmick stage . Ice\u3010Hard\u3011\n<size=12>created by @hayadebi</size>"
+  EnglishText: 
   englishFontSize: 14
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &8838030693266297241
 GameObject:
   m_ObjectHideFlags: 0
@@ -7173,15 +7277,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Developer Stage.2
-
-    <size=12>created by @hayadebi</size>'
+  EnglishText: 
   englishFontSize: 16
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &9121548439891998200
 GameObject:
   m_ObjectHideFlags: 0

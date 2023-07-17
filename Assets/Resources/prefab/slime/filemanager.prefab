@@ -389,6 +389,42 @@ MonoBehaviour:
   - {fileID: 559927465754015465, guid: a69a7a8e5a10d9a438e2a23d569afa54, type: 3}
   - {fileID: 7833452353315789684, guid: 5db8de6eca48bc44d88c0e2f7f30375c, type: 3}
   - {fileID: 3093929968300013955, guid: cb6a302c7cb00ab42a4c4eb107558222, type: 3}
+  - {fileID: 3902180131283111135, guid: f09e081952f1a1c4a82c8aed25a81fc6, type: 3}
+  - {fileID: 2661939709953139030, guid: d8cd59d895dd03246ac06d294835f44b, type: 3}
+  - {fileID: 783500256187667147, guid: e7ee4338f4ac09446b86ff0c31a54c9a, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
+  - {fileID: 2619153969966117694, guid: 2c5f7ce7bf87d864babda47b1d6de644, type: 3}
   stageobj_createimg:
   - {fileID: 21300000, guid: a4ab4fa1e1e825242a15290e893fb70d, type: 3}
   - {fileID: 21300000, guid: 9753b430b20d0fd499b9bd47c1776690, type: 3}
@@ -448,6 +484,42 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b2377163dda9acb41b990727e8c53894, type: 3}
   - {fileID: 21300000, guid: 6b3be90ba583f6b4bad750a8934e56c5, type: 3}
   - {fileID: 21300000, guid: 9c86e8f2da7c2834f9264b55ee2da0a0, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 749d3a41ffec8b24289735a04ba99e8f, type: 3}
+  - {fileID: 21300000, guid: 85bad862072764145926e82fd991cdbf, type: 3}
+  - {fileID: 21300000, guid: f523ca4fd8c4b904eb458c9c6d2c5951, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
+  - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
   - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
   - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
   - {fileID: 21300000, guid: 6abc06b07d224674c89f5f9d784d05fc, type: 3}
@@ -839,7 +911,223 @@ MonoBehaviour:
     script:
     - "\u62BC\u305B\u308B\u3088"
     - I can push this block.
-  stageobj_onset: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000000000000000000000000000000000000000000000000000001000000010000000100000001000000000000000000000000000000000000000000000000000000
+  - name:
+    - "\u30CA\u30A4\u30C8\u30E1\u30A2\u30B9\u30A4\u30C3\u30C1"
+    - Nightmare Switches
+    script:
+    - "\u663C\u9593\u3068\u591C\u3092\u5207\u308A\u66FF\u3048\u308B"
+    - Switch between day and night
+  - name:
+    - "\u5149\u306E\u50CF"
+    - nnn
+    script:
+    - "\u660E\u308B\u3044\u6642\u306B\u306E\u307F\u59FF\u3092\u73FE\u3059\u50CF"
+    - nnn
+  - name:
+    - "\u6697\u95C7\u306E\u68D8"
+    - nnn
+    script:
+    - "\u5F71\u306F\u523A\u3057\u3066\u304F\u308B\u305E"
+    - nnn
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  - name:
+    - "\u52D5\u304F\u30D6\u30ED\u30C3\u30AF"
+    - Moving Blocks
+    script:
+    - "\u62BC\u305B\u308B\u3088"
+    - I can push this block.
+  stageobj_onset: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000000000000000000000000000000000000000000000000000001000000010000000100000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   debug_trg: 0
   goal_num: 0
   cleartrg: 0
@@ -875,7 +1163,7 @@ MonoBehaviour:
   - test_x: 0100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000b0000000c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000
   - test_x: 0100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   notsay: 0
-  gimmick_length: 58
+  gimmick_length: 100
   reset_time: 0
   set_createid: 0
   fixed_createid: 0
@@ -1076,6 +1364,7 @@ MonoBehaviour:
   tmp_bosscount: 90
   isplaying_stage: 
   plusalpha: a
+  nighttrg: 1
   tmpget_devcoin: 0
 --- !u!114 &6017326719407883951
 MonoBehaviour:

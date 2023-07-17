@@ -11,11 +11,15 @@ public class wallbutton : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip se;
     public bool staytrg = false;
-    private GameObject[] connect_obj = null;
-    private wallbutton[] connect_button = null;
+    public GameObject[] connect_obj = null;
+    public wallbutton[] connect_button = null;
     public string btn_tagname = "btn";
     public string wallcolor_tagname = "wall_red";
     private void Start()
+    {
+        Invoke(nameof(SetBTN), 0.31f);
+    }
+    void SetBTN()
     {
         wallrocks = GameObject.FindGameObjectsWithTag(wallcolor_tagname);
         if (wallrocks.Length > 0)
@@ -30,7 +34,7 @@ public class wallbutton : MonoBehaviour
         }
         connect_obj = GameObject.FindGameObjectsWithTag(btn_tagname);
         if (connect_obj.Length > 0)
-        { 
+        {
             connect_button = new wallbutton[connect_obj.Length];
             for (int i = 0; i < connect_obj.Length;)
             {
