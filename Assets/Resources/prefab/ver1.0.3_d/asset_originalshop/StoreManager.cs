@@ -13,24 +13,26 @@ public class StoreManager : MonoBehaviour
     private string address_num = " ";
     public string coin_name = "adsCoin";
     private int query_limit = 200;
-    public InputField get_addressfield;
+    public InputField get_name;
+    public InputField get_pass;
     public Text get_devcoinviewtext;
     private bool CheckEnable = false;
     private bool onuser = false;
     public NCMBObject get_ncmbobj=null;
+    public NCMBUser get_ncmbuse = null;
     // Start is called before the first frame update
     void Start()
     {
-        get_addressfield.text = PlayerPrefs.GetString("MpurseAddress", "");
-        if (get_addressfield.text != "")
-        {
+        //get_addressfield.text = PlayerPrefs.GetString("MpurseAddress", "");
+        //if (get_addressfield.text != "")
+        //{
             FetchStage();
-        }
-        else
-        {
+        //}
+        //else
+        //{
             if (GManager.instance.isEnglish == 0) get_devcoinviewtext.text = "所持デビコイン：0.0";
             else if (GManager.instance.isEnglish != 0) get_devcoinviewtext.text = "Devil coins you have：0.0";
-        }
+        //}
     }
     public void CheckUser()
     {
@@ -42,7 +44,7 @@ public class StoreManager : MonoBehaviour
         //ユーザーチェック
         NCMBQuery<NCMBObject> query = null;
         query = new NCMBQuery<NCMBObject>(check_name);
-        query.OrderByDescending(get_addressfield.text);
+        //query.OrderByDescending(get_addressfield.text);
         //検索件数を設定
         query.Limit = 4;
         int i = 1;
@@ -54,8 +56,8 @@ public class StoreManager : MonoBehaviour
             {
                 if (!ShopManager.instance.mpurseuser_on)
                 {
-                    if (GManager.instance.isEnglish == 0) get_addressfield.text = "本人確認に失敗しました。";
-                    else if (GManager.instance.isEnglish != 0) get_addressfield.text = "Identification failed.";
+                    //if (GManager.instance.isEnglish == 0) get_addressfield.text = "本人確認に失敗しました。";
+                    //else if (GManager.instance.isEnglish != 0) get_addressfield.text = "Identification failed.";
                     GManager.instance.setrg = 27;
                 }
             }
@@ -79,12 +81,12 @@ public class StoreManager : MonoBehaviour
         {
             onuser = false;
             //保存ムーブ
-            if (!ShopManager.instance.mpurseuser_on)
-            {
-                PlayerPrefs.SetString("MpurseAddress", get_addressfield.text);
-                PlayerPrefs.Save();
-            }
-            address_num = PlayerPrefs.GetString("MpurseAddress", get_addressfield.text);
+            //if (!ShopManager.instance.mpurseuser_on)
+            //{
+            //    PlayerPrefs.SetString("MpurseAddress", get_addressfield.text);
+            //    PlayerPrefs.Save();
+            //}
+            //address_num = PlayerPrefs.GetString("MpurseAddress", get_addressfield.text);
             NCMBQuery<NCMBObject> query2 = null;
             //取得から配置
             query2 = null;
