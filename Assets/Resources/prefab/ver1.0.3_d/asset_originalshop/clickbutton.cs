@@ -276,8 +276,10 @@ public class clickbutton : MonoBehaviour
             GManager.instance.loadscene_name = next_scene;
             if(!loadnext )
                 SceneManager.LoadScene(next_scene);
-            else if (loadnext)
+            else if (loadnext && !GManager.instance.dx_mode)
                 SceneManager.LoadScene("load");
+            else
+                SceneManager.LoadScene(next_scene);
         }
         else
         {
@@ -286,8 +288,9 @@ public class clickbutton : MonoBehaviour
             GManager.instance.loadscene_name = "title";
             if (!loadnext)
                 SceneManager.LoadScene(next_scene);
-            else if (loadnext)
+            else if (loadnext && !GManager.instance.dx_mode)
                 SceneManager.LoadScene("load");
+            else SceneManager.LoadScene(next_scene);
             SceneManager.LoadScene("title");
         }
     }

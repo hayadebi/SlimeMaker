@@ -835,7 +835,7 @@ MonoBehaviour:
   ev_stageselect: -1
   ev_uistrg: 0
   evreset_trg: 1
-  loadnext: 0
+  loadnext: 1
   adstrg: 0
   daysavetrg: 0
   unilangtrg: 0

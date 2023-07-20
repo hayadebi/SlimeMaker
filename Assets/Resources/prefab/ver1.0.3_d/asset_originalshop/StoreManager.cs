@@ -10,147 +10,139 @@ public class StoreManager : MonoBehaviour
 {
     public string class_name = "AdsClass";
     public string check_name = "UserCheck";
-    private string address_num = " ";
     public string coin_name = "adsCoin";
     private int query_limit = 200;
-    public InputField get_name;
-    public InputField get_pass;
+    public InputField get_username;
+    public InputField get_userpass;
+    public InputField get_repass;
     public Text get_devcoinviewtext;
-    private bool CheckEnable = false;
-    private bool onuser = false;
+    public Text loginstatus_text;
     public NCMBObject get_ncmbobj=null;
-    public NCMBUser get_ncmbuse = null;
+    public NCMBUser get_ncmbuser = null;
+    public clickbtn cbtn;
+    private string tmp_name="";
     // Start is called before the first frame update
     void Start()
     {
-        //get_addressfield.text = PlayerPrefs.GetString("MpurseAddress", "");
-        //if (get_addressfield.text != "")
-        //{
-            FetchStage();
-        //}
-        //else
-        //{
-            if (GManager.instance.isEnglish == 0) get_devcoinviewtext.text = "所持デビコイン：0.0";
-            else if (GManager.instance.isEnglish != 0) get_devcoinviewtext.text = "Devil coins you have：0.0";
-        //}
+        ShopManager.instance.mpurseuser_on = false;
+        if (GManager.instance.isEnglish == 0) get_devcoinviewtext.text = "所持デビコイン：0.0";
+        else if (GManager.instance.isEnglish != 0) get_devcoinviewtext.text = "Devil coins you have：0.0";
     }
-    public void CheckUser()
-    {
-        string tmp = "https://unitygamehayadebi.jimdofree.com/devusercheck/#";
-        Application.OpenURL(tmp);
-    }
+    //public void CheckUser()
+    //{
+    //    string tmp = "https://unitygamehayadebi.jimdofree.com/devusercheck/#";
+    //    Application.OpenURL(tmp);
+    //}
     public void FetchStage()
     {
-        //ユーザーチェック
-        NCMBQuery<NCMBObject> query = null;
-        query = new NCMBQuery<NCMBObject>(check_name);
-        //query.OrderByDescending(get_addressfield.text);
-        //検索件数を設定
-        query.Limit = 4;
-        int i = 1;
-        if (!ShopManager.instance.mpurseuser_on) onuser = false;
-        //データストアでの検索を行う
-        query.FindAsync((List<NCMBObject> objList, NCMBException e) =>
+        //ユーザー登録
+        if (get_username.text != "" && get_userpass.text != "" && get_userpass.text == get_repass.text)//(get_ncmbuser != null||!ShopManager.instance.mpurseuser_on||!onuser) &&
         {
-            if (e != null)
+            get_ncmbuser = new NCMBUser();
+            // ユーザー名・パスワードを設定
+            tmp_name = get_username.text;
+            print(tmp_name);
+            get_ncmbuser.UserName = get_username.text; /* ユーザー名 */
+            get_ncmbuser.Password = get_userpass.text; /* パスワード */
+            // ユーザーの新規登録処理
+            get_ncmbuser.SignUpAsync((NCMBException e) =>
             {
-                if (!ShopManager.instance.mpurseuser_on)
+                if (e != null)
                 {
-                    //if (GManager.instance.isEnglish == 0) get_addressfield.text = "本人確認に失敗しました。";
-                    //else if (GManager.instance.isEnglish != 0) get_addressfield.text = "Identification failed.";
-                    GManager.instance.setrg = 27;
-                }
-            }
-            else
-            {
-                onuser = true;
-                ShopManager.instance.mpurseuser_on = true;
-                //検索成功時の処理
-                foreach (NCMBObject obj in objList)
+                    //新規登録失敗、ログインに移る
+                    NCMBUser.LogInAsync(get_username.text, get_userpass.text, (NCMBException _e) =>
                 {
-                    break;
+                    if (_e != null)
+                    {
+                        //GManager.instance.setrg = 27;
+                        NCMBUser currentUser = NCMBUser.CurrentUser;
+                        if (currentUser != null)
+                        {
+                            tmp_name = currentUser.UserName;
+                            ShopManager.instance.mpurseuser_on = true;
+                            GManager.instance.setrg = 6;
+                            loginstatus_text.text = "ログイン中";
+                            DevNumCheck();
+                        }
+                    }
+                    else
+                    {
+                        //UnityEngine.Debug.Log("ログインに成功！");
+                        ShopManager.instance.mpurseuser_on = true;
+                        //FetchDev();
+                        GManager.instance.setrg = 6;
+                        loginstatus_text.text = "ログイン中";
+                        DevNumCheck();
+                        
+                    }
+                });
                 }
-            }
-        });
-        Resources.UnloadUnusedAssets();
-        CheckEnable = false;
+                else
+                {
+                    //UnityEngine.Debug.Log("ユーザーの新規登録に成功");
+                    GManager.instance.setrg = 6;
+                    loginstatus_text.text = "ログイン中";
+                    AdsAdd();
+                }
+            });
+        }
+        else
+        {
+            GManager.instance.setrg = 27;
+            Resources.UnloadUnusedAssets();
+        }
+
     }
-    private void Update()
+    void DevNumCheck()
     {
-        if (onuser)
+        if (tmp_name != "")
         {
-            onuser = false;
-            //保存ムーブ
-            //if (!ShopManager.instance.mpurseuser_on)
-            //{
-            //    PlayerPrefs.SetString("MpurseAddress", get_addressfield.text);
-            //    PlayerPrefs.Save();
-            //}
-            //address_num = PlayerPrefs.GetString("MpurseAddress", get_addressfield.text);
-            NCMBQuery<NCMBObject> query2 = null;
-            //取得から配置
-            query2 = null;
-            query2 = new NCMBQuery<NCMBObject>(class_name);
+            NCMBQuery<NCMBObject> query2 = new NCMBQuery<NCMBObject>(class_name);
             //Scoreフィールドの降順でデータを取得
-            query2.OrderByDescending("mpurseAddress");
-            //検索件数を設定
+            query2.WhereEqualTo("mpurseAddress", tmp_name);
             query2.Limit = query_limit;
-            int i = 1;
+            //検索件数を設定
             //データストアでの検索を行う
             query2.FindAsync((List<NCMBObject> objList, NCMBException e) =>
             {
                 if (e != null)
                 {
                     //検索失敗時の処理
+                    GManager.instance.setrg = 27;
+                    AdsAdd();
                 }
                 else
                 {
                     //検索成功時の処理
                     foreach (NCMBObject obj in objList)
                     {
-                        if (obj["mpurseAddress"].ToString() == address_num)//
-                        {
-                            if (get_ncmbobj == null) get_ncmbobj = obj;
-                            var tmpnum = obj[coin_name].ToString();
-                            ShopManager.instance.get_devcoin = float.Parse(tmpnum);
-                            var getminidev = PlayerPrefs.GetFloat("getdc", 0);
-                            PlayerPrefs.SetFloat("getdc", 0);
-                            PlayerPrefs.Save();
-                            BuyAddData(getminidev);
-                            break;
-                        }
+                        if (get_ncmbobj == null) get_ncmbobj = obj;
+                        var tmpnum = obj[coin_name].ToString();
+                        ShopManager.instance.get_devcoin = float.Parse(tmpnum);
+                        var getminidev = PlayerPrefs.GetFloat("getdc", 0);
+                        PlayerPrefs.SetFloat("getdc", 0);
+                        PlayerPrefs.Save();
+                        print("検索成功");
+                        BuyAddData(getminidev);
+                        break;
                     }
                     if (GManager.instance.isEnglish == 0) get_devcoinviewtext.text = "所持デビコイン：" + ShopManager.instance.get_devcoin.ToString();
                     else if (GManager.instance.isEnglish != 0) get_devcoinviewtext.text = "Devil coins you have：" + ShopManager.instance.get_devcoin.ToString();
+
                 }
             });
+            cbtn.CheckNoView();
         }
     }
-    private void OnApplicationPause(bool pauseStatus)
+    void AdsAdd()
     {
-        if (pauseStatus)
-        {
-            //アプリが一時停止(バックグラウンドに行った)
-        }
-        else if(!CheckEnable)
-        {
-            CheckEnable = true;
-            //アプリが再開(バックグラウンドから戻った)
-            FetchStage();
-        }
-    }
-    private void OnApplicationFocus(bool hasFocus)
-    {
-        if (hasFocus && !CheckEnable)
-        {
-            CheckEnable = true;
-            //アプリが選択された(バックグラウンドから戻った)
-            FetchStage();
-        }
-        else
-        {
-            //アプリが選択されなくなった(バックグラウンドに行った)
-        }
+        print("検索失敗時の処理を通ったよ");
+        NCMBObject obj = new NCMBObject(class_name);
+        obj.Add("mpurseAddress", tmp_name);
+        obj.Add(coin_name, 0);
+        obj.SaveAsync();
+        ShopManager.instance.mpurseuser_on = true;
+        DevNumCheck();
     }
     public void BuyAddData(float setf=0f)
     {

@@ -223,8 +223,8 @@ public class player : MonoBehaviour
                 GManager.instance.goal_num += 1;
                 GManager.instance.setrg = 7;
                 Instantiate(GManager.instance.all_ui[4], transform.position, transform.rotation);
-                if (adcmpos != null)
-                    Instantiate(GManager.instance.all_ui[8], adcmpos.transform.position, adcmpos.transform.rotation);
+                //if (adcmpos != null)
+                //    Instantiate(GManager.instance.all_ui[8], adcmpos.transform.position, adcmpos.transform.rotation);
                 if (GManager.instance.goal_num < 2)
                 {
                     GManager.instance.setrg = 5;

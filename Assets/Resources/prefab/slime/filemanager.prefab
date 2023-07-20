@@ -65,6 +65,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c9d7660a2eb8e16448bddfc5488fc6a4, type: 3}
   - {fileID: 8300000, guid: ee7a9f350b208bf4797c3292d8db1c80, type: 3}
   - {fileID: 8300000, guid: 52328e21095c85d41a06e3b507c3b6c8, type: 3}
+  - {fileID: 8300000, guid: 52328e21095c85d41a06e3b507c3b6c8, type: 3}
+  - {fileID: 8300000, guid: 52328e21095c85d41a06e3b507c3b6c8, type: 3}
+  - {fileID: 8300000, guid: 52328e21095c85d41a06e3b507c3b6c8, type: 3}
+  - {fileID: 8300000, guid: 52328e21095c85d41a06e3b507c3b6c8, type: 3}
+  - {fileID: 8300000, guid: 52328e21095c85d41a06e3b507c3b6c8, type: 3}
+  - {fileID: 8300000, guid: 52328e21095c85d41a06e3b507c3b6c8, type: 3}
+  - {fileID: 8300000, guid: 52328e21095c85d41a06e3b507c3b6c8, type: 3}
+  - {fileID: 8300000, guid: 52328e21095c85d41a06e3b507c3b6c8, type: 3}
+  - {fileID: 8300000, guid: 50a2482349048f24a801e1eadd3e5153, type: 3}
 --- !u!82 &7327059648232550944
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1167,7 +1176,7 @@ MonoBehaviour:
   reset_time: 0
   set_createid: 0
   fixed_createid: 0
-  dx_mode: 1
+  dx_mode: 0
   dx_stageid: -1
   dx_filename:
   - {fileID: 4900000, guid: 1f65af72aa6cd024a902322b1e614bd0, type: 3}

@@ -39,7 +39,7 @@ public class MailManager : MonoBehaviour
                 //検索成功時の処理
                 foreach (NCMBObject obj in objList)
                 {
-                    if ((obj["gametype"].ToString() == check_name || obj["gametype"].ToString() == "共通") && ((bool)obj["isdx"] == false || ((bool)obj["isdx"] == true && GManager.instance.dx_mode)))
+                    if ((obj["gametype"].ToString() == check_name || obj["gametype"].ToString() == "共通")) //&& ((bool)obj["isdx"] == false || ((bool)obj["isdx"] == true && GManager.instance.dx_mode)))
                     {
                         GameObject tmpobj = Instantiate(setuiobj, transform.position, transform.rotation, transform);
                         ChildMail tmpchild = tmpobj.GetComponent<ChildMail>();
