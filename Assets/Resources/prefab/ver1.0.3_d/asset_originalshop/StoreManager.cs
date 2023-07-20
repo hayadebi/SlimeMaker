@@ -21,6 +21,7 @@ public class StoreManager : MonoBehaviour
     public NCMBUser get_ncmbuser = null;
     public clickbtn cbtn;
     private string tmp_name="";
+    public bool onuser = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,14 @@ public class StoreManager : MonoBehaviour
     //    string tmp = "https://unitygamehayadebi.jimdofree.com/devusercheck/#";
     //    Application.OpenURL(tmp);
     //}
+    private void Update()
+    {
+        if (onuser)
+        {
+            onuser = false;
+            DevNumCheck();
+        }
+    }
     public void FetchStage()
     {
         //ユーザー登録
@@ -54,7 +63,7 @@ public class StoreManager : MonoBehaviour
                 {
                     if (_e != null)
                     {
-                        //GManager.instance.setrg = 27;
+                        
                         NCMBUser currentUser = NCMBUser.CurrentUser;
                         if (currentUser != null)
                         {
@@ -63,6 +72,10 @@ public class StoreManager : MonoBehaviour
                             GManager.instance.setrg = 6;
                             loginstatus_text.text = "ログイン中";
                             DevNumCheck();
+                        }
+                        else
+                        {
+                            GManager.instance.setrg = 27;
                         }
                     }
                     else

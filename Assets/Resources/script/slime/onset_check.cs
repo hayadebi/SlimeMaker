@@ -30,7 +30,9 @@ public class onset_check : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+      
+        if(PlayerPrefs.GetString("notdxtrg", "FALSE")=="TRUE")
+            GManager.instance.dx_mode = true;
         Invoke("TimeEventset", 0.3f);
     }
     void TimeEventset()
