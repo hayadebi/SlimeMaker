@@ -5381,6 +5381,8 @@ MonoBehaviour:
   loginstatus_text: {fileID: 8052175928217424859}
   cbtn: {fileID: 3576762751397144427}
   onuser: 0
+  appkey_set: 0bb40dc273cd651233a98d2509524a143b986cc7344982bdb7e0d53e5dafb3b8
+  clientkey_set: efb97dda4f060e16889b264f8a34b97728785391e36f87b24a209b572fbf9745
 --- !u!1 &4890016457730086469
 GameObject:
   m_ObjectHideFlags: 0

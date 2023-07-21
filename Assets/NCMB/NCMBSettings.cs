@@ -226,16 +226,16 @@ namespace NCMB
 		/// </summary>
 		public virtual void Awake ()
 		{
-			if (!NCMBSettings._isInitialized) {
+			//if (!NCMBSettings._isInitialized) {
 				NCMBSettings._isInitialized = true;
 				_responseValidationFlag = responseValidation;
-				DontDestroyOnLoad (base.gameObject);
+				//DontDestroyOnLoad (base.gameObject);
 				NCMBSettings.Initialize (this.applicationKey, this.clientKey, this.domainURL, this.apiVersion);
 				//NCMBSettings.RegisterPush(this.usePush, this.androidSenderId, this.getLocation);
 				filePath = Application.persistentDataPath;
 				currentInstallationPath = filePath + "/currentInstallation";
 				NCMBSettings.RegisterPush (this.usePush, this.useAnalytics, false);
-			}
+			//}
 		}
 
 		/// <summary>

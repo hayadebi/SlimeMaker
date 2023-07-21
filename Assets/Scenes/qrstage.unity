@@ -953,7 +953,7 @@ PrefabInstance:
     - target: {fileID: 5415590203843232425, guid: cb624c97ad9342048a9ac5a34645518c,
         type: 3}
       propertyPath: responseValidation
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb624c97ad9342048a9ac5a34645518c, type: 3}
@@ -2293,6 +2293,7 @@ MonoBehaviour:
   adstrg: 0
   daysavetrg: 0
   unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &1677695271
 MonoBehaviour:
   m_ObjectHideFlags: 0

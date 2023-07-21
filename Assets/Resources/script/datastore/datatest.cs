@@ -23,7 +23,6 @@ public class datatest : MonoBehaviour
     public Text onsearch_word;
     public Text notsearch_word;
     public List<NCMBObject> tmp_objlist = null;
-    // Start is called before the first frame update
     void Start()
     {
         //// クラスのNCMBObjectを作成

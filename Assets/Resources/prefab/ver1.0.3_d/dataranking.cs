@@ -24,6 +24,14 @@ public class dataranking : MonoBehaviour
     private List<float> rank_time;
     private List<int> rank_index;
     private bool rankintrg = false;
+    public string appkey_set = "6389c8004926f5e7281c224c976dedfaea075e8d22898f17912ae056a104cdd0";
+    public string clientkey_set = "d007162d93318e4054fe5893ad770e5d761c358949dfd05ceb5e2d59f0944449";
+    // Start is called before the first frame update
+    private void Awake()
+    {
+        if(NCMBSettings.ApplicationKey != appkey_set) NCMBSettings.ApplicationKey = appkey_set;
+        if(NCMBSettings.ClientKey != clientkey_set) NCMBSettings.ClientKey = clientkey_set;
+    }
     // Start is called before the first frame update
     void Start()
     {
