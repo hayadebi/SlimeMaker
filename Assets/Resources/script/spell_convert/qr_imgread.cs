@@ -80,7 +80,7 @@ public class qr_imgread : MonoBehaviour
                             stage_qrtrg += 1;
                         else if (check_line == 1 && line == Application.version)
                             stage_qrtrg += 1;
-                        else if (((check_line == 0 && line != "stage") || (check_line == 1 && line != Application.version)) && !not_stageqrtrg)
+                        else if (((check_line == 0 && line != "stage") || (check_line == 1 && (line != Application.version&& line!="-1"))) && !not_stageqrtrg)
                         {
                             not_stageqrtrg = true;
                             GManager.instance.setrg = 1;
@@ -136,7 +136,7 @@ public class qr_imgread : MonoBehaviour
                                 stage_qrtrg += 1;
                             else if (check_line == 1 && (line == Application.version || line == "-1"))
                                 stage_qrtrg +=1;
-                            else if (((check_line == 0 && line != "stage") || (check_line == 1 && line != Application.version)) && !not_stageqrtrg)
+                            else if (((check_line == 0 && line != "stage") || (check_line == 1 && (line != Application.version && line != "-1"))) && !not_stageqrtrg)
                             {
                                 not_stageqrtrg = true;
                                 GManager.instance.setrg = 1;
@@ -198,9 +198,9 @@ public class qr_imgread : MonoBehaviour
                 {
                     if (check_line == 0 && line == "stage")
                         stage_qrtrg += 1;
-                    else if (check_line == 1 && line == Application.version)
+                    else if (check_line == 1 && (line == Application.version || line == "-1"))
                         stage_qrtrg += 1;
-                    else if (((check_line == 0 && line != "stage") || (check_line == 1 && line != Application.version)) && !not_stageqrtrg)
+                    else if (((check_line == 0 && line != "stage") || (check_line == 1 && (line != Application.version && line != "-1"))) && !not_stageqrtrg)
                     {
                         not_stageqrtrg = true;
                         GManager.instance.setrg = 1;
@@ -254,7 +254,7 @@ public class qr_imgread : MonoBehaviour
                             stage_qrtrg += 1;
                         else if (check_line == 1 && (line == Application.version || line == "-1"))
                             stage_qrtrg += 1;
-                        else if (((check_line == 0 && line != "stage") || (check_line == 1 && line != Application.version)) && !not_stageqrtrg)
+                        else if (((check_line == 0 && line != "stage") || (check_line == 1 && (line != Application.version && line != "-1"))) && !not_stageqrtrg)
                         {
                             not_stageqrtrg = true;
                             GManager.instance.setrg = 1;
