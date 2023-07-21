@@ -41,6 +41,18 @@ public class DataBuySystem : MonoBehaviour
                 check_text.text = "I am about to spend 18 devilcoin \nto purchase【DX Contents】.\n Do you really want to spend your precious devilcoins to purchase it?";
             }
         }
+        else if (get_buytype == 1)
+        {
+            buyprice = 6;
+            if (GManager.instance.isEnglish == 0)
+            {
+                check_text.text = "6デビコイン消費して【ギミックセット第1弾】\nを購入しようとしています。\n貴重なデビコインを消費して本当に購入しますか？";
+            }
+            else
+            {
+                check_text.text = "I am about to spend 6 devilcoin \nto purchase【Gimmick Set #1】.\n Do you really want to spend your precious devilcoins to purchase it?";
+            }
+        }
     }
     public void BuyBtn()
     {
@@ -61,6 +73,12 @@ public class DataBuySystem : MonoBehaviour
                 PlayerPrefs.SetInt("daily_hour", DateTime.Now.Hour);
                 PlayerPrefs.SetInt("daily_min", DateTime.Now.Minute);
                 PlayerPrefs.SetInt("daily_sec", DateTime.Now.Second);
+                PlayerPrefs.Save();
+            }
+            else if (get_buytype == 1)
+            {
+                var oldonset = PlayerPrefs.GetString("all_onset", "");
+                PlayerPrefs.SetString("all_onset", oldonset+"48\n49\n64\n65\n66\n");
                 PlayerPrefs.Save();
             }
             if (buyend_targetobj != null)

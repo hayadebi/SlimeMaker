@@ -77,7 +77,14 @@ public class onset_check : MonoBehaviour
         {
             for (int i = 0; i < tmp_arr.Length;)
             {
-                GManager.instance.stageobj_onset[int.Parse(tmp_arr[i])] = 1;
+                try
+                {
+                    GManager.instance.stageobj_onset[int.Parse(tmp_arr[i])] = 1;
+                }
+                catch(System.Exception e)
+                {
+                    print("error:" + e.ToString());
+                }
                 i++;
             }
         }

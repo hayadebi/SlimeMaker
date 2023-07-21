@@ -50,7 +50,6 @@ public class StoreManager : MonoBehaviour
             get_ncmbuser = new NCMBUser();
             // ユーザー名・パスワードを設定
             tmp_name = get_username.text;
-            print(tmp_name);
             get_ncmbuser.UserName = get_username.text; /* ユーザー名 */
             get_ncmbuser.Password = get_userpass.text; /* パスワード */
             // ユーザーの新規登録処理
@@ -135,7 +134,6 @@ public class StoreManager : MonoBehaviour
                         var getminidev = PlayerPrefs.GetFloat("getdc", 0);
                         PlayerPrefs.SetFloat("getdc", 0);
                         PlayerPrefs.Save();
-                        print("検索成功");
                         BuyAddData(getminidev);
                         break;
                     }
@@ -149,7 +147,6 @@ public class StoreManager : MonoBehaviour
     }
     void AdsAdd()
     {
-        print("検索失敗時の処理を通ったよ");
         NCMBObject obj = new NCMBObject(class_name);
         obj.Add("mpurseAddress", tmp_name);
         obj.Add(coin_name, 0);
@@ -167,7 +164,6 @@ public class StoreManager : MonoBehaviour
             if (GManager.instance.isEnglish == 0) get_devcoinviewtext.text = "所持デビコイン：" + ShopManager.instance.get_devcoin.ToString();
             else if (GManager.instance.isEnglish != 0) get_devcoinviewtext.text = "Devil coins you have：" + ShopManager.instance.get_devcoin.ToString();
             NCMBObject obj = get_ncmbobj;
-            print((tmpnum + setf).ToString());
             obj[coin_name] = tmpnum + setf;
             //obj.Increment("adsCoin", -setf);
             obj.SaveAsync();

@@ -17,6 +17,7 @@ public class devconvert : MonoBehaviour
     public GameObject buyend_targetobj;
     public string buyend_text = "dxcontents_buy";
     public bool dxcheck = true;
+    public float set_price=18;
     public GameObject NotUI;
     // Start is called before the first frame update
     void Start()
@@ -40,7 +41,7 @@ public class devconvert : MonoBehaviour
     }
     public void ShopPlay()
     {
-        if (inputshopID == 0 && cooltime <= 0 && 18 <= ShopManager.instance.get_devcoin && ShopManager.instance.mpurseuser_on)
+        if (cooltime <= 0 && set_price <= ShopManager.instance.get_devcoin && ShopManager.instance.mpurseuser_on)
         {
             cooltime = 2f;
             audioS.PlayOneShot(getse);

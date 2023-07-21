@@ -342,6 +342,8 @@ MonoBehaviour:
   loadnext: 0
   adstrg: 0
   daysavetrg: 0
+  unilangtrg: 0
+  mpurseuser_trg: 0
 --- !u!114 &1083753524795962020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1881,13 +1883,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: Return to Title
+  EnglishText: 
   englishFontSize: 22
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &6442479298645718741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1980,15 +1985,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: 'Two are slime brother makers
-
-    ~endroll~'
+  EnglishText: 
   englishFontSize: 64
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
 --- !u!1 &6930915362633960929
 GameObject:
   m_ObjectHideFlags: 0
@@ -2171,10 +2177,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u25A0\u4F01\u753B/\u7269\u8A9E\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A03D\u30E2\u30C7\u30EB/\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A0\u30DE\u30C3\u30D7/UI/\u305D\u306E\u4ED6\u30C7\u30B6\u30A4\u30F3\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A0\u30B7\u30B9\u30C6\u30E0/\u30D7\u30ED\u30B0\u30E9\u30E0\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A0\u30C7\u30D0\u30C3\u30B0/\u30C6\u30B9\u30C8\u30D7\u30EC\u30A4\r\n\u30FB\u30AD\u30CE\u30B3\u5BB6\u30E1\u30F3\u30D0\u30FC\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A0\u52D5\u753B\u64AE\u5F71/\u7DE8\u96C6\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A0\u7D20\u6750\u63D0\u4F9B\r\n\u25C6BGM\r\n\u30FB\u30A4\u30EF\u30B7\u30ED\u97F3\u697D\u7D20\u6750\u69D8\r\n 
-    -\u30BF\u30A4\u30C8\u30EB\u300C\u7CBE\u795E\u79D1\u533B\u300D\r\n  -\u30B9\u30C6\u30FC\u30B8\u300C\u6226\u3046\u6642\u306E\u3084\u3064\u300D\r\n 
-    -\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FC\u300C\u30B2\u30FC\u30E0\u30AA\u30FC\u30D0\u30FCBGM
-    \u30DC\u30EA\u30E5\u30FC\u30E0\uFF11\u300D\r\n  -\u30A8\u30F3\u30C9\u30ED\u30FC\u30EB\u300C\u304B\u305F\u308F\u308C\u300D\r\n\u25C6SE\r\n\u30FB\u52B9\u679C\u97F3\u30E9\u30DC\r\n\u30FBFC\u97F3\u5DE5\u5834\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\u3000\u3000<size=45>\u30B9\u30C8\u30FC\u30EA\u30FC\u30E2\u30FC\u30C9 
+  m_Text: "\u25A0\u4F01\u753B/\u7269\u8A9E\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A03D\u30E2\u30C7\u30EB/\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A0\u30DE\u30C3\u30D7/UI/\u305D\u306E\u4ED6\u30C7\u30B6\u30A4\u30F3\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A0\u30B7\u30B9\u30C6\u30E0/\u30D7\u30ED\u30B0\u30E9\u30E0\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A0\u30C7\u30D0\u30C3\u30B0/\u30C6\u30B9\u30C8\u30D7\u30EC\u30A4\r\n\u30FB\u30AD\u30CE\u30B3\u5BB6\u30E1\u30F3\u30D0\u30FC\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A0\u52D5\u753B\u64AE\u5F71/\u7DE8\u96C6\r\n\u30FB\u30CF\u30E4\u30C7\u30D3\r\n\r\n\u25A0\u7D20\u6750\u63D0\u4F9B\r\n\u25C6BGM\r\n\u30FB\u30A4\u30EF\u30B7\u30ED\u97F3\u697D\u7D20\u6750\u69D8\r\n\u30FB\u306A\u3050\u3082\u308A\u305A\u306E\u97F3\u697D\u5BA4\r\n\u30FB\u3057\u30FC\u3067\u3093\u3067\u3093\r\n\r\n\u25C6SE\r\n\u30FB\u52B9\u679C\u97F3\u30E9\u30DC\r\n\u30FBFC\u97F3\u5DE5\u5834\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\r\n\u3000\u3000<size=45>\u30B9\u30C8\u30FC\u30EA\u30FC\u30E2\u30FC\u30C9 
     \u7D42(\uFF1F)\r\n\r\n\u3000\u3000\u2026\u30B9\u30E9\u30A4\u30E0\u30C7\u30A3\u30B9\u30C8\u30D4\u30A2\u306B\u7D9A\u304F</size>"
 --- !u!114 &6539362862789577313
 MonoBehaviour:
@@ -2188,15 +2191,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6298236c04b67ec4da255c68a81b9d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  englishText: "\u25A0Projects/Stories\nHAYADEVI\n\n\u25A03D Model/Animation\nHayadevi\n\n\u25A0Map/UI/other
-    design\nHAYADEVI\n\n\u25A0System/Programming\nSystem/Programming\n\n\u25A0Debugging/Test
-    play\nMushroom family members\nHAYADEVI\n\n\u25A0Video shooting/editing\nHAYADEVI\n\n\u25A0Providing
-    materials\n\u25C6BGM\n\u30A4\u30EF\u30B7\u30ED\u97F3\u697D\u7D20\u6750 \u69D8\n-Title\n-Stage\n-End
-    Event\n-End roll\n\u25C6Sound\n\u52B9\u679C\u97F3\u30E9\u30DC\nFC\u97F3\u5DE5\u5834\n\n\n\n\n\n\n\n\n\n\n\n\n\nStory
-    Mode End(?)\n\n...Continue to Slime Dystopia"
+  EnglishText: "\u25A0Projects/Stories\r\nHAYADEBI\r\n\r\n\u25A03D Model/Animation\r\nHAYADEBI\r\n\r\n\u25A0Map/UI/other
+    design\r\nHAYADEBI\r\n\r\n\u25A0System/Programming\r\nHAYADEBI\r\n\r\n\u25A0Debugging/Test
+    play\r\nMushroom family members\r\nHAYADEBI\r\n\r\n\u25A0Video shooting/editing\r\nHAYADEBI\r\n\r\n\u25A0Providing
+    materials\r\n\u30FBBGM\r\nMusic by Iwashiro Music Material\r\nnagumorizu\r\nseadenden\r\n 
+    \r\n\u30FBSound\r\nSound Effects Lab\r\nFC Sound Factory\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\n\r\n\u3000\u3000Story
+    Mode End\r\n\r\n\u3000\u3000...Continue to Slime Dystopia"
   englishFontSize: 40
   nosetTrg: 0
   textimage: {fileID: 0}
   textsprite: {fileID: 0}
   enfont: {fileID: 0}
-  starttrg: 0
+  updatetime: 0
+  realtimeconvert: 0
+  humantrg: 0
+  oldstring: 
